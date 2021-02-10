@@ -6,23 +6,24 @@ bot.on("ready", () => {
 })
 
 const prefix = "c.";
-// bot.on('message', message => {
-if (!message.content.startsWith(prefix) || message.author.bot) return;
+bot.on('message', message => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-const args = message.content.slice(prefix.length).trim().split(/ +/);
-const command = args.shift().toLowerCase();
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const command = args.shift().toLowerCase();
 
-if (command === 'washes') {
-    if (!args.length) {
-        return message.channel.send(`You didn't provide any arguments! $washes <job> <level> <mp>`);
+    if (command === 'washes') {
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments! $washes <job> <level> <mp>`);
+        }
+        else if (args[0] === 'spearman') {
+            message.channel.send('spearman wash entered!');
+        }
+
+        message.channel.send(`Command namne: ${command}\nArguments: ${args}\nFirst argument: ${args[0]}`)
     }
-    else if (args[0] === 'spearman') {
-        message.channel.send('spearman wash entered!');
-    }
 
-    message.channel.send(`Command namne: ${command}\nArguments: ${args}\nFirst argument: ${args[0]}`)
-}
-
+})
 /*switch (args[0]) {
     case 'washes':
         if (args[1].toLowerCase() === 'spearman') {
