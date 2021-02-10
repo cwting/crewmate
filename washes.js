@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 
 bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (washes.js)`); // BOT online
-
 })
 
 const prefix = "c.";

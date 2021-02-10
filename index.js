@@ -1,6 +1,6 @@
 var gmjr = require('./gmjr.js');
 var cwkbon = require('./cwkbon.js');
-// var washes = require("./washes.js");
+var washes = require("./washes.js");
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -97,7 +97,8 @@ bot.on("message", async msg => {
 // HP WASH
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.washes") {
-        msg.channel.send("to be added because belle too small brain for hp washing math :(");
+        // msg.channel.send("to be added because belle too small brain for hp washing math :(");
+        washes;
     }
 });
 
