@@ -1,0 +1,13 @@
+{
+    "name": "crewmate",
+    "description": "Crewmate",
+    "version": "0.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "discord.js": "^12.5.1",
+        "discord.js-menu": "^2.3.1"
+    }
+}
