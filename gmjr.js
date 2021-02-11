@@ -19,6 +19,9 @@ List of GMJr:
 - Lior
 */
 
+var membersIDs = bot.guilds.get('id')
+console.log(membersIDs)
+
 bot.on('message', message => {
     // Nivi
     if (message.content.toLowerCase() === "c.gmjr-nivi") {
@@ -136,6 +139,8 @@ bot.on('message', message => {
         ], 60000)
         gmjr.start()
         console.log(message.author.id)
+        // belbel id: 409686858826514432
+        // tester id: 809480893474406402
     }
 
     // Naomi
