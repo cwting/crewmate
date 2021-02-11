@@ -22,7 +22,7 @@ List of GMJr:
 */
 
 // Get the Guild and store it under the variable "list"
-const list = client.guilds.get("804559769049497641");
+const list = bot.guilds.get("804559769049497641");
 
 // Iterate through the collection of GuildMembers from the Guild getting the username property of each member 
 list.members.forEach(member => console.log(member.user.username));
