@@ -19,7 +19,7 @@ List of GMJr:
 - Lior
 */
 
-var membersIDs = bot.guilds
+const membersIDs = bot.guilds.cache.get("GuildID").members.map(member => member.id)
 
 bot.on('message', message => {
     // Nivi
