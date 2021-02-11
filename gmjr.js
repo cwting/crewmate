@@ -22,7 +22,7 @@ List of GMJr:
 bot.on('message', message => {
     // Nivi
     if (message.content.toLowerCase() === "c.gmjr-nivi") {
-        let gmjr = new Menu(message.channel, null, [
+        let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'Wolftail',
                 content: new MessageEmbed({
@@ -135,6 +135,7 @@ bot.on('message', message => {
             },
         ], 60000)
         gmjr.start()
+        console.log(message.author.id)
     }
 
     // Naomi
