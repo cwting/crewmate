@@ -19,8 +19,10 @@ List of GMJr:
 - Lior
 */
 
-const membersIDs = bot.guilds.cache.get('804559769049497641')
-membersIDs.members.fetch().then(members => console.log(members))
+const Guild = bot.guilds.cache.get("804559769049497641"); // Getting the guild.
+const Members = Guild.members.cache.map(member => member.id); // Getting the members and mapping them by ID.
+console.log(Members);
+// --> ["1234567890054356", "1323534709650967", "436567540796390"] etc...
 
 bot.on('message', message => {
     // Nivi
@@ -138,8 +140,8 @@ bot.on('message', message => {
             },
         ], 60000)
         gmjr.start()
-        console.log(message.author.id)
-        console.log(membersIDs)
+        //console.log(message.author.id)
+        //console.log(membersIDs)
         // belbel id: 409686858826514432
         // tester id: 809480893474406402
     }
