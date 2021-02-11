@@ -19,7 +19,7 @@ List of GMJr:
 - Lior
 */
 
-var membersIDs = bot.guilds.get('id')
+var membersIDs = Client.guilds.get('id')
 console.log(membersIDs)
 
 bot.on('message', message => {
