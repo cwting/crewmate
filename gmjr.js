@@ -20,6 +20,7 @@ List of GMJr:
 */
 
 const Guild = bot.guilds.cache.get("804559769049497641"); // Getting the guild.
+console.log(Guild)
 const Members = Guild.members.cache.map(member => member.id); // Getting the members and mapping them by ID.
 console.log(Members);
 // --> ["1234567890054356", "1323534709650967", "436567540796390"] etc...
