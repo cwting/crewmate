@@ -20,12 +20,11 @@ List of GMJr:
 */
 
 var membersIDs = bot.guilds
-console.log(membersIDs)
 
 bot.on('message', message => {
     // Nivi
     if (message.content.toLowerCase() === "c.gmjr-nivi") {
-        let gmjr = new Menu(message.channel, message.author.id, [
+        let gmjr = new Menu(message.channel, membersIDs, [
             {
                 name: 'Wolftail',
                 content: new MessageEmbed({
@@ -139,6 +138,7 @@ bot.on('message', message => {
         ], 60000)
         gmjr.start()
         console.log(message.author.id)
+        console.log(membersIDs)
         // belbel id: 409686858826514432
         // tester id: 809480893474406402
     }
