@@ -19,7 +19,7 @@ List of GMJr:
 - Lior
 */
 
-const membersIDs = bot.guilds.get('804559769049497641')
+const membersIDs = bot.guilds.cache.get('804559769049497641')
 membersIDs.members.fetch().then(members => console.log(members))
 
 bot.on('message', message => {
