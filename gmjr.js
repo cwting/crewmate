@@ -1,6 +1,8 @@
 const { Client, MessageEmbed } = require('discord.js')
 const { Menu } = require('discord.js-menu')
+const Discord = require('discord.js');
 const bot = new Client()
+const client = new Discord.Client()
 const currentYear = 2021; // Change yearly
 
 bot.on("ready", () => {
@@ -19,11 +21,11 @@ List of GMJr:
 - Lior
 */
 
-const Guild = bot.guilds.cache.get("804559769049497641"); // Getting the guild.
-console.log(Guild)
-const Members = Guild.members.cache.map(member => member.id); // Getting the members and mapping them by ID.
-console.log(Members);
-// --> ["1234567890054356", "1323534709650967", "436567540796390"] etc...
+// Get the Guild and store it under the variable "list"
+const list = client.guilds.get("804559769049497641");
+
+// Iterate through the collection of GuildMembers from the Guild getting the username property of each member 
+list.members.forEach(member => console.log(member.user.username));
 
 bot.on('message', message => {
     // Nivi
@@ -149,7 +151,7 @@ bot.on('message', message => {
 
     // Naomi
     else if (message.content.toLowerCase() === "c.gmjr-naomi") {
-        let gmjr = new Menu(message.channel, message.author.id, [
+        let gmjr = new Menu(message.channel, message.guild, [
             {
                 name: 'NLynx',
                 content: new MessageEmbed({
