@@ -53,7 +53,7 @@ const hpwashmsg = new Discord.MessageEmbed()
     .setTitle('HP Washing')
     .setDescription(`
     Enter your job, level and clean MP in the following format:
-    e.g. c.washes <job> <level> <mp>
+    e.g. c.hpwash <job> <level> <mp>
     `)
 
 const apqmsg = new Discord.MessageEmbed()

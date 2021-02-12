@@ -17,14 +17,14 @@ bot.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if (command === 'washes') {
+    if (command === 'hpwash') {
         // c.washes <job> <level> <mp>
         if (!args.length) {
             return message.channel.send(`You didn't provide any details!`);
         }
         // HP gain from APR
         // Min MP = 148 + (level * 6)
-        else if (args[0] === 'spearman') {
+        else if (args[0] === 'spearman' && args[1] === !null && args[2] === !null) {
             message.channel.send('spearman wash entered!');
             var level = args[1];
             var cleanMP = arg[2];
