@@ -34,8 +34,12 @@ bot.on('message', message => {
                         { name: "Country:", value: "Finland", inline: true },
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
-                            name: "Character Information:",
-                            value: "Wolftail - Level 200 Corsair"
+                            name: "Maple Character IGN(s), Job(s) and Level:",
+                            value: `**Wolftail - Level 200 Corsair**
+                            Bunpaws - Level 200 Buccaneer
+                            Nweeky -  Level 200 Bowmaster
+                            Pronghorn -  Level 18x Marksman
+                            Stripewing -  Level 13x Bishop`
                         }
                     )
                     .setColor("#5FC3C3")
@@ -56,8 +60,12 @@ bot.on('message', message => {
                         { name: "Country:", value: "Finland", inline: true },
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
-                            name: "Character Information:",
-                            value: "Bunpaws - Level 200 Buccaneer"
+                            name: "Maple Character IGN(s), Job(s) and Level:",
+                            value: `Wolftail - Level 200 Corsair
+                            **Bunpaws - Buccaneer (200)**
+                            Nweeky - Bowmaster (200)
+                            Pronghorn - Marksman (17x)
+                            Stripewing - Bishop (13x)`
                         }
                     )
                     .setColor("#5FC3C3")
@@ -78,8 +86,12 @@ bot.on('message', message => {
                         { name: "Country:", value: "Finland", inline: true },
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
-                            name: "Character Information:",
-                            value: "Nweeky - Level 200 Bowmaster"
+                            name: "Maple Character IGN(s), Job(s) and Level:",
+                            value: `Wolftail - Level 200 Corsair
+                            Bunpaws - Buccaneer (200)
+                            **Nweeky - Bowmaster (200)**
+                            Pronghorn - Marksman (17x)
+                            Stripewing - Bishop (13x)`
                         }
                     )
                     .setColor("#5FC3C3")
@@ -100,8 +112,12 @@ bot.on('message', message => {
                         { name: "Country:", value: "Finland", inline: true },
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
-                            name: "Character Information:",
-                            value: "Pronghorn - Level 18x Marksman "
+                            name: "Maple Character IGN(s), Job(s) and Level:",
+                            value: `Wolftail - Level 200 Corsair
+                            Bunpaws - Buccaneer (200)
+                            Nweeky - Bowmaster (200)
+                            **Pronghorn - Marksman (17x)**
+                            Stripewing - Bishop (13x)`
                         }
                     )
                     .setColor("#5FC3C3")
@@ -122,8 +138,12 @@ bot.on('message', message => {
                         { name: "Country:", value: "Finland", inline: true },
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
-                            name: "Character Information:",
-                            value: "Stripewing - Level 13x Bishop"
+                            name: "Maple Character IGN(s), Job(s) and Level:",
+                            value: `Wolftail - Level 200 Corsair
+                            Bunpaws - Buccaneer (200)
+                            Nweeky - Bowmaster (200)
+                            Pronghorn - Marksman (17x)
+                            **Stripewing - Bishop (13x)**`
                         }
                     )
                     .setColor("#5FC3C3")
@@ -151,7 +171,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "EU", inline: true },
                         { name: "Speaks:", value: "English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "NLynx - Level 200 Night Lord"
                         }
                     )
@@ -173,7 +193,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "EU", inline: true },
                         { name: "Speaks:", value: "English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Acinonyx - Level 17x Dark Knight"
                         }
                     )
@@ -195,7 +215,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "EU", inline: true },
                         { name: "Speaks:", value: "English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "LunarN - Level 16x Shadower"
                         }
                     )
@@ -217,7 +237,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "EU", inline: true },
                         { name: "Speaks:", value: "English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "NPanthera - Level 16x Bowmaster"
                         }
                     )
@@ -247,7 +267,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Korea", inline: true },
                         { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "xKook007 - Level 200 Night Lord"
                         }
                     )
@@ -269,7 +289,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Korea", inline: true },
                         { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Vaiiente - Level 19x Dark Knight"
                         }
                     )
@@ -292,7 +312,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Korea", inline: true },
                         { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Rooka - Level 14x Corsair"
                         }
                     )
@@ -314,7 +334,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Korea", inline: true },
                         { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Leuca - Level 13x Night Lord"
                         }
                     )
@@ -336,7 +356,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Korea", inline: true },
                         { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Jyeong - Level 13x Bishop"
                         }
                     )
@@ -365,7 +385,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "ArchWar - Level 200 Bowmaster"
                         }
                     )
@@ -387,7 +407,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "BadShooter - Level 19x Corsair"
                         }
                     )
@@ -409,7 +429,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "GreenyHeaven - Level 13x Bishop"
                         }
                     )
@@ -438,7 +458,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Singapore", inline: true },
                         { name: "Speaks:", value: "English, Chinese", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "DingTongBell - Level 200 Hero"
                         }
                     )
@@ -460,7 +480,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Singapore", inline: true },
                         { name: "Speaks:", value: "English, Chinese", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "BadPuncher - Level 19x Buccaneer"
                         }
                     )
@@ -482,7 +502,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Singapore", inline: true },
                         { name: "Speaks:", value: "English, Chinese", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "TingTongBell - Level 18x Bishop"
                         }
                     )
@@ -511,7 +531,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Germany", inline: true },
                         { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "MazeRunner - Level 200 Night Lord"
                         }
                     )
@@ -540,7 +560,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Philippines", inline: true },
                         { name: "Speaks:", value: "English, Filipino", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "xCintare - Level 200 Dark Knight"
                         }
                     )
@@ -562,7 +582,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Philippines", inline: true },
                         { name: "Speaks:", value: "English, Filipino", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "Mewleficent - Level 18x Bishop"
                         }
                     )
@@ -591,7 +611,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "Hebrew, English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "iTinyRick - Level 200 Dark Knight"
                         }
                     )
@@ -613,7 +633,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "Hebrew, English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "TinyHero - Level 200 Hero"
                         }
                     )
@@ -635,7 +655,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "Hebrew, English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "iDragonFist - Level 19x Buccaneer"
                         }
                     )
@@ -657,7 +677,7 @@ bot.on('message', message => {
                         { name: "Country:", value: "Israel", inline: true },
                         { name: "Speaks:", value: "Hebrew, English", inline: true },
                         {
-                            name: "Character Information:",
+                            name: "Maple Character IGN(s), Job(s) and Level:",
                             value: "HealWolf - Level 15x Bishop"
                         }
                     )
