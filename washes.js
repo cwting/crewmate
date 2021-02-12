@@ -21,12 +21,10 @@ bot.on('message', message => {
 
     if (command === 'hpwash') {
         if (!args.length) {
-            return message.channel.send(`You didn't provide any details!`);
+            return
         }
         // HP gain from APR
         else if (args[0] === 'spearman' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
-            //message.channel.send('spearman wash entered!');
-
             var level = args[1];
             var cleanMP = args[2];
             var hpGain = 49;
@@ -36,7 +34,10 @@ bot.on('message', message => {
             var numOfWash = extraMP / mpLoss;
             var hpGained = numOfWash * hpGain;
 
-            message.channel.send(`Your extra mp is ${extraMP}\nYou can wash ${numOfWash} times and gain an approximate of ${hpGained} HP.\n The cost of AP resets is: ${aprNX * numOfWash} NX. (${Math.ceil(aprNX * numOfWash / vote)} number of days of voting)`)
+            message.channel.send(`
+            Your extra mp is ${extraMP.toLocaleString()}\n
+            You can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained} HP.\n
+            The cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX. (${Math.ceil(aprNX * numOfWash / vote)} days of voting)`)
 
         }
         else if (args[0] === 'fighter') {

@@ -54,6 +54,7 @@ const hpwashmsg = new Discord.MessageEmbed()
     .setDescription(`
     Enter your job, level and clean MP in the following format:
     e.g. c.hpwash <job> <level> <mp>
+    where <job> can be: spearman, fighter, page, archer, thief, brawler, gunslinger, magician
     `)
 
 const apqmsg = new Discord.MessageEmbed()
