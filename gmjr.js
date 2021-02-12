@@ -139,7 +139,7 @@ bot.on('message', message => {
 
     // Naomi
     else if (message.content.toLowerCase() === "c.gmjr-naomi") {
-        let gmjr = new Menu(message.channel, message.guild, [
+        let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'NLynx',
                 content: new MessageEmbed({
