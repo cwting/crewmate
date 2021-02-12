@@ -16,26 +16,26 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+    // c.washes <job> <level> <mp>
 
     if (command === 'hpwash') {
-        // c.washes <job> <level> <mp>
         if (!args.length) {
             return message.channel.send(`You didn't provide any details!`);
         }
         // HP gain from APR
-        // Min MP = 148 + (level * 6)
-        else if (args[0] === 'spearman' && args[1] === !null && args[2] === !null) {
+        else if (args[0] === 'spearman') {
             message.channel.send('spearman wash entered!');
-            var level = args[1];
-            var cleanMP = arg[2];
-            var hpGain = 49;
-            var mpLoss = 4;
-            var minMP = 148 + (level * 6);
-            var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
-            var hpGained = numOfWash * hpGain;
+            console.log(`command: ${command}, args: ${args}, args[0]: ${args[0]}, args[1]: ${args[1]} , args[0]: ${args[2]}  `)
+            // var level = args[1];
+            // var cleanMP = arg[2];
+            // var hpGain = 49;
+            // var mpLoss = 4;
+            // var minMP = 148 + (level * 6);
+            // var extraMP = cleanMP - minMP
+            // var numOfWash = extraMP / mpLoss;
+            // var hpGained = numOfWash * hpGain;
 
-            message.channel.send(`Your extra mp is ${extraMP}\nYou can wash ${numOfWash} times and gain an approximate of ${hpGained} HP.\n The cost of AP resets is: ${vote * numOfWash} NX.`)
+            // message.channel.send(`Your extra mp is ${extraMP}\nYou can wash ${numOfWash} times and gain an approximate of ${hpGained} HP.\n The cost of AP resets is: ${vote * numOfWash} NX.`)
         }
         else if (args[0] === 'fighter') {
             message.channel.send('fighter wash entered!');
