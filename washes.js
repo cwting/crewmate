@@ -34,7 +34,7 @@ bot.on('message', message => {
             var numOfWash = extraMP / mpLoss;
             var hpGained = numOfWash * hpGain;
 
-            message.channel.send(`Your extra mp is ${extraMP.toLocaleString()}\nYou can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX. (${Math.ceil(aprNX * numOfWash / vote)} days of voting)`)
+            message.channel.send(`Your extra mp is ${extraMP.toLocaleString()}\nYou can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained.toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting)`)
         }
         else if (args[0] === 'fighter') {
             message.channel.send('fighter wash entered!');
