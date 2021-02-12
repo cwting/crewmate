@@ -1,8 +1,6 @@
 const { Client, MessageEmbed } = require('discord.js')
 const { Menu } = require('discord.js-menu')
-const Discord = require('discord.js');
-const bot = new Client()
-const client = new Discord.Client()
+const bot = new Client();
 const currentYear = 2021; // Change yearly
 
 bot.on("ready", () => {
