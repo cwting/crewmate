@@ -35,11 +35,7 @@ bot.on('message', message => {
                         { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                         {
                             name: "Maple Character IGN(s), Job(s) and Level:",
-                            value: `**Wolftail - Level 200 Corsair**
-                            Bunpaws - Level 200 Buccaneer
-                            Nweeky -  Level 200 Bowmaster
-                            Pronghorn -  Level 18x Marksman
-                            Stripewing -  Level 13x Bishop`
+                            value: `__Wolftail - Level 200 Corsair__\nBunpaws - Level 200 Buccaneer\nNweeky -  Level 200 Bowmaster\nPronghorn -  Level 18x Marksman\nStripewing -  Level 13x Bishop`
                         }
                     )
                     .setColor("#5FC3C3")
