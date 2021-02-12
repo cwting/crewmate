@@ -28,7 +28,7 @@ bot.on('message', message => {
             //message.channel.send('spearman wash entered!');
 
             var level = args[1];
-            var cleanMP = arg[2];
+            var cleanMP = args[2];
             var hpGain = 49;
             var mpLoss = 4;
             var minMP = 148 + (level * 6);
