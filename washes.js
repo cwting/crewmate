@@ -1,11 +1,9 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var hpGain = 0;
-var mpLoss = 0;
 var vote = 8000;
 var aprNX = 3100;
-var aprCost = 12500000;
+var aprMeso = 12500000;
 
 bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (washes.js)`); // BOT online
@@ -34,7 +32,9 @@ bot.on('message', message => {
             var numOfWash = extraMP / mpLoss;
             var hpGained = numOfWash * hpGain;
 
-            message.channel.send(`Your extra mp is ${extraMP.toLocaleString()}\nYou can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained.toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting)`)
+            message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained.toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/ AP Reset)`)
+
+            //You have 113 extra MP. You can wash 28 times to gain at least 1,400 HP and on average 1,456 HP. The cost of AP Reset is 86,800 NX (11 days of voting) or 448,000,000 mesos (16m/AP Reset).
         }
         else if (args[0] === 'fighter') {
             message.channel.send('fighter wash entered!');
