@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
+var hpGain = 0;
+var mpLoss = 0;
+var vote = 8000;
+var aprCost = 12500000;
+
 bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (washes.js)`); // BOT online
 })
@@ -13,11 +18,24 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
 
     if (command === 'washes') {
+        // c.washes <job> <level> <mp>
         if (!args.length) {
-            return message.channel.send(`You didn't provide any arguments! for belbel: $washes <job> <level> <mp>`);
+            return message.channel.send(`You didn't provide any details!`);
         }
+        // HP gain from APR
+        // Min MP = 148 + (level * 6)
         else if (args[0] === 'spearman') {
             message.channel.send('spearman wash entered!');
+            var level = args[1];
+            var cleanMP = arg[2];
+            var hpGain = 49;
+            var mpLoss = 4;
+            var minMP = 148 + (level * 6);
+            var extraMP = cleanMP - minMP
+            var numOfWash = extraMP / mpLoss;
+            var hpGained = numOfWash * hpGain;
+
+            message.channel.send(`Your extra mp is ${extraMP}\nYou can wash ${numOfWash} times and gain an approximate of ${hpGained} HP.\n The cost of AP resets is: ${vote * numOfWash} NX.`)
         }
         else if (args[0] === 'fighter') {
             message.channel.send('fighter wash entered!');
