@@ -15,47 +15,64 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+    var level = args[1];
+    var cleanMP = args[2];
     // c.washes <job> <level> <mp>
 
     if (command === 'hpwash') {
+        // if empty
         if (!args.length) {
-            return
+            message.reply("Please enter your level and clean MP.")
         }
-        // HP gain from APR
+        // if invalid parameter
+        else if (args[0] === '' || (args[1] < 1 && args[1] > 200) || (args[2] < 1 && args[2] > 30000)) {
+            message.reply("Invalid job/level/clean MP.")
+        }
+        // beginner
+        else if (args[0] === 'beginner' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
+            message.channel.send('beginner wash entered!');
+        }
+        // warriors
         else if (args[0] === 'spearman' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
-            var level = args[1];
-            var cleanMP = args[2];
-            var hpGain = 49;
+            var minHPGain = 50;
+            var avgHPGain = 52;
             var mpLoss = 4;
-            var minMP = 148 + (level * 6);
+            var minMP = (4 * level) + 156;
             var extraMP = cleanMP - minMP
             var numOfWash = extraMP / mpLoss;
-            var hpGained = numOfWash * hpGain;
+            var minHPGained = numOfWash * minHPGain;
+            var avgHPGained = numOfWash * avgHPGain;
 
-            message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${numOfWash.toLocaleString()} times and gain an approximate of ${hpGained.toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/ AP Reset)`)
-
-            //You have 113 extra MP. You can wash 28 times to gain at least 1,400 HP and on average 1,456 HP. The cost of AP Reset is 86,800 NX (11 days of voting) or 448,000,000 mesos (16m/AP Reset).
+            message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${numOfWash.toLocaleString()} times and gain at least ${minHPGained.toLocaleString()} and on average ${avgHPGained.toLocaleString()}.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/ AP Reset)`)
         }
-        else if (args[0] === 'fighter') {
+        else if (args[0] === 'fighter' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('fighter wash entered!');
         }
-        else if (args[0] === 'page') {
+        else if (args[0] === 'page' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('page wash entered!');
         }
-        else if (args[0] === 'archer') {
+        // archers
+        else if (args[0] === 'archer' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('archer wash entered!');
         }
-        else if (args[0] === 'thief') {
+        // thieves
+        else if (args[0] === 'thief' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('thief wash entered!');
         }
-        else if (args[0] === 'brawler') {
+        // brawler
+        else if (args[0] === 'brawler' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('brawler wash entered!');
         }
-        else if (args[0] === 'gunslinger') {
+        // gunslinger
+        else if (args[0] === 'gunslinger' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('gunslinger wash entered!');
         }
-        else if (args[0] === 'magician') {
+        // magicians
+        else if (args[0] === 'magician' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send('magician wash entered!');
+        }
+        else {
+            message.reply("Incorrect format!")
         }
     }
 
