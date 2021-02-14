@@ -113,15 +113,14 @@ bot.on('message', message => {
             var avgHPGained = Math.floor(numOfWash * avgHPGain);
         }
         // magicians
-        else if (args[0] === 'magician' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
+        else if (args[0] === 'magician') {// && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             message.channel.send("i cannot do mage D:")
         }
         else {
             message.reply("Incorrect format!")
         }
     }
-    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${Math.floor(numOfWash).toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
-
+    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${Math.floor(numOfWash).toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${Math.ceil((aprNX * numOfWash)).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
 })
 
 bot.login(process.env.TOKEN);
