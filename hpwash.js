@@ -31,7 +31,7 @@ bot.on('message', message => {
             var mpLoss = 8;
             var minMP = (10 * level) + 2;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -42,7 +42,7 @@ bot.on('message', message => {
             var mpLoss = 4;
             var minMP = (4 * level) + 156;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -53,7 +53,7 @@ bot.on('message', message => {
             var mpLoss = 4;
             var minMP = (4 * level) + 56;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -64,7 +64,7 @@ bot.on('message', message => {
             var mpLoss = 4;
             var minMP = (4 * level) + 56;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -75,7 +75,7 @@ bot.on('message', message => {
             var mpLoss = 12;
             var minMP = (14 * level) + 148;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -86,7 +86,7 @@ bot.on('message', message => {
             var mpLoss = 12;
             var minMP = (14 * level) + 148;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -97,7 +97,7 @@ bot.on('message', message => {
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
@@ -108,7 +108,7 @@ bot.on('message', message => {
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
-            var numOfWash = extraMP / mpLoss;
+            var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = Math.floor(numOfWash * minHPGain);
             var avgHPGained = Math.floor(numOfWash * avgHPGain);
         }
@@ -120,7 +120,7 @@ bot.on('message', message => {
             message.reply("Incorrect format!")
         }
     }
-    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${Math.floor(numOfWash).toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
+    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
 })
 
 bot.login(process.env.TOKEN);
