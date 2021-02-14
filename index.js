@@ -1,6 +1,6 @@
 var gmjr = require('./gmjr.js');
 var cwkbon = require('./cwkbon.js');
-var washes = require("./washes.js");
+var washes = require("./hpwash.js");
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -37,12 +37,12 @@ const gmjrmsg = new Discord.MessageEmbed()
     .setDescription(`
     Enter the name of the member you're interested in:\ne.g. c.gmjr-<name>\n- Nivi\n- Naomi\n- Marc\n- Antonio\n- Belle\n- Piet\n- Gel\n- Lior\n*will be adding more jrs as we go
     `)
-    
+
 const hpwashmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('HP Washing')
     .setDescription(`
-    Enter your job, level and clean MP in the following format:\ne.g. c.hpwash <job> <level> <mp>\n*<job> can be: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician
+    Enter your job, level and clean MP in the following format:\ne.g. c.hpwash <job> <level> <mp>\n<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n<level: 1 - 200\n<mp>: 1 - 30000 (not inclusive of MP added by equipments)
     `)
 
 const apqmsg = new Discord.MessageEmbed()
@@ -94,7 +94,6 @@ bot.on("message", async msg => {
 // HP WASH
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.hpwash") {
-        // msg.channel.send("to be added because belle too small brain for hp washing math :(");
         msg.channel.send(hpwashmsg);
         washes;
     }
