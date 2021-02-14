@@ -6,7 +6,7 @@ var aprNX = 3100;
 var aprMeso = 12500000;
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (washes.js)`); // BOT online
+    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
 const prefix = "c.";
@@ -120,7 +120,7 @@ bot.on('message', message => {
             message.reply("Incorrect format!")
         }
     }
-    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${Math.floor(numOfWash.toLocaleString())} times and gain at least ${Math.floor(minHPGained.toLocaleString())} HP and on average ${Math.floor(avgHPGained.toLocaleString())} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
+    message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${Math.floor(numOfWash).toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
 
 })
 
