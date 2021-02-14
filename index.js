@@ -42,7 +42,7 @@ const hpwashmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('HP Washing')
     .setDescription(`
-    Enter your job, level and clean MP in the following format:\ne.g. c.hpwash <job> <level> <mp>\n<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n<level: 1 - 200\n<mp>: 1 - 30000 (not inclusive of MP added by equipments)
+    Enter your job, level and clean MP in the following format:\ne.g. c.hpwash <job> <level> <mp>\n<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n<level>: 1 - 200\n<mp>: 1 - 30000 (not inclusive of MP added by equipments)
     `)
 
 const apqmsg = new Discord.MessageEmbed()
