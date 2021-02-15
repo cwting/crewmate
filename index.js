@@ -41,9 +41,12 @@ const gmjrmsg = new Discord.MessageEmbed()
 const hpwashmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('HP Washing')
-    .setDescription(`
-    Enter your job, level and clean MP in the following format:\ne.g. c.hpwash <job> <level> <mp>\n<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n<level>: 1 - 200\n<mp>: 1 - 30000 (not inclusive of MP added by equipments)
-    `)
+    .setDescription(
+        "Enter your job, level and clean MP in the following format: c.hpwash < job > <level> <mp>" +
+        "<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician" +
+        "<level>: 1 - 200" +
+        "<mp>: 1 - 30000 (not inclusive of MP added by equipments)"
+    )
 
 const apqmsg = new Discord.MessageEmbed()
     .setColor("#223DDD")
@@ -56,15 +59,15 @@ const zakmsg = new Discord.MessageEmbed()
     .setTitle("Zakum Pre-Quest Stage 1")
     .setImage("https://i.imgur.com/juGsxVp.png")
     .setDescription(`
-    *In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.
-    11-1 (chest)
-    9-2 (chest)
-    14-1 (chest)
-    4-2 (rock)
-    16-3 (chest)
-    16-2 (chest)
-    16-5 (rock)
-`)
+        *In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.
+        11-1 (chest)
+        9-2 (chest)
+        14-1 (chest)
+        4-2 (rock)
+        16-3 (chest)
+        16-2 (chest)
+        16-5 (rock)
+        `)
     .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/")
 
 /* DO NOT TOUCH BELOW */
