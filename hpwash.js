@@ -10,7 +10,6 @@ bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
     var aprMeso = 12500000;
-    var minHPGain, avgHPGain, mpLoss, minMP, extraMP, numOfWash, minHPGained, avgHPGained = 0;
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -18,7 +17,6 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
     var level = args[1];
     var cleanMP = args[2];
-    // c.washes <job> <level> <mp>
 
     if (command === 'hpwash') {
         // if empty
@@ -121,7 +119,6 @@ bot.on('message', message => {
             return message.reply("Incorrect format!")
         }
         message.reply(
-            `Hi ${message.author.id}!\n` +
             `You have ${extraMP.toLocaleString()} extra MP.\n` +
             `You can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\n` +
             `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`)

@@ -65,7 +65,7 @@ bot.on('message', message => {
                     description: "Map for 6 man bonus split"
                 })
                     .setColor("#DDDDDD")
-                    .setImage("https://i.imgur.com/79aZxlt.png"),
+                    .setImage("https://i.imgur.com/EwcIPem.png"),
                 reactions: {
                     '3️⃣': "3-man-bonus",
                     '4️⃣': "4-man-bonus",

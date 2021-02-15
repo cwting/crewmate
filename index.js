@@ -40,7 +40,7 @@ const gmjrmsg = new Discord.MessageEmbed()
         "- Naomi\n" +
         "- Marc\n" +
         "- Antonio\n" +
-        "- Belle\n" +
+        "- Bell\n" +
         "- Piet\n" +
         "- Gel\n" +
         "- Lior\n" +
@@ -48,14 +48,14 @@ const gmjrmsg = new Discord.MessageEmbed()
     )
 
 const hpwashmsg = new Discord.MessageEmbed()
-    .setColor('#DDDDDD')
+    .setColor('#FF0000')
     .setTitle('HP Washing')
     .setDescription(
         "Enter your job, level and clean MP in the following format:\n" +
-        "c.hpwash < job > <level> <mp>\n" +
-        "`<job>`:\t beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-        "`<level>`:\t 1 - 200\n" +
-        "`<mp>`:\t 1 - 30000 (not inclusive of MP added by equipments)"
+        "c.hpwash <job > <level> <mp>\n" +
+        "`<job>`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+        "`<level>`: 1 - 200\n" +
+        "`<mp>`: 1 - 30000 (not inclusive of MP added by equipments)"
     )
 
 const apqmsg = new Discord.MessageEmbed()
@@ -121,7 +121,7 @@ bot.on("message", async msg => {
 
 // ZAK
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.zakpq") {
+    if (msg.content.toLowerCase() === "c.zak") {
         msg.channel.send(zakmsg);
     }
 });
