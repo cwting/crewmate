@@ -101,7 +101,7 @@ bot.on('message', message => {
                 `**If you use APRs:**\n` +
                 `You can gain at least ${Math.floor(minHPGainedAPR).toLocaleString()} HP and on average ${Math.floor(avgHPGainedAPR).toLocaleString()} HP.\n` +
                 `**If you use Fresh APs:**\n` +
-                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n\n` +
+                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n` +
                 `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`
             )
         }
