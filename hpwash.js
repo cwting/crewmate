@@ -1,16 +1,17 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var vote = 8000;
-var aprNX = 3100;
-var aprMeso = 12500000;
-
 bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
 const prefix = "c.";
 bot.on('message', message => {
+    var vote = 8000;
+    var aprNX = 3100;
+    var aprMeso = 12500000;
+    var minHPGain, avgHPGain, mpLoss, minMP, extraMP, numOfWash, minHPGained, avgHPGained = 0;
+
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);

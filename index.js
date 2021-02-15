@@ -23,29 +23,39 @@ const helpmsg = new Discord.MessageEmbed()
         { name: 'APQ Stage 2', value: '`c.apq`', inline: false },
         { name: 'To Adds:', value: 'Leech Guide. HP Wash.', inline: false }
     )
-    .setFooter("Let me know if there's anything else to add :D")
 
 const aboutmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setThumbnail('https://i.imgur.com/HPZg2QE.png')
     .setTitle('About Crew')
-    .setDescription(`We are a trust-based family where help is always available and nobody gets left behind. 😊`)
+    .setDescription("We are a trust-based family where help is always available and nobody gets left behind. 😊")
 
 const gmjrmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('Crew\'s Guild Master/Junior Masters')
-    .setDescription(`
-    Enter the name of the member you're interested in:\ne.g. c.gmjr-<name>\n- Nivi\n- Naomi\n- Marc\n- Antonio\n- Belle\n- Piet\n- Gel\n- Lior\n*will be adding more jrs as we go
-    `)
+    .setDescription(
+        "Enter the name of the member you're interested in in the following format:\n" +
+        "**c.gmjr-<name>**\n" +
+        "- Nivi\n" +
+        "- Naomi\n" +
+        "- Marc\n" +
+        "- Antonio\n" +
+        "- Belle\n" +
+        "- Piet\n" +
+        "- Gel\n" +
+        "- Lior\n" +
+        "*will be adding more jrs as we go"
+    )
 
 const hpwashmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('HP Washing')
     .setDescription(
-        "Enter your job, level and clean MP in the following format: c.hpwash <job > <level> <mp>\n" +
-        "<job>: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-        "<level>: 1 - 200\n" +
-        "<mp>: 1 - 30000 (not inclusive of MP added by equipments)"
+        "Enter your job, level and clean MP in the following format:\n" +
+        "c.hpwash < job > <level> <mp>\n" +
+        "`<job>`:\t beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+        "`<level>`:\t 1 - 200\n" +
+        "`<mp>`:\t 1 - 30000 (not inclusive of MP added by equipments)"
     )
 
 const apqmsg = new Discord.MessageEmbed()
