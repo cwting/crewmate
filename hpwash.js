@@ -120,7 +120,11 @@ bot.on('message', message => {
         else {
             return message.reply("Incorrect format!")
         }
-        message.reply(`You have ${extraMP.toLocaleString()} extra MP.\nYou can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\nThe cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()}/AP Reset)`)
+        message.reply(
+            `Hi ${user.author.id}!\n` +
+            `You have ${extraMP.toLocaleString()} extra MP.\n` +
+            `You can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\n` +
+            `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`)
     }
 })
 bot.login(process.env.TOKEN);

@@ -68,16 +68,16 @@ const zakmsg = new Discord.MessageEmbed()
     .setColor("#71502E")
     .setTitle("Zakum Pre-Quest Stage 1")
     .setImage("https://i.imgur.com/juGsxVp.png")
-    .setDescription(`
-        *In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.
-        11-1 (chest)
-        9-2 (chest)
-        14-1 (chest)
-        4-2 (rock)
-        16-3 (chest)
-        16-2 (chest)
-        16-5 (rock)
-        `)
+    .setDescription(
+        "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.\n" +
+        "11-1 (chest)\n" +
+        "9-2 (chest)\n" +
+        "14-1 (chest)\n" +
+        "4-2 (rock)\n" +
+        "16-3 (chest)\n" +
+        "16-2 (chest)\n" +
+        "16-5 (rock)"
+    )
     .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/")
 
 /* DO NOT TOUCH BELOW */
