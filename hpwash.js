@@ -78,7 +78,7 @@ bot.on('message', message => {
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
-        // thieves
+        // thief
         else if (args[0] === 'thief' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             var mpLoss = 12;
             var minMP = (14 * level) + 148;
@@ -86,7 +86,7 @@ bot.on('message', message => {
             var numOfWash = Math.floor(extraMP / mpLoss);
             // apr
             var minHPGainAPR = 16;
-            var avgHPGainAPR = 20;
+            var avgHPGainAPR = 18;
             var minHPGainedAPR = numOfWash * minHPGainAPR;
             var avgHPGainedAPR = numOfWash * avgHPGainAPR;
             // fresh
