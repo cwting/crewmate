@@ -146,12 +146,12 @@ bot.on('message', message => {
 
             return message.reply(
                 `You have ${extraMP.toLocaleString()} extra MP.\n` +
-                `You can wash ${numOfWash.toLocaleString()} times\n` +
                 `**If Improved MaxMP Increase skill is level 0:**\n` +
-                `You can gain at least ${Math.floor(minHPGainedS0).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS0).toLocaleString()} HP.\n` +
+                `You can wash ${numOfWashS0.toLocaleString()} times\n and gain at least ${Math.floor(minHPGainedS0).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS0).toLocaleString()} HP.\n` +
+                `The cost of AP resets is: ${Math.ceil(aprNX * numOfWashS0).toLocaleString()} NX(${Math.ceil(aprNX * numOfWashS0 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS0).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)\n` +
                 `**If Improved MaxMP Increase skill is level 10:**\n` +
-                `You can gain at least ${Math.floor(minHPGainedS10).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS10).toLocaleString()} HP.\n` +
-                `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`
+                `You can wash ${numOfWashS10.toLocaleString()} times\n and gain at least ${Math.floor(minHPGainedS10).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS10).toLocaleString()} HP.\n` +
+                `The cost of AP resets is: ${Math.ceil(aprNX * numOfWashS10).toLocaleString()} NX(${Math.ceil(aprNX * numOfWashS10 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS10).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`
             )
         }
         else {
