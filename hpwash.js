@@ -96,12 +96,12 @@ bot.on('message', message => {
             var avgHPGainedFresh = numOfWash * avgHPGainFresh;
 
             return message.reply(
-                `You have ${extraMP.toLocaleString()} extra MP.\n` +
-                `You can wash ${numOfWash.toLocaleString()} times\n` +
+                `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
+                `You can wash ${numOfWash.toLocaleString()} times.\n` +
                 `**If you use APRs:**\n` +
                 `You can gain at least ${Math.floor(minHPGainedAPR).toLocaleString()} HP and on average ${Math.floor(avgHPGainedAPR).toLocaleString()} HP.\n` +
                 `**If you use Fresh APs:**\n` +
-                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n` +
+                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n\n` +
                 `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`
             )
         }
@@ -137,15 +137,15 @@ bot.on('message', message => {
             var extraMP = cleanMP - minMP
             // Improved MapMP = 0
             var numOfWashS0 = Math.floor(extraMP / mpLossS0);
-            var minHPGainedS0 = numOfWashS0 * minHPGainAPR;
-            var avgHPGainedS0 = numOfWashS0 * avgHPGainAPR;
+            var minHPGainedS0 = numOfWashS0 * minHPGain;
+            var avgHPGainedS0 = numOfWashS0 * avgHPGain;
             // Improved MapMP = 10
             var numOfWashS10 = Math.floor(extraMP / mpLossS10);
             var minHPGainedS10 = numOfWashS10 * minHPGain;
             var avgHPGainedS10 = numOfWashS10 * avgHPGain;
 
             return message.reply(
-                `You have ${extraMP.toLocaleString()} extra MP.\n` +
+                `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
                 `**If Improved MaxMP Increase skill is level 0:**\n` +
                 `You can wash ${numOfWashS0.toLocaleString()} times\n and gain at least ${Math.floor(minHPGainedS0).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS0).toLocaleString()} HP.\n` +
                 `The cost of AP resets is: ${Math.ceil(aprNX * numOfWashS0).toLocaleString()} NX(${Math.ceil(aprNX * numOfWashS0 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS0).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)\n` +
@@ -158,7 +158,7 @@ bot.on('message', message => {
             return message.reply("Incorrect format!")
         }
         message.reply(
-            `You have ${extraMP.toLocaleString()} extra MP.\n` +
+            `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
             `You can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\n` +
             `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX(${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos(${aprMeso.toLocaleString()} / AP Reset)`
         )
