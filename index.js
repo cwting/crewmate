@@ -21,7 +21,7 @@ const helpmsg = new Discord.MessageEmbed()
         { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`', inline: false },
         { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`', inline: false },
         { name: 'APQ Stage 2', value: '`c.apq`', inline: false },
-        { name: 'To Adds:', value: 'Leech Guide. HP Wash.', inline: false }
+        { name: 'Leeching Guide', value: 'c.leech', inline: false },
     )
 
 const aboutmsg = new Discord.MessageEmbed()
@@ -44,7 +44,7 @@ const gmjrmsg = new Discord.MessageEmbed()
         "- Piet\n" +
         "- Gel\n" +
         "- Lior\n" +
-        "*will be adding more jrs as we go"
+        "*will add more people as we go :)"
     )
 
 const hpwashmsg = new Discord.MessageEmbed()
@@ -52,11 +52,12 @@ const hpwashmsg = new Discord.MessageEmbed()
     .setTitle('HP Washing')
     .setDescription(
         "Enter your job, level and clean MP in the following format:\n" +
-        "c.hpwash <job > <level> <mp>\n" +
-        "`<job>`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-        "`<level>`: 1 - 200\n" +
-        "`<mp>`: 1 - 30000 (not inclusive of MP added by equipments)"
+        "c.hpwash [job] [level] [mp]\n" +
+        "`[job]`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+        "`[level]`: 1 - 200\n" +
+        "`[mp]`: 1 - 30000 (not inclusive of MP added by equipments)"
     )
+    .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍")
 
 const apqmsg = new Discord.MessageEmbed()
     .setColor("#223DDD")
@@ -79,6 +80,32 @@ const zakmsg = new Discord.MessageEmbed()
         "16-5 (rock)"
     )
     .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/")
+
+const leechmsg = new Discord.MessageEmbed()
+    .setColor("#DDDDDD")
+    .setTitle("Leeching Guide")
+    .setDescription(
+        "Lv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n" +
+        "Lv 20-25: Wild Boar [Hidden Street: The Land of WildBoar I]\n" +
+        "Lv 25-30: Brown Teddy, Pink Teddy [Ludibrium: Terrace Hall]\n" +
+        "Lv 30-36: Jr. Wraith [Kerning Line 1 Area 2]\n" +
+        "Lv 36-41: Platoon Chronos [Ludibrium: The Path of Time <1>]\n" +
+        "Lv 41-43: Master Chronos [Ludibrium: The Path of Time <4>]\n" +
+        "Lv 43-51: Wraith [Kerning City Subway: Line 1 Area <4>]\n" +
+        "Lv 51-53: Oly Oly, Dark Fission [Malaysia: Muddy Banks 1]\n" +
+        "Lv 53-56: Neo Huroid [Alcadno Research Institute: Lab - Area C-3]\n" +
+        "Lv 56-65: Rodeo [Malaysia: Muddy Banks 2]\n" +
+        "Lv 65-67: Windraiders [Crimsonwood Keep: Tornado Corridor]\n" +
+        "Lv 67-75: Froscola, Jester Scarlion [Malaysia: Fantasy Theme Park 1]\n" +
+        "Lv 75-78: Stormbreaker [Crimsonwood Keep: Stormhall]\n" +
+        "Lv 78-85: Harp, Blood Harp [Leafre: Sky Nest II]\n" +
+        "Lv 85-90: Berserkie, Veetron [Singapore: Ulu Estate 1]\n" +
+        "Lv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n" +
+        "Lv 105+: Petrifighter [Singapore: Ulu City Center]\n" +
+        "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
+        "Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku"
+    )
+    .setFooter("Details from: https://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/")
 
 /* DO NOT TOUCH BELOW */
 
@@ -132,5 +159,12 @@ bot.on("message", async msg => {
         msg.channel.send(apqmsg);
     }
 });
+
+// LEECH
+bot.on("message", async msg => {
+    if (msg.content.toLowerCase() === "c.leech") {
+        msg.channel.send(leechmsg);
+    }
+})
 
 bot.login(process.env.TOKEN);
