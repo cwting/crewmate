@@ -21,7 +21,7 @@ const helpmsg = new Discord.MessageEmbed()
         { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`', inline: false },
         { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`', inline: false },
         { name: 'APQ Stage 2', value: '`c.apq`', inline: false },
-        { name: 'Leeching Guide', value: 'c.leech', inline: false },
+        { name: 'Leeching Guide', value: '`c.leech`', inline: false },
     )
 
 const aboutmsg = new Discord.MessageEmbed()
