@@ -691,10 +691,9 @@ bot.on('message', message => {
         }
         /* insert here */
         else {
-            return message.reply("Incorrect name!")
+            return message.reply("Incorrect name!\nList of GmJr: c.gmjr")
         }
     }
-    console.log(`${message.author.username} searched for: ${args[0]}`)
 })
 
 bot.login(process.env.TOKEN);

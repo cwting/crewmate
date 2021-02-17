@@ -24,11 +24,22 @@ bot.on('message', message => {
             return
         }
         else if ((level >= 1 && level <= 200) && (str >= 4 && str <= 999) && (dex >= 4 && dex <= 999) && (int >= 4 && int <= 999) && (luk >= 4 && luk <= 999)) {
-            userAP = 9 + (level * 5);
-            unusedAP = userAP - str - dex - int - luk + 16;
+            if (level >= 70 && level < 120) {
+                userAP = 9 + (level * 5) + 5;
+            }
+            else if (level >= 120) {
+                userAP = 9 + (level * 5) + 10;
+            }
+            else {
+                userAP = 9 + (level * 5);
+            }
+            unusedAP = userAP - str - dex - int - luk;
+            if (unusedAP < 0) {
+                return message.reply("\nYour AP that is assigned to HP/MP or unassigned is negative. Please check that your str/dex/int/luk is not inclusive of any stat added by equipments.")
+            }
         }
         else {
-            return message.reply("Incorrect format!")
+            return message.reply("Incorrect format!\nCorrect format: c.ap `level` `str` `dex` `int` `luk`")
         }
         message.reply(`\nYou have ${unusedAP} AP unassigned or assigned to HP/MP`)
     }

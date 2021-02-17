@@ -61,7 +61,7 @@ bot.on('message', message => {
             var minHPGain = 50;
             var avgHPGain = 52;
             var mpLoss = 4;
-            var minMP = (4 * level) + 56;
+            var minMP = (4 * level) + 156;
             var extraMP = cleanMP - minMP
             var numOfWash = Math.floor(extraMP / mpLoss);
             var minHPGained = numOfWash * minHPGain;
@@ -155,7 +155,7 @@ bot.on('message', message => {
             )
         }
         else {
-            return message.reply("Incorrect format!")
+            return message.reply("Incorrect format!\nCorrect format: c.hpwash `job` `level` `mp`")
         }
         message.reply(
             `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
