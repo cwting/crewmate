@@ -44,11 +44,11 @@ const calcapmsg = new Discord.MessageEmbed()
     .setDescription(
         "Enter your level, clean str, clean dex, clean int and clean luk in the following format:\n" +
         "c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`\n" +
-        "`level`: 1 - 200\n" +
-        "`str`: 4 - 999 \n" +
-        "`dex`: 4 - 999 \n" +
-        "`int`: 4 - 999 \n" +
-        "`luk`: 4 - 999"
+        "`[level]`: 1 - 200\n" +
+        "`[str]`: 4 - 999 \n" +
+        "`[dex]`: 4 - 999 \n" +
+        "`[int]`: 4 - 999 \n" +
+        "`[luk]`: 4 - 999"
     );
 
 const gmjrmsg = new Discord.MessageEmbed()
@@ -57,7 +57,7 @@ const gmjrmsg = new Discord.MessageEmbed()
     .setDescription(
         "Enter the name of the member you're interested in in the following format:\n" +
         "`c.gmjr [name]`\n" +
-        "[name]:\n" +
+        "`[name]`:\n" +
         "Nivi\n" +
         "Naomi\n" +
         "Marc\n" +
