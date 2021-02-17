@@ -694,7 +694,7 @@ bot.on('message', message => {
             return message.reply("Incorrect name!")
         }
     }
-    console.log(args[0])
+    console.log(`${message.author} search for ${args[0]}`)
 })
 
 bot.login(process.env.TOKEN);
