@@ -57,7 +57,7 @@ const hpwashmsg = new Discord.MessageEmbed()
         "`[level]`: 1 - 200\n" +
         "`[mp]`: 1 - 30000 (not inclusive of MP added by equipments)"
     )
-    .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍")
+    .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍\nAnd let me know if there's any error in calculations @Ting#4335")
 
 const apqmsg = new Discord.MessageEmbed()
     .setColor("#223DDD")
@@ -85,7 +85,7 @@ const leechmsg = new Discord.MessageEmbed()
     .setColor("#DDDDDD")
     .setTitle("Leeching Guide")
     .setDescription(
-        "Lv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n" +
+        "```diff\n+ Lv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n```\n" +
         "Lv 20-25: Wild Boar [Hidden Street: The Land of WildBoar I]\n" +
         "Lv 25-30: Brown Teddy, Pink Teddy [Ludibrium: Terrace Hall]\n" +
         "Lv 30-36: Jr. Wraith [Kerning Line 1 Area 2]\n" +
@@ -105,7 +105,7 @@ const leechmsg = new Discord.MessageEmbed()
         "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
         "Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku"
     )
-    .setFooter("Details from: https://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/")
+    .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/")
 
 /* DO NOT TOUCH BELOW */
 
