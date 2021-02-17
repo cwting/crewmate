@@ -55,7 +55,7 @@ const gmjrmsg = new Discord.MessageEmbed()
     .setTitle('Crew\'s Guild Master/Junior Masters')
     .setDescription(
         "Enter the name of the member you're interested in in the following format:\n" +
-        "c.gmjr-`name`\n" +
+        "c.gmjr `name`\n" +
         "`name`:" +
         "Nivi\n" +
         "Naomi\n" +
