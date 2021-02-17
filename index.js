@@ -17,12 +17,13 @@ const helpmsg = new Discord.MessageEmbed()
     .setDescription('Hello! \\o/\nI am Crewmate, a BOT made by Crew\'s members for Crew!')
     .addFields(
         { name: 'About Crew', value: '`c.about`', inline: false },
-        { name: 'About Crew\'s GM/JRs', value: '`c.gmjr`', inline: false },
-        { name: 'HP Washing', value: '`c.hpwash`', inline: false },
-        { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`', inline: false },
-        { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`', inline: false },
+        { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`', inline: false },
         { name: 'APQ Stage 2', value: '`c.apq`', inline: false },
+        { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`', inline: false },
+        { name: 'Crew\'s GM/JRs', value: '`c.gmjr`', inline: false },
+        { name: 'HP Washing', value: '`c.hpwash`', inline: false },
         { name: 'Leeching Guide', value: '`c.leech`', inline: false },
+        { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`', inline: false },
     )
 
 const aboutmsg = new Discord.MessageEmbed()
