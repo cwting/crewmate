@@ -332,7 +332,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.ibb.co/N67TDNz/marc4.png"),
+                        .setImage("https://i.ibb.co/0sZVzYK/marc4.png"),
                     reactions: {
                         '⬅': 'Rooka',
                         '➡': 'Jyeong'
@@ -354,7 +354,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.ibb.co/ys6njtr/marc5.png"),
+                        .setImage("https://i.ibb.co/n0kj7S2/marc5.png"),
                     reactions: {
                         '⬅': 'Leuca',
                         '❌': 'Jyeong'
@@ -694,7 +694,7 @@ bot.on('message', message => {
             return message.reply("Incorrect name!")
         }
     }
-    console.log(`${message.author.username} search for: ${args[0]}`)
+    console.log(`${message.author.username} searched for: ${args[0]}`)
 })
 
 bot.login(process.env.TOKEN);
