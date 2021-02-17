@@ -67,7 +67,7 @@ bot.on('message', message => {
             var minHPGained = numOfWash * minHPGain;
             var avgHPGained = numOfWash * avgHPGain;
         }
-        // archers
+        // archer
         else if (args[0] === 'archer' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             var minHPGain = 16;
             var avgHPGain = 18;
@@ -127,13 +127,13 @@ bot.on('message', message => {
             var minHPGained = Math.floor(numOfWash * minHPGain);
             var avgHPGained = Math.floor(numOfWash * avgHPGain);
         }
-        // magicians
+        // magician
         else if (args[0] === 'magician' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
             var minHPGain = 10;
             var avgHPGain = 15;
             var mpLossS0 = 20;
             var mpLossS10 = 30;
-            var minMP = (14 * level) + 148;
+            var minMP = (22 * level) + 488;
             var extraMP = cleanMP - minMP
             // Improved MapMP = 0
             var numOfWashS0 = Math.floor(extraMP / mpLossS0);
