@@ -33,7 +33,7 @@ bot.on('message', message => {
             else {
                 var userAP = 9 + (level * 5);
             }
-            const unusedAP = userAP - str - dex - int - luk + 16;
+            var unusedAP = userAP - str - dex - int - luk + 16;
             if (unusedAP < 0) {
                 return message.reply("\nYour AP that is assigned to HP/MP or unassigned is negative. Please check that your str/dex/int/luk is not inclusive of any stat added by equipments.")
             }
