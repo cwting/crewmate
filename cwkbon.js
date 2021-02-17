@@ -17,7 +17,7 @@ bot.on('message', message => {
                     description: "Map for 3 man bonus split"
                 })
                     .setColor("#DDDDDD")
-                    .setImage("https://i.imgur.com/Rt2DhgH.png"),
+                    .setImage("https://i.ibb.co/TB1mRbs/cwk-3manbon.png"),
                 reactions: {
                     '3️⃣': "3-man-bonus",
                     '4️⃣': "4-man-bonus",
@@ -33,7 +33,7 @@ bot.on('message', message => {
                     description: "Map for 4 man bonus split"
                 })
                     .setColor("#DDDDDD")
-                    .setImage("https://i.imgur.com/9LY22Yh.png"),
+                    .setImage("https://i.ibb.co/yQZsNgb/cwk-4manbon.png"),
                 reactions: {
                     '3️⃣': "3-man-bonus",
                     '4️⃣': "4-man-bonus",
@@ -49,7 +49,7 @@ bot.on('message', message => {
                     description: "Map for 5 man bonus split"
                 })
                     .setColor("#DDDDDD")
-                    .setImage("https://i.imgur.com/sdPuqEe.png"),
+                    .setImage("https://i.ibb.co/VqPpzyg/cwk-5manbon.png"),
                 reactions: {
                     '3️⃣': "3-man-bonus",
                     '4️⃣': "4-man-bonus",
@@ -65,7 +65,7 @@ bot.on('message', message => {
                     description: "Map for 6 man bonus split"
                 })
                     .setColor("#DDDDDD")
-                    .setImage("https://i.imgur.com/EwcIPem.png"),
+                    .setImage("https://i.ibb.co/StY5LC3/cwk-6manbon.png"),
                 reactions: {
                     '3️⃣': "3-man-bonus",
                     '4️⃣': "4-man-bonus",

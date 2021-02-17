@@ -12,7 +12,7 @@ bot.on("ready", () => {
 
 const helpmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
-    .setThumbnail('https://i.imgur.com/HPZg2QE.png')
+    .setThumbnail('https://i.ibb.co/8zMHfsR/logo.png')
     .setTitle('Crewmate Commands')
     .setDescription('Hello! \\o/\nI am Crewmate, a BOT made by Crew\'s members for Crew!')
     .addFields(
@@ -27,14 +27,14 @@ const helpmsg = new Discord.MessageEmbed()
 
 const aboutmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
-    .setThumbnail('https://i.imgur.com/HPZg2QE.png')
+    .setThumbnail('https://i.ibb.co/8zMHfsR/logo.png')
     .setTitle('About Crew')
     .setDescription("We are a trust-based family where help is always available and nobody gets left behind. 😊");
 
 const apqmsg = new Discord.MessageEmbed()
     .setColor("#223DDD")
     .setTitle('APQ Stage 2')
-    .setImage("https://i.imgur.com/GrZbctI.jpg")
+    .setImage("https://i.ibb.co/Wks0MQT/apq-stg2.jpg")
     .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/");
 
 const calcapmsg = new Discord.MessageEmbed()
@@ -109,7 +109,7 @@ const leechmsg = new Discord.MessageEmbed()
 const zakmsg = new Discord.MessageEmbed()
     .setColor("#71502E")
     .setTitle("Zakum Pre-Quest Stage 1")
-    .setImage("https://i.imgur.com/juGsxVp.png")
+    .setImage("https://i.ibb.co/2gRQxw0/zak-stg1.png")
     .setDescription(
         "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.\n" +
         "11-1 (chest)\n" +

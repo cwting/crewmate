@@ -50,7 +50,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5FC3C3")
-                        .setImage("https://i.imgur.com/xuaKCTS.png"),
+                        .setImage("https://i.ibb.co/WDGxRGd/nivi1.png"),
                     reactions: {
                         '❌': 'Wolftail',
                         '➡': 'Bunpaws'
@@ -72,7 +72,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5FC3C3")
-                        .setImage("https://i.imgur.com/wYihec9.png"),
+                        .setImage("https://i.ibb.co/cgNzctc/nivi2.png"),
                     reactions: {
                         '⬅': 'Wolftail',
                         '➡': 'Nweeky'
@@ -94,7 +94,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5FC3C3")
-                        .setImage("https://i.imgur.com/LohAi8X.png"),
+                        .setImage("https://i.ibb.co/3z8Rmt5/nivi3.png"),
                     reactions: {
                         '⬅': 'Bunpaws',
                         '➡': 'Pronghorn'
@@ -116,7 +116,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5FC3C3")
-                        .setImage("https://i.imgur.com/CsoGqIb.png"),
+                        .setImage("https://i.ibb.co/3zZKxLF/nivi4.png"),
                     reactions: {
                         '⬅': 'Nweeky',
                         '➡': 'Stripewing'
@@ -138,7 +138,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5FC3C3")
-                        .setImage("https://i.imgur.com/fBK18bi.png"),
+                        .setImage("https://i.ibb.co/zmH2Nc4/nivi5.png"),
                     reactions: {
                         '⬅': 'Pronghorn',
                         '❌': 'Stripewing'
@@ -168,7 +168,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F8A913")
-                        .setImage("https://i.imgur.com/yr9yj1i.png"),
+                        .setImage("https://i.ibb.co/w7PTDqw/naomi1.png"),
                     reactions: {
                         '❌': 'NLynx',
                         '➡': 'Acinonyx'
@@ -190,7 +190,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F8A913")
-                        .setImage("https://i.imgur.com/MciV0dh.png"),
+                        .setImage("https://i.ibb.co/Nys7Zv1/naomi2.png"),
                     reactions: {
                         '⬅': 'NLynx',
                         '➡': 'LunarN'
@@ -212,7 +212,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F8A913")
-                        .setImage("https://i.imgur.com/AxeEatG.png"),
+                        .setImage("https://i.ibb.co/k5MT5Tz/naomi3.png"),
                     reactions: {
                         '⬅': 'Acinonyx',
                         '➡': 'NPanthera'
@@ -234,7 +234,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F8A913")
-                        .setImage("https://i.imgur.com/HVG25C9.png"),
+                        .setImage("https://i.ibb.co/2Pzw0vR/naomi4.png"),
                     reactions: {
                         '⬅': 'LunarN',
                         '❌': 'NPanthera'
@@ -265,7 +265,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#3455EB")
-                        .setImage("https://i.imgur.com/hkGWKrS.png"),
+                        .setImage("https://i.ibb.co/3TZ15H1/marc1.png"),
                     reactions: {
                         '❌': 'xKook007',
                         '➡': 'Vaiiente'
@@ -287,7 +287,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.imgur.com/eI7OF9r.png"),
+                        .setImage("https://i.ibb.co/wMpKYtF/marc2.png"),
                     reactions: {
                         '⬅': 'xKook007',
                         '➡': 'Rooka'
@@ -310,7 +310,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.imgur.com/IG8512L.png"),
+                        .setImage("https://i.ibb.co/Xtf2FT4/marc3.png"),
                     reactions: {
                         '⬅': 'Vaiiente',
                         '➡': 'Leuca'
@@ -332,7 +332,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.imgur.com/gHbGnpE.png"),
+                        .setImage("https://i.ibb.co/N67TDNz/marc4.png"),
                     reactions: {
                         '⬅': 'Rooka',
                         '➡': 'Jyeong'
@@ -354,7 +354,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("3455EB")
-                        .setImage("https://i.imgur.com/XIMw3BI.png"),
+                        .setImage("https://i.ibb.co/ys6njtr/marc5.png"),
                     reactions: {
                         '⬅': 'Leuca',
                         '❌': 'Jyeong'
@@ -384,7 +384,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#384C4F")
-                        .setImage("https://i.imgur.com/qt4cCQS.png"),
+                        .setImage("https://i.ibb.co/87bPS3t/antonio1.png"),
                     reactions: {
                         '❌': 'ArchWar',
                         '➡': 'BadShooter'
@@ -406,7 +406,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#384C4F")
-                        .setImage("https://i.imgur.com/oQE3ZS3.png"),
+                        .setImage("https://i.ibb.co/cQNhCRw/antonio2.png"),
                     reactions: {
                         '⬅': 'ArchWar',
                         '➡': 'GreenyHeaven'
@@ -428,7 +428,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#384C4F")
-                        .setImage("https://i.imgur.com/hZt683O.png"),
+                        .setImage("https://i.ibb.co/QQdKTWB/antonio3.png"),
                     reactions: {
                         '⬅': 'BadShooter',
                         '❌': 'GreenyHeaven'
@@ -458,7 +458,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F83B3B")
-                        .setImage("https://i.imgur.com/UICM5SR.png"),
+                        .setImage("https://i.ibb.co/z7XnDJZ/belle1.png"),
                     reactions: {
                         '❌': 'DingTongBell',
                         '➡': 'BadPuncher'
@@ -480,7 +480,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F83B3B")
-                        .setImage("https://i.imgur.com/z9Glm8q.png"),
+                        .setImage("https://i.ibb.co/2gFDt6W/belle2.png"),
                     reactions: {
                         '⬅': 'DingTongBell',
                         '➡': 'TingTongBell'
@@ -502,7 +502,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#F83B3B")
-                        .setImage("https://i.imgur.com/qmLgI47.png"),
+                        .setImage("https://i.ibb.co/M5Qy24V/belle3.png"),
                     reactions: {
                         '⬅': 'BadPuncher',
                         '❌': 'TingTongBell'
@@ -532,7 +532,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#00FFF9")
-                        .setImage("https://i.imgur.com/StegBHS.png"),
+                        .setImage("https://i.ibb.co/nMMZtCc/piet1.png"),
                     reactions: {
                         '❌': 'MazeRunner',
                         '😭': 'MazeRunner'
@@ -562,7 +562,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5C44D2")
-                        .setImage("https://i.imgur.com/yjROcqK.png"),
+                        .setImage("https://i.ibb.co/ZN0d6ZG/gel1.png"),
                     reactions: {
                         '❌': 'xCintare',
                         '➡': 'Mewleficent'
@@ -584,7 +584,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5C44D2")
-                        .setImage("https://i.imgur.com/Om786Fk.png"),
+                        .setImage("https://i.ibb.co/r6BBfpZ/gel2.png"),
                     reactions: {
                         '⬅': 'xCintare',
                         '❌': 'Mewleficent'
@@ -614,7 +614,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage("https://i.imgur.com/KPDAbTg.png"),
+                        .setImage("https://i.ibb.co/3mDfy4Z/lior1.png"),
                     reactions: {
                         '❌': 'iTinyRick',
                         '➡': 'TinyHero'
@@ -636,7 +636,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage("https://i.imgur.com/MRURZnB.png"),
+                        .setImage("https://i.ibb.co/M6VqVnx/lior2.png"),
                     reactions: {
                         '⬅': 'iTinyRick',
                         '➡': 'iDragonFist'
@@ -658,7 +658,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage("https://i.imgur.com/1xaJf9I.png"),
+                        .setImage("https://i.ibb.co/VCwCG8k/lior3.png"),
                     reactions: {
                         '⬅': 'TinyHero',
                         '➡': 'HealWolf'
@@ -680,7 +680,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage("https://i.imgur.com/3PPL34S.png"),
+                        .setImage("https://i.ibb.co/njy5sYL/lior4.png"),
                     reactions: {
                         '⬅': 'iDragonFist',
                         '❌': 'HealWolf'
@@ -694,7 +694,7 @@ bot.on('message', message => {
             return message.reply("Incorrect name!")
         }
     }
-    console.log(`${message.author} search for ${args[0]}`)
+    console.log(`${message.author.username} search for: ${args[0]}`)
 })
 
 bot.login(process.env.TOKEN);
