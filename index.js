@@ -43,7 +43,7 @@ const calcapmsg = new Discord.MessageEmbed()
     .setTitle("Calculate AP")
     .setDescription(
         "Enter your level, clean str, clean dex, clean int and clean luk in the following format:\n" +
-        "c.ap `level` `str` `dex` `int` `luk`\n" +
+        "c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`\n" +
         "`level`: 1 - 200\n" +
         "`str`: 4 - 999 \n" +
         "`dex`: 4 - 999 \n" +
@@ -56,8 +56,8 @@ const gmjrmsg = new Discord.MessageEmbed()
     .setTitle('Crew\'s Guild Master/Junior Masters')
     .setDescription(
         "Enter the name of the member you're interested in in the following format:\n" +
-        "c.gmjr `name`\n" +
-        "`name`:" +
+        "`c.gmjr [name]`\n" +
+        "[name]:\n" +
         "Nivi\n" +
         "Naomi\n" +
         "Marc\n" +
@@ -74,10 +74,10 @@ const hpwashmsg = new Discord.MessageEmbed()
     .setTitle('HP Wash')
     .setDescription(
         "Enter your job, level and clean MP in the following format:\n" +
-        "c.hpwash `job` `level` `mp`\n" +
-        "`job`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-        "`level`: 1 - 200\n" +
-        "`mp`: 1 - 30000 (not inclusive of MP added by equipments)"
+        "`c.hpwash [job] [level] [mp]`\n" +
+        "`[job]`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+        "`[level]`: 1 - 200\n" +
+        "`[mp]`: 1 - 30000 (not inclusive of MP added by equipments)"
     )
     .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍\nAnd let me know if there's any error in calculations @Ting#4335");
 

@@ -155,7 +155,7 @@ bot.on('message', message => {
             )
         }
         else {
-            return message.reply("Incorrect format!\nCorrect format: c.hpwash `job` `level` `mp`")
+            return message.reply("Incorrect format!\nCorrect format: c.hpwash `[job]` `[level]` `[mp]`")
         }
         message.reply(
             `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +

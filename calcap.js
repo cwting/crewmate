@@ -39,7 +39,7 @@ bot.on('message', message => {
             }
         }
         else {
-            return message.reply("Incorrect format!\nCorrect format: c.ap `level` `str` `dex` `int` `luk`")
+            return message.reply("Incorrect format!\nCorrect format: c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`")
         }
         message.reply(`\nYou have ${unusedAP} AP unassigned or assigned to HP/MP`)
     }

@@ -691,7 +691,7 @@ bot.on('message', message => {
         }
         /* insert here */
         else {
-            return message.reply("Incorrect name!\nList of GmJr: c.gmjr")
+            return message.reply("Incorrect name!\nNames of GmJr: `c.gmjr`")
         }
     }
 })
