@@ -18,8 +18,10 @@ List of GMJr:
 - Gel
 - Lior
 */
-
+const prefix = "c.";
 bot.on('message', message => {
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+
     // Nivi
     if (message.content.toLowerCase() === "c.gmjr-nivi") {
         message.reply("Here's info on Nivi! 😉")
