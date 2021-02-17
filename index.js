@@ -1,6 +1,7 @@
 var gmjr = require('./gmjr.js');
 var cwkbon = require('./cwkbon.js');
-var washes = require("./hpwash.js");
+var hpwash = require("./hpwash.js");
+var calcap = require('./calcap.js')
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -28,58 +29,56 @@ const aboutmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setThumbnail('https://i.imgur.com/HPZg2QE.png')
     .setTitle('About Crew')
-    .setDescription("We are a trust-based family where help is always available and nobody gets left behind. 😊")
+    .setDescription("We are a trust-based family where help is always available and nobody gets left behind. 😊");
+
+const apqmsg = new Discord.MessageEmbed()
+    .setColor("#223DDD")
+    .setTitle('APQ Stage 2')
+    .setImage("https://i.imgur.com/GrZbctI.jpg")
+    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/");
+
+const calcapmsg = new Discord.MessageEmbed()
+    .setColor("#FF0000")
+    .setTitle("Calculate AP")
+    .setDescription(
+        "Enter your level, clean str, clean dex, clean int and clean luk in the following format:\n" +
+        "c.ap `level` `str` `dex` `int` `luk`\n" +
+        "`level`: 1 - 200\n" +
+        "`str`: 4 - 999 \n" +
+        "`dex`: 4 - 999 \n" +
+        "`int`: 4 - 999 \n" +
+        "`luk`: 4 - 999"
+    );
 
 const gmjrmsg = new Discord.MessageEmbed()
     .setColor('#DDDDDD')
     .setTitle('Crew\'s Guild Master/Junior Masters')
     .setDescription(
         "Enter the name of the member you're interested in in the following format:\n" +
-        "**c.gmjr-<name>**\n" +
-        "- Nivi\n" +
-        "- Naomi\n" +
-        "- Marc\n" +
-        "- Antonio\n" +
-        "- Bell\n" +
-        "- Piet\n" +
-        "- Gel\n" +
-        "- Lior\n" +
+        "c.gmjr-`name`\n" +
+        "`name`:" +
+        "Nivi\n" +
+        "Naomi\n" +
+        "Marc\n" +
+        "Antonio\n" +
+        "Bell\n" +
+        "Piet\n" +
+        "Gel\n" +
+        "Lior\n" +
         "*will add more people as we go :)"
-    )
+    );
 
 const hpwashmsg = new Discord.MessageEmbed()
     .setColor('#FF0000')
-    .setTitle('HP Washing')
+    .setTitle('HP Wash')
     .setDescription(
         "Enter your job, level and clean MP in the following format:\n" +
-        "c.hpwash [job] [level] [mp]\n" +
-        "`[job]`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-        "`[level]`: 1 - 200\n" +
-        "`[mp]`: 1 - 30000 (not inclusive of MP added by equipments)"
+        "c.hpwash `job` `level` `mp`\n" +
+        "`job`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+        "`level`: 1 - 200\n" +
+        "`mp`: 1 - 30000 (not inclusive of MP added by equipments)"
     )
-    .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍\nAnd let me know if there's any error in calculations @Ting#4335")
-
-const apqmsg = new Discord.MessageEmbed()
-    .setColor("#223DDD")
-    .setTitle('APQ Stage 2')
-    .setImage("https://i.imgur.com/GrZbctI.jpg")
-    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/")
-
-const zakmsg = new Discord.MessageEmbed()
-    .setColor("#71502E")
-    .setTitle("Zakum Pre-Quest Stage 1")
-    .setImage("https://i.imgur.com/juGsxVp.png")
-    .setDescription(
-        "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.\n" +
-        "11-1 (chest)\n" +
-        "9-2 (chest)\n" +
-        "14-1 (chest)\n" +
-        "4-2 (rock)\n" +
-        "16-3 (chest)\n" +
-        "16-2 (chest)\n" +
-        "16-5 (rock)"
-    )
-    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/")
+    .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍\nAnd let me know if there's any error in calculations @Ting#4335");
 
 const leechmsg = new Discord.MessageEmbed()
     .setColor("#DDDDDD")
@@ -105,9 +104,25 @@ const leechmsg = new Discord.MessageEmbed()
         "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
         "Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku"
     )
-    .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/")
+    .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
 
-/* DO NOT TOUCH BELOW */
+const zakmsg = new Discord.MessageEmbed()
+    .setColor("#71502E")
+    .setTitle("Zakum Pre-Quest Stage 1")
+    .setImage("https://i.imgur.com/juGsxVp.png")
+    .setDescription(
+        "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.\n" +
+        "11-1 (chest)\n" +
+        "9-2 (chest)\n" +
+        "14-1 (chest)\n" +
+        "4-2 (rock)\n" +
+        "16-3 (chest)\n" +
+        "16-2 (chest)\n" +
+        "16-5 (rock)"
+    )
+    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/");
+
+/* ------------------------------- DO NOT TOUCH BELOW ------------------------------- */
 
 // HELP
 bot.on("message", async msg => {
@@ -123,19 +138,18 @@ bot.on("message", async msg => {
     }
 })
 
-// GM/JR
+// APQ
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.gmjr") {
-        msg.channel.send(gmjrmsg);
-        gmjr;
+    if (msg.content.toLowerCase() === "c.apq") {
+        msg.channel.send(apqmsg);
     }
-})
+});
 
-// HP WASH
+// CALCULATE AP
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.hpwash") {
-        msg.channel.send(hpwashmsg);
-        washes;
+    if (msg.content.toLowerCase() === "c.ap") {
+        msg.channel.send(calcapmsg);
+        calcap;
     }
 });
 
@@ -146,17 +160,19 @@ bot.on("message", async msg => {
     }
 });
 
-// ZAK
+// GM/JR
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.zak") {
-        msg.channel.send(zakmsg);
+    if (msg.content.toLowerCase() === "c.gmjr") {
+        msg.channel.send(gmjrmsg);
+        gmjr;
     }
 });
 
-// APQ
+// HP WASH
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.apq") {
-        msg.channel.send(apqmsg);
+    if (msg.content.toLowerCase() === "c.hpwash") {
+        msg.channel.send(hpwashmsg);
+        hpwash;
     }
 });
 
@@ -165,6 +181,14 @@ bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.leech") {
         msg.channel.send(leechmsg);
     }
-})
+});
+
+
+// ZAK
+bot.on("message", async msg => {
+    if (msg.content.toLowerCase() === "c.zak") {
+        msg.channel.send(zakmsg);
+    }
+});
 
 bot.login(process.env.TOKEN);

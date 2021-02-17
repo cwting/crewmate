@@ -148,10 +148,10 @@ bot.on('message', message => {
                 `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
                 "**If your `Improved MaxMP Increase skill` is level 0:**\n" +
                 `You can wash ${numOfWashS0.toLocaleString()} times and gain at least ${Math.floor(minHPGainedS0).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS0).toLocaleString()} HP.\n` +
-                `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS0).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS0 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS0).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)\n` +
+                `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS0).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS0 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS0).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)\n` +
                 "**If your `Improved MaxMP Increase skill` is level 10:**\n" +
                 `You can wash ${numOfWashS10.toLocaleString()} times and gain at least ${Math.floor(minHPGainedS10).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS10).toLocaleString()} HP.\n` +
-                `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS10).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS10 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS10).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)`
+                `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS10).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS10 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS10).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)`
             )
         }
         else {
@@ -160,7 +160,7 @@ bot.on('message', message => {
         message.reply(
             `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
             `You can wash ${numOfWash.toLocaleString()} times and gain at least ${Math.floor(minHPGained).toLocaleString()} HP and on average ${Math.floor(avgHPGained).toLocaleString()} HP.\n` +
-            `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)`
+            `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)`
         )
     }
 })

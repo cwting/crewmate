@@ -22,6 +22,7 @@ List of GMJr:
 bot.on('message', message => {
     // Nivi
     if (message.content.toLowerCase() === "c.gmjr-nivi") {
+        message.reply("Here's info on Nivi! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'Wolftail',
@@ -139,6 +140,7 @@ bot.on('message', message => {
 
     // Naomi
     else if (message.content.toLowerCase() === "c.gmjr-naomi") {
+        message.reply("Here's info on Naomi! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'NLynx',
@@ -235,6 +237,7 @@ bot.on('message', message => {
 
     // Marc
     else if (message.content.toLowerCase() === "c.gmjr-marc") {
+        message.reply("Here's info on Marc! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'xKook007',
@@ -353,6 +356,7 @@ bot.on('message', message => {
 
     // Antonio
     else if (message.content.toLowerCase() === "c.gmjr-antonio") {
+        message.reply("Here's info on Antonio! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'ArchWar',
@@ -426,6 +430,7 @@ bot.on('message', message => {
 
     // Belle
     else if (message.content.toLowerCase() === "c.gmjr-bell") {
+        message.reply("Here's info on Bell! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'DingTongBell',
@@ -455,7 +460,7 @@ bot.on('message', message => {
                     title: 'Crew\'s Jr. Master',
                 })
                     .addFields(
-                        { name: "Name:", value: "Bell/Belle/Ting", inline: true },
+                        { name: "Name:", value: "Bell/Belle", inline: true },
                         { name: "Age:", value: `${currentYear - 2000}`, inline: true },
                         { name: "Country:", value: "Singapore", inline: true },
                         { name: "Speaks:", value: "English, Chinese", inline: true },
@@ -477,7 +482,7 @@ bot.on('message', message => {
                     title: 'Crew\'s Jr. Master',
                 })
                     .addFields(
-                        { name: "Name:", value: "Bell/Belle/Ting", inline: true },
+                        { name: "Name:", value: "Bell/Belle", inline: true },
                         { name: "Age:", value: `${currentYear - 2000}`, inline: true },
                         { name: "Country:", value: "Singapore", inline: true },
                         { name: "Speaks:", value: "English, Chinese", inline: true },
@@ -499,6 +504,7 @@ bot.on('message', message => {
 
     // Piet/Pietro
     else if (message.content.toLowerCase() === "c.gmjr-piet") {
+        message.reply("Here's info on Piet! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'MazeRunner',
@@ -528,6 +534,7 @@ bot.on('message', message => {
 
     // Gel
     else if (message.content.toLowerCase() === "c.gmjr-gel") {
+        message.reply("Here's info on Gel! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'xCintare',
@@ -579,6 +586,7 @@ bot.on('message', message => {
 
     // Lior
     else if (message.content.toLowerCase() === "c.gmjr-lior") {
+        message.reply("Here's info on Lior! 😉")
         let gmjr = new Menu(message.channel, message.author.id, [
             {
                 name: 'iTinyRick',
@@ -670,6 +678,10 @@ bot.on('message', message => {
             },
         ], 60000)
         gmjr.start()
+    }
+    /* insert here */
+    else {
+        return message.reply("Incorrect format!")
     }
 })
 
