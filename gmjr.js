@@ -424,7 +424,7 @@ bot.on('message', message => {
         gmjr.start()
     }
 
-    // Bell
+    // Belle
     else if (message.content.toLowerCase() === "c.gmjr-bell") {
         let gmjr = new Menu(message.channel, message.author.id, [
             {
@@ -443,7 +443,7 @@ bot.on('message', message => {
                         }
                     )
                     .setColor("#F83B3B")
-                    .setImage("https://i.imgur.com/BovAgKh.png"),
+                    .setImage("https://i.imgur.com/UICM5SR.png"),
                 reactions: {
                     '❌': 'DingTongBell',
                     '➡': 'BadPuncher'
@@ -465,7 +465,7 @@ bot.on('message', message => {
                         }
                     )
                     .setColor("#F83B3B")
-                    .setImage("https://i.imgur.com/yIDq0gw.png"),
+                    .setImage("https://i.imgur.com/z9Glm8q.png"),
                 reactions: {
                     '⬅': 'DingTongBell',
                     '➡': 'TingTongBell'
@@ -487,7 +487,7 @@ bot.on('message', message => {
                         }
                     )
                     .setColor("#F83B3B")
-                    .setImage("https://i.imgur.com/Vc7Vn7I.png"),
+                    .setImage("https://i.imgur.com/qmLgI47.png"),
                 reactions: {
                     '⬅': 'BadPuncher',
                     '❌': 'TingTongBell'
