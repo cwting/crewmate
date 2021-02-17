@@ -681,7 +681,7 @@ bot.on('message', message => {
     }
     /* insert here */
     else {
-        return message.reply("Incorrect format!")
+        return message.reply("Incorrect format! GM")
     }
 })
 
