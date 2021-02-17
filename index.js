@@ -85,25 +85,25 @@ const leechmsg = new Discord.MessageEmbed()
     .setColor("#DDDDDD")
     .setTitle("Leeching Guide")
     .setDescription(
-        "```diff\n+ Lv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n```\n" +
-        "Lv 20-25: Wild Boar [Hidden Street: The Land of WildBoar I]\n" +
-        "Lv 25-30: Brown Teddy, Pink Teddy [Ludibrium: Terrace Hall]\n" +
-        "Lv 30-36: Jr. Wraith [Kerning Line 1 Area 2]\n" +
-        "Lv 36-41: Platoon Chronos [Ludibrium: The Path of Time <1>]\n" +
-        "Lv 41-43: Master Chronos [Ludibrium: The Path of Time <4>]\n" +
-        "Lv 43-51: Wraith [Kerning City Subway: Line 1 Area <4>]\n" +
-        "Lv 51-53: Oly Oly, Dark Fission [Malaysia: Muddy Banks 1]\n" +
-        "Lv 53-56: Neo Huroid [Alcadno Research Institute: Lab - Area C-3]\n" +
-        "Lv 56-65: Rodeo [Malaysia: Muddy Banks 2]\n" +
-        "Lv 65-67: Windraiders [Crimsonwood Keep: Tornado Corridor]\n" +
-        "Lv 67-75: Froscola, Jester Scarlion [Malaysia: Fantasy Theme Park 1]\n" +
-        "Lv 75-78: Stormbreaker [Crimsonwood Keep: Stormhall]\n" +
-        "Lv 78-85: Harp, Blood Harp [Leafre: Sky Nest II]\n" +
-        "Lv 85-90: Berserkie, Veetron [Singapore: Ulu Estate 1]\n" +
-        "Lv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n" +
-        "Lv 105+: Petrifighter [Singapore: Ulu City Center]\n" +
-        "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
-        "Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku"
+        "```CSS\nLv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n```\n" +
+        "```CSS\nLv 20-25: Wild Boar [Hidden Street: The Land of WildBoar I]\n```\n" +
+        "```CSS\nLv 25-30: Brown Teddy, Pink Teddy [Ludibrium: Terrace Hall]\n```\n" +
+        "```CSS\nLv 30-36: Jr. Wraith [Kerning Line 1 Area 2]\n```\n" +
+        "```CSS\nLv 36-41: Platoon Chronos [Ludibrium: The Path of Time <1>]\n```\n" +
+        "```CSS\nLv 41-43: Master Chronos [Ludibrium: The Path of Time <4>]\n```\n" +
+        "```CSS\nLv 43-51: Wraith [Kerning City Subway: Line 1 Area <4>]\n```\n" +
+        "```CSS\nLv 51-53: Oly Oly, Dark Fission [Malaysia: Muddy Banks 1]\n```\n" +
+        "```yaml\nLv 53-56: Neo Huroid [Alcadno Research Institute: Lab - Area C-3]\n```\n" +
+        "```CSS\nLv 56-65: Rodeo [Malaysia: Muddy Banks 2]\n```\n" +
+        "```CSS\nLv 65-67: Windraiders [Crimsonwood Keep: Tornado Corridor]\n```\n" +
+        "```CSS\nLv 67-75: Froscola, Jester Scarlion [Malaysia: Fantasy Theme Park 1]\n```\n" +
+        "```http\nLv 75-78: Stormbreaker [Crimsonwood Keep: Stormhall]\n```\n" +
+        "```http\nLv 78-85: Harp, Blood Harp [Leafre: Sky Nest II]\n```\n" +
+        "```http\nLv 85-90: Berserkie, Veetron [Singapore: Ulu Estate 1]\n```\n" +
+        "```http\nLv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n```\n" +
+        "```arm\nLv 105+: Petrifighter [Singapore: Ulu City Center]\n```\n" +
+        "```arm\nLv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n```\n" +
+        "```arm\nLv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku\n```"
     )
     .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/")
 
