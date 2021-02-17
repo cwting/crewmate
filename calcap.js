@@ -28,7 +28,7 @@ bot.on('message', message => {
             unusedAP = userAP - str - dex - int - luk + 16;
         }
         else {
-            return message.reply("Incorrect format! AP")
+            return message.reply("Incorrect format!")
         }
         message.reply(`\nYou have ${unusedAP} AP unassigned or assigned to HP/MP`)
     }

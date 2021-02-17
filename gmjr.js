@@ -691,7 +691,7 @@ bot.on('message', message => {
         }
         /* insert here */
         else {
-            return message.reply("Incorrect format! GM")
+            return message.reply("Incorrect name!")
         }
     }
 })

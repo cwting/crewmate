@@ -155,7 +155,7 @@ bot.on('message', message => {
             )
         }
         else {
-            return message.reply("Incorrect format! HP")
+            return message.reply("Incorrect format!")
         }
         message.reply(
             `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
