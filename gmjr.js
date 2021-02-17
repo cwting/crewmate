@@ -24,8 +24,6 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var level = args[1];
-    var cleanMP = args[2];
 
     if (command === "gmjr") {
         // if empty
