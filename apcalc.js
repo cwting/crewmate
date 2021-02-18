@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (calcap.js)`); // BOT online
+    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (apcalc.js)`); // BOT online
 });
 
 
@@ -24,11 +24,17 @@ bot.on('message', message => {
             return
         }
         else if ((level >= 1 && level <= 200) && (str >= 4 && str <= 999) && (dex >= 4 && dex <= 999) && (int >= 4 && int <= 999) && (luk >= 4 && luk <= 999)) {
-            if (level >= 70 && level < 120) {
-                var userAP = 9 + (level * 5) + 5;
+            // 1st and 2nd job
+            if (level < 70) {
+                var userAP = 4 + (level * 5);
             }
+            // 3rd job
+            else if (level >= 70 && level < 120) {
+                var userAP = 4 + (level * 5) + 5;
+            }
+            // 4th job
             else {
-                var userAP = 9 + (level * 5);
+                var userAP = 9 + (level * 5) + 10;
             }
             var unusedAP = userAP - str - dex - int - luk + 16;
             if (unusedAP < 0) {

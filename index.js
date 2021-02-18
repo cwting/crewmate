@@ -1,7 +1,7 @@
 var gmjr = require('./gmjr.js');
 var cwkbon = require('./cwkbon.js');
 var hpwash = require("./hpwash.js");
-var calcap = require('./calcap.js')
+var apcalc = require('./apcalc.js')
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -38,7 +38,7 @@ const apqmsg = new Discord.MessageEmbed()
     .setImage("https://i.ibb.co/Wks0MQT/apq-stg2.jpg")
     .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/");
 
-const calcapmsg = new Discord.MessageEmbed()
+const apcalcmsg = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setTitle("Calculate AP")
     .setDescription(
@@ -146,11 +146,11 @@ bot.on("message", async msg => {
     }
 });
 
-// CALCULATE AP
+// AP Calculator
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.ap") {
-        msg.channel.send(calcapmsg);
-        calcap;
+        msg.channel.send(apcalcmsg);
+        apcalc;
     }
 });
 
