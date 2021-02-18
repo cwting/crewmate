@@ -691,7 +691,7 @@ bot.on('message', message => {
             ], 60000)
             gmjr.start()
         }
-        
+
         // Jon
         else if (name.toLowerCase() === "jon") {
             message.reply("Here's info on Jon! 😉")
@@ -712,7 +712,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage(""),
+                        .setImage("https://i.ibb.co/7C9BCCg/jon1.png"),
                     reactions: {
                         '❌': 'S2Hanna',
                         '➡': 'iJSK'
@@ -734,7 +734,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#000000")
-                        .setImage(""),
+                        .setImage("https://i.ibb.co/t4kcp4G/jon2.png"),
                     reactions: {
                         '⬅': 'S2Hanna',
                         '❌': 'iJSK'
