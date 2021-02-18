@@ -84,48 +84,76 @@ bot.on('message', message => {
             var minMP = (14 * level) + 148;
             var extraMP = cleanMP - minMP
             var numOfWash = Math.floor(extraMP / mpLoss);
-            // apr
-            var minHPGainAPR = 16;
-            var avgHPGainAPR = 18;
-            var minHPGainedAPR = numOfWash * minHPGainAPR;
-            var avgHPGainedAPR = numOfWash * avgHPGainAPR;
             // fresh
             var minHPGainFresh = 20;
             var avgHPGainFresh = 22;
             var minHPGainedFresh = numOfWash * minHPGainFresh;
             var avgHPGainedFresh = numOfWash * avgHPGainFresh;
+            // apr
+            var minHPGainAPR = 16;
+            var avgHPGainAPR = 18;
+            var minHPGainedAPR = numOfWash * minHPGainAPR;
+            var avgHPGainedAPR = numOfWash * avgHPGainAPR;
 
             return message.reply(
                 `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
                 `You can wash ${numOfWash.toLocaleString()} times.\n` +
-                `**If you use APRs:**\n` +
-                `You can gain at least ${Math.floor(minHPGainedAPR).toLocaleString()} HP and on average ${Math.floor(avgHPGainedAPR).toLocaleString()} HP.\n` +
                 `**If you use Fresh APs:**\n` +
                 `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n` +
+                `**If you use APRs:**\n` +
+                `You can gain at least ${Math.floor(minHPGainedAPR).toLocaleString()} HP and on average ${Math.floor(avgHPGainedAPR).toLocaleString()} HP.\n` +
                 `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)`
             )
         }
         // brawler
         else if (args[0] === 'brawler' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
-            var minHPGain = 36;
-            var avgHPGain = 38;
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
             var numOfWash = Math.floor(extraMP / mpLoss);
-            var minHPGained = numOfWash * minHPGain;
-            var avgHPGained = numOfWash * avgHPGain;
+            // fresh
+            var minHPGainFresh = 36;
+            var avgHPGainFresh = 38;
+            var minHPGained = numOfWash * minHPGainFresh;
+            var avgHPGained = numOfWash * avgHPGainFresh;
+            // apr
+            var HPGainAPR = 40;
+            var HPGainedAPR = numOfWash * HPGainAPR;
+
+            return message.reply(
+                `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
+                `You can wash ${numOfWash.toLocaleString()} times.\n` +
+                `**If you use Fresh APs:**\n` +
+                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n` +
+                `**If you use APRs:**\n` +
+                `You can gain ${Math.floor(HPGainedAPR).toLocaleString()} HP.\n` +
+                `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)`
+            )
         }
         // gunslinger
         else if (args[0] === 'gunslinger' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
-            var minHPGain = 16;
-            var avgHPGain = 18;
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
             var numOfWash = Math.floor(extraMP / mpLoss);
-            var minHPGained = Math.floor(numOfWash * minHPGain);
-            var avgHPGained = Math.floor(numOfWash * avgHPGain);
+            // fresh
+            var minHPGainFresh = 16;
+            var avgHPGainFresh = 18;
+            var minHPGainedFresh = numOfWash * minHPGainFresh;
+            var avgHPGainedFresh = numOfWash * avgHPGainFresh;
+            // apr
+            var HPGainAPR = 20;
+            var HPGainedAPR = numOfWash * HPGainAPR;
+
+            return message.reply(
+                `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
+                `You can wash ${numOfWash.toLocaleString()} times.\n` +
+                `**If you use Fresh APs:**\n` +
+                `You can gain at least ${Math.floor(minHPGainedFresh).toLocaleString()} HP and on average ${Math.floor(avgHPGainedFresh).toLocaleString()} HP.\n` +
+                `**If you use APRs:**\n` +
+                `You can gain ${Math.floor(HPGainedAPR).toLocaleString()} HP.\n` +
+                `The cost of AP resets is: ${Math.ceil(aprNX * numOfWash).toLocaleString()} NX (${Math.ceil(aprNX * numOfWash / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWash).toLocaleString()} mesos (${aprMeso.toLocaleString()} / AP Reset)`
+            )
         }
         // magician
         else if (args[0] === 'magician' && (args[1] > 1 && args[1] <= 200) && (args[2] > 1 && args[2] <= 30000)) {
