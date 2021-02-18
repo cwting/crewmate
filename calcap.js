@@ -27,9 +27,6 @@ bot.on('message', message => {
             if (level >= 70 && level < 120) {
                 var userAP = 9 + (level * 5) + 5;
             }
-            else if (level >= 120) {
-                var userAP = 9 + (level * 5) + 10;
-            }
             else {
                 var userAP = 9 + (level * 5);
             }
@@ -42,7 +39,6 @@ bot.on('message', message => {
             return message.reply("Incorrect format!\nCorrect format: c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`")
         }
         message.reply(`\nYou have ${unusedAP} AP unassigned or assigned to HP/MP`)
-        console.log(level, str, dex, int, luk, userAP, unusedAP)
     }
 })
 
