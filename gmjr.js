@@ -17,6 +17,7 @@ List of GMJr:
 - Piet/Pietro
 - Gel
 - Lior
+- Jon
 */
 const prefix = "c.";
 bot.on('message', message => {
@@ -24,6 +25,7 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+    var name = args[0];
 
     if (command === "gmjr") {
         // if empty
@@ -31,7 +33,7 @@ bot.on('message', message => {
             return
         }
         // Nivi
-        else if (args[0].toLowerCase() === "nivi") {
+        else if (name.toLowerCase() === "nivi") {
             message.reply("Here's info on Nivi! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -149,7 +151,7 @@ bot.on('message', message => {
         }
 
         // Naomi
-        else if (args[0].toLowerCase() === "naomi") {
+        else if (name.toLowerCase() === "naomi") {
             message.reply("Here's info on Naomi! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -246,7 +248,7 @@ bot.on('message', message => {
         }
 
         // Marc
-        else if (args[0].toLowerCase() === "marc") {
+        else if (name.toLowerCase() === "marc") {
             message.reply("Here's info on Marc! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -365,7 +367,7 @@ bot.on('message', message => {
         }
 
         // Antonio
-        else if (args[0].toLowerCase() === "antonio") {
+        else if (name.toLowerCase() === "antonio") {
             message.reply("Here's info on Antonio! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -439,7 +441,7 @@ bot.on('message', message => {
         }
 
         // Belle
-        else if (args[0].toLowerCase() === "bell") {
+        else if (name.toLowerCase() === "bell") {
             message.reply("Here's info on Bell! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -513,7 +515,7 @@ bot.on('message', message => {
         }
 
         // Piet/Pietro
-        else if (args[0].toLowerCase() === "piet") {
+        else if (name.toLowerCase() === "piet") {
             message.reply("Here's info on Piet! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -543,7 +545,7 @@ bot.on('message', message => {
         }
 
         // Gel
-        else if (args[0].toLowerCase() === "gel") {
+        else if (name.toLowerCase() === "gel") {
             message.reply("Here's info on Gel! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -595,7 +597,7 @@ bot.on('message', message => {
         }
 
         // Lior
-        else if (args[0].toLowerCase() === "lior") {
+        else if (name.toLowerCase() === "lior") {
             message.reply("Here's info on Lior! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -689,7 +691,60 @@ bot.on('message', message => {
             ], 60000)
             gmjr.start()
         }
-        /* insert here */
+        
+        // Jon
+        else if (name.toLowerCase() === "jon") {
+            message.reply("Here's info on Jon! 😉")
+            let gmjr = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'S2Hanna',
+                    content: new MessageEmbed({
+                        title: 'Crew\'s Jr. Master',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Jon", inline: true },
+                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Country:", value: "USA/Korea", inline: true },
+                            { name: "Speaks:", value: "English, Korean", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: `🤍 __S2Hanna - Level 19x Dark Knight__ 🤍\niJSK - Level 19x Night Lord`
+                            }
+                        )
+                        .setColor("#000000")
+                        .setImage(""),
+                    reactions: {
+                        '❌': 'S2Hanna',
+                        '➡': 'iJSK'
+                    }
+                },
+                {
+                    name: 'iJSK',
+                    content: new MessageEmbed({
+                        title: 'Crew\'s Jr. Master',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Jon", inline: true },
+                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Country:", value: "USA/Korea", inline: true },
+                            { name: "Speaks:", value: "English, Korean", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: `S2Hanna - Level 19x Dark Knight\n🤍 __iJSK - Level 19x Night Lord__ 🤍`
+                            }
+                        )
+                        .setColor("#000000")
+                        .setImage(""),
+                    reactions: {
+                        '⬅': 'S2Hanna',
+                        '❌': 'iJSK'
+                    }
+                },
+            ], 60000)
+            gmjr.start()
+        }
+
+
         else {
             return message.reply("Incorrect name!\nNames of GmJr: `c.gmjr`")
         }
