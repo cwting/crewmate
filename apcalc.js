@@ -34,7 +34,7 @@ bot.on('message', message => {
             }
             // 4th job
             else {
-                var userAP = 9 + (level * 5) + 10;
+                var userAP = 4 + (level * 5) + 10;
             }
             var unusedAP = userAP - str - dex - int - luk + 16;
             if (unusedAP < 0) {
