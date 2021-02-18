@@ -114,8 +114,8 @@ bot.on('message', message => {
             // fresh
             var minHPGainFresh = 36;
             var avgHPGainFresh = 38;
-            var minHPGained = numOfWash * minHPGainFresh;
-            var avgHPGained = numOfWash * avgHPGainFresh;
+            var minHPGainedFresh = numOfWash * minHPGainFresh;
+            var avgHPGainedFresh = numOfWash * avgHPGainFresh;
             // apr
             var HPGainAPR = 40;
             var HPGainedAPR = numOfWash * HPGainAPR;
