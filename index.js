@@ -26,7 +26,7 @@ bot.on("message", async msg => {
                 { name: 'Crew\'s GM/JRs', value: '`c.gmjr`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
-                { name: 'Random Channel Picker', value: '`c.channel' },
+                { name: 'Random Channel Picker', value: '`c.ch`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
             )
         msg.channel.send(helpmsg);
@@ -163,7 +163,7 @@ bot.on("message", async msg => {
 
 /* ------------------------------- RANDOM CHANNEL PICKER ------------------------------- */
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.channel") {
+    if (msg.content.toLowerCase() === "c.ch") {
         var randomCh = Math.floor(Math.random() * 20) + 1;
         msg.reply(` I have picked Channel ${randomCh} for you!`)
     }
