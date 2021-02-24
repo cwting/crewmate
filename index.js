@@ -26,7 +26,8 @@ bot.on("message", async msg => {
                 { name: 'Crew\'s GM/JRs', value: '`c.gmjr`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
-                { name: 'Random Channel Picker', value: '`c.ch`' },
+                { name: 'Random Channel Picker [NEW]', value: '`c.ch`' },
+                { name: 'Random Gacha Location Picker [NEW]', value: '`c.gach`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
             )
         msg.channel.send(helpmsg);
@@ -165,7 +166,16 @@ bot.on("message", async msg => {
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.ch") {
         var randomCh = Math.floor(Math.random() * 20) + 1;
-        msg.reply(` I have picked Channel ${randomCh} for you!`)
+        msg.reply(`I have picked Channel ${randomCh} for you!`)
+    }
+})
+
+/* ------------------------------- RANDOM GACHA LOCATION PICKER ------------------------------- */
+bot.on("message", async msg => {
+    if (msg.content.toLowerCase() === "c.gach") {
+        const locationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
+        var locationArrayNum = Math.floor(Math.random() * 10);
+        msg.reply(`I have picked ${locationArray[locationArrayNum]} for you!`)
     }
 })
 
