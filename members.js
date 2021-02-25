@@ -4,7 +4,7 @@ const bot = new Client();
 const currentYear = 2021; // Change yearly
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (gmjr.js)`); // BOT online
+    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (members.js)`); // BOT online
 });
 
 /*
