@@ -20,7 +20,7 @@ List of Members:
 - Jon
 */
 
-const prefix = "c." || "C.";
+const prefix = "c.";
 bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -28,7 +28,7 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
     var name = args[0];
 
-    if (command === "member") {
+    if (prefix.toLowerCase === "c." && command === "member") {
         // if empty
         if (!args.length) {
             return

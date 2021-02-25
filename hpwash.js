@@ -5,7 +5,7 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
-const prefix = "c." || "C.";
+const prefix = "c.";
 bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
@@ -19,7 +19,7 @@ bot.on('message', message => {
     var level = args[1];
     var cleanMP = args[2];
 
-    if (command === 'hpwash') {
+    if (prefix.toLowerCase() === "c." && command === 'hpwash') {
         // if empty
         if (!args.length) {
             return
