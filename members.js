@@ -745,7 +745,34 @@ bot.on('message', message => {
         }
 
         /* ----------------------------------------------- MEMBERS ----------------------------------------------- */
-
+        else if (name.toLowerCase() === "david") {
+            message.reply("Here's info on David! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'megachin',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "David", inline: true },
+                            { name: "Age:", value: `${currentYear - 2000}`, inline: true },
+                            { name: "Country:", value: "The Netherlands", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: `🤍 __megachin - Level 16x Bowmaster__ 🤍`
+                            }
+                        )
+                        .setColor("#6F2525")
+                        .setImage("https://i.ibb.co/j66cgGf/megachin.png"),
+                    reactions: {
+                        '❌': 'megachin',
+                        '😭': 'megachin',
+                    }
+                },
+            ], 60000)
+            member.start()
+        }
 
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
         else if (name.toLowerCase() === "chris") {

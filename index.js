@@ -164,7 +164,7 @@ bot.on("message", async msg => {
                 {
                     name: 'Members',
                     value:
-                        'PM me to add yourself here >w<'
+                        "David"
                 },
                 {
                     name: 'Gone But Not Forgotten',
