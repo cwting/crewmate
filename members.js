@@ -28,7 +28,7 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
     var name = args[0];
 
-    if (prefix.toLowerCase === "c." && command === "member") {
+    if (command === "member") {
         // if empty
         if (!args.length) {
             return
