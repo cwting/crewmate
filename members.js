@@ -23,7 +23,6 @@ List of Members:
 const prefix = "c.";
 bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
-
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
     var name = args[0];
@@ -41,7 +40,7 @@ bot.on('message', message => {
                 {
                     name: 'Wolftail',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Guild Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
@@ -63,7 +62,7 @@ bot.on('message', message => {
                 {
                     name: 'Bunpaws',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Guild Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
@@ -85,7 +84,7 @@ bot.on('message', message => {
                 {
                     name: 'Nweeky',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Guild Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
@@ -107,7 +106,7 @@ bot.on('message', message => {
                 {
                     name: 'Pronghorn',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Guild Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
@@ -129,7 +128,7 @@ bot.on('message', message => {
                 {
                     name: 'Stripewing',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Guild Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
@@ -159,7 +158,7 @@ bot.on('message', message => {
                 {
                     name: 'NLynx',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
@@ -181,7 +180,7 @@ bot.on('message', message => {
                 {
                     name: 'Acinonyx',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
@@ -203,7 +202,7 @@ bot.on('message', message => {
                 {
                     name: 'LunarN',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
@@ -225,7 +224,7 @@ bot.on('message', message => {
                 {
                     name: 'NPanthera',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Guild Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
@@ -256,7 +255,7 @@ bot.on('message', message => {
                 {
                     name: 'xKook007',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
@@ -278,7 +277,7 @@ bot.on('message', message => {
                 {
                     name: 'Vaiiente',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
@@ -300,9 +299,8 @@ bot.on('message', message => {
                 {
                     name: 'Rooka',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
-
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
                             { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
@@ -323,7 +321,7 @@ bot.on('message', message => {
                 {
                     name: 'Leuca',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
@@ -345,7 +343,7 @@ bot.on('message', message => {
                 {
                     name: 'Jyeong',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
@@ -375,7 +373,7 @@ bot.on('message', message => {
                 {
                     name: 'ArchWar',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
@@ -397,7 +395,7 @@ bot.on('message', message => {
                 {
                     name: 'BadShooter',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
@@ -419,7 +417,7 @@ bot.on('message', message => {
                 {
                     name: 'GreenyHeaven',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
@@ -449,7 +447,7 @@ bot.on('message', message => {
                 {
                     name: 'DingTongBell',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
@@ -471,7 +469,7 @@ bot.on('message', message => {
                 {
                     name: 'BadPuncher',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
@@ -493,7 +491,7 @@ bot.on('message', message => {
                 {
                     name: 'TingTongBell',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
@@ -523,7 +521,7 @@ bot.on('message', message => {
                 {
                     name: 'MazeRunner',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Piet/Pietro", inline: true },
@@ -553,7 +551,7 @@ bot.on('message', message => {
                 {
                     name: 'xCintare',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
@@ -575,7 +573,7 @@ bot.on('message', message => {
                 {
                     name: 'Mewleficent',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
@@ -605,7 +603,7 @@ bot.on('message', message => {
                 {
                     name: 'iTinyRick',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
@@ -627,7 +625,7 @@ bot.on('message', message => {
                 {
                     name: 'TinyHero',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
@@ -649,7 +647,7 @@ bot.on('message', message => {
                 {
                     name: 'iDragonFist',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
@@ -671,7 +669,7 @@ bot.on('message', message => {
                 {
                     name: 'HealWolf',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
@@ -701,7 +699,7 @@ bot.on('message', message => {
                 {
                     name: 'S2Hanna',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
@@ -723,7 +721,7 @@ bot.on('message', message => {
                 {
                     name: 'iJSK',
                     content: new MessageEmbed({
-                        title: 'Crew\'s Jr. Master',
+                        title: 'Jr. Master of Crew',
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
@@ -755,7 +753,9 @@ bot.on('message', message => {
             let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'DrKris',
-                    content: new MessageEmbed
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
                             { name: "Age:", value: `${currentYear - 1996}`, inline: true },
@@ -775,7 +775,9 @@ bot.on('message', message => {
                 },
                 {
                     name: 'Chris4ReaL',
-                    content: new MessageEmbed
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
                             { name: "Age:", value: `${currentYear - 1996}`, inline: true },
@@ -795,7 +797,9 @@ bot.on('message', message => {
                 },
                 {
                     name: 'SamuraiChris',
-                    content: new MessageEmbed
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
                             { name: "Age:", value: `${currentYear - 1996}`, inline: true },
@@ -815,7 +819,9 @@ bot.on('message', message => {
                 },
                 {
                     name: 'CutePaws',
-                    content: new MessageEmbed
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
                             { name: "Age:", value: `${currentYear - 1996}`, inline: true },
