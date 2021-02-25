@@ -750,7 +750,7 @@ bot.on('message', message => {
 
 
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
-        /*else if (name.toLowerCase() === "chris") {
+        else if (name.toLowerCase() === "chris") {
             message.reply("Here's info on Chris! 😉")
             let member = new Menu(message.channel, message.author.id, [
                 {
@@ -758,16 +758,16 @@ bot.on('message', message => {
                     content: new MessageEmbed
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
-                            // { name: "Country:", value: "Germany", inline: true },
-                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                                value: `🤍 __DrKris - Level 200 Bishop__ 🤍\nChris4ReaL - Level 190 Night Lord\nSamuraiChris - Level 184 Paladin\nCutePaws - Level 155 Buccaneer`
                             }
                         )
-                        // .setColor("#00FFF9")
-                        .setImage("https://i.ibb.co/DQJtLWd/DrKris.png"),
+                        .setColor("#0A0A0A")
+                        .setImage("https://i.ibb.co/580ZqjH/DrKris.png"),
                     reactions: {
                         '❌': 'DrKris',
                         '➡': 'Chris4ReaL'
@@ -778,18 +778,38 @@ bot.on('message', message => {
                     content: new MessageEmbed
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
-                            // { name: "Country:", value: "Germany", inline: true },
-                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                                value: `DrKris - Level 200 Bishop\n🤍 __Chris4ReaL - Level 190 Night Lord__ 🤍\nSamuraiChris - Level 184 Paladin\nCutePaws - Level 155 Buccaneer`
                             }
                         )
-                        // .setColor("#00FFF9")
-                        .setImage("https://i.ibb.co/ypdTSXz/Chris4-Rea-L.png"),
+                        .setColor("#0A0A0A")
+                        .setImage("https://i.ibb.co/2q5qY04/Chris4-Rea-L.png"),
                     reactions: {
                         '⬅': 'DrKris',
+                        '➡': 'SamuraiChris'
+                    }
+                },
+                {
+                    name: 'SamuraiChris',
+                    content: new MessageEmbed
+                        .addFields(
+                            { name: "Name:", value: "Chris", inline: true },
+                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: `DrKris - Level 200 Bishop\nChris4ReaL - Level 190 Night Lord\n🤍 __SamuraiChris - Level 184 Paladin__ 🤍\nCutePaws - Level 155 Buccaneer`
+                            }
+                        )
+                        .setColor("#0A0A0A")
+                        .setImage("https://i.ibb.co/GFTSNJm/Samurai-Chris.png"),
+                    reactions: {
+                        '⬅': 'Chris4ReaL',
                         '➡': 'CutePaws'
                     }
                 },
@@ -798,25 +818,24 @@ bot.on('message', message => {
                     content: new MessageEmbed
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
-                            // { name: "Country:", value: "Germany", inline: true },
-                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                                value: `DrKris - Level 200 Bishop\nChris4ReaL - Level 190 Night Lord\nSamuraiChris - Level 184 Paladin\n🤍 __CutePaws - Level 155 Buccaneer__ 🤍`
                             }
                         )
-                        // .setColor("#00FFF9")
+                        .setColor("#0A0A0A")
                         .setImage("https://i.ibb.co/hsT4bBP/CutePaws.png"),
                     reactions: {
-                        '⬅': 'Chris4ReaL',
+                        '⬅': 'SamuraiChris',
                         '❌': 'CutePaws'
                     }
                 },
             ], 60000)
             member.start()
         }
-        */
 
         else {
             return message.reply("Incorrect name!\nNames of members: `c.member`")
@@ -850,7 +869,8 @@ else if (name.toLowerCase() === "<name>") {
                         .setImage(""),
                     reactions: {
                         '❌': '',
-                        '😭': ''
+                        '⬅': '',
+                        '➡': '',
                     }
                 },
             ], 60000)
