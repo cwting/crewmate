@@ -19,21 +19,22 @@ List of GMJr:
 - Lior
 - Jon
 */
-const prefix = "c.";
+
+const prefix = "c." || "C.";
 bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var name = args[0];
+    var name = args[0].toLowerCase();
 
-    if (command === "gmjr") {
+    if (command === "member") {
         // if empty
         if (!args.length) {
             return
         }
         // Nivi
-        else if (name.toLowerCase() === "nivi") {
+        else if (name === "nivi") {
             message.reply("Here's info on Nivi! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -151,7 +152,7 @@ bot.on('message', message => {
         }
 
         // Naomi
-        else if (name.toLowerCase() === "naomi") {
+        else if (name === "naomi") {
             message.reply("Here's info on Naomi! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -248,7 +249,7 @@ bot.on('message', message => {
         }
 
         // Marc
-        else if (name.toLowerCase() === "marc") {
+        else if (name === "marc") {
             message.reply("Here's info on Marc! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -367,7 +368,7 @@ bot.on('message', message => {
         }
 
         // Antonio
-        else if (name.toLowerCase() === "antonio") {
+        else if (name === "antonio") {
             message.reply("Here's info on Antonio! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -441,7 +442,7 @@ bot.on('message', message => {
         }
 
         // Belle
-        else if (name.toLowerCase() === "bell") {
+        else if (name === "bell") {
             message.reply("Here's info on Bell! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -515,7 +516,7 @@ bot.on('message', message => {
         }
 
         // Piet/Pietro
-        else if (name.toLowerCase() === "piet") {
+        else if (name === "piet") {
             message.reply("Here's info on Piet! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -545,7 +546,7 @@ bot.on('message', message => {
         }
 
         // Gel
-        else if (name.toLowerCase() === "gel") {
+        else if (name === "gel") {
             message.reply("Here's info on Gel! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -597,7 +598,7 @@ bot.on('message', message => {
         }
 
         // Lior
-        else if (name.toLowerCase() === "lior") {
+        else if (name === "lior") {
             message.reply("Here's info on Lior! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {
@@ -693,7 +694,7 @@ bot.on('message', message => {
         }
 
         // Jon
-        else if (name.toLowerCase() === "jon") {
+        else if (name === "jon") {
             message.reply("Here's info on Jon! 😉")
             let gmjr = new Menu(message.channel, message.author.id, [
                 {

@@ -1,4 +1,4 @@
-var gmjr = require('./gmjr.js');
+var member = require('./members.js');
 var cwkbon = require('./cwkbon.js');
 var hpwash = require("./hpwash.js");
 var apcalc = require('./apcalc.js')
@@ -85,15 +85,15 @@ bot.on("message", async msg => {
     }
 });
 
-/* ------------------------------- GM/JR ------------------------------- */
+/* ------------------------------- MEMBERS ------------------------------- */
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.gmjr") {
-        const gmjrmsg = new Discord.MessageEmbed()
+    if (msg.content.toLowerCase() === "c.member") {
+        const membermsg = new Discord.MessageEmbed()
             .setColor('#DDDDDD')
-            .setTitle('Crew\'s Guild Master/Junior Masters')
+            .setTitle('Crew\'s Members')
             .setDescription(
                 "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.gmjr [name]`\n" +
+                "`c.member [name]`\n" +
                 "`[name]`:\n" +
                 "Nivi\n" +
                 "Naomi\n" +
@@ -105,8 +105,8 @@ bot.on("message", async msg => {
                 "Lior\n" +
                 "*will add more people as we go :)"
             )
-        msg.channel.send(gmjrmsg);
-        gmjr;
+        msg.channel.send(membermsg);
+        member;
     }
 });
 

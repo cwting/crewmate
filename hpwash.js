@@ -5,7 +5,7 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
-const prefix = "c.";
+const prefix = "c." || "C.";
 bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
@@ -15,7 +15,7 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var job = args[0];
+    var job = args[0].toLowerCase();
     var level = args[1];
     var cleanMP = args[2];
 
