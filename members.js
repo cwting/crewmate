@@ -26,7 +26,7 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var name = args[0].toLowerCase();
+    var name = args[0];
 
     if (command === "member") {
         // if empty

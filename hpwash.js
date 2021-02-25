@@ -15,7 +15,7 @@ bot.on('message', message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var job = args[0].toLowerCase();
+    var job = args[0];
     var level = args[1];
     var cleanMP = args[2];
 

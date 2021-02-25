@@ -23,9 +23,9 @@ bot.on("message", async msg => {
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
-                { name: 'Crew\'s GM/JRs', value: '`c.gmjr`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
+                { name: 'Crew\'s Members', value: '`c.member`' },
                 { name: 'Random Channel Picker [NEW]', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker [NEW]', value: '`c.gach`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
@@ -85,31 +85,6 @@ bot.on("message", async msg => {
     }
 });
 
-/* ------------------------------- MEMBERS ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.member") {
-        const membermsg = new Discord.MessageEmbed()
-            .setColor('#DDDDDD')
-            .setTitle('Crew\'s Members')
-            .setDescription(
-                "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member [name]`\n" +
-                "`[name]`:\n" +
-                "Nivi\n" +
-                "Naomi\n" +
-                "Marc\n" +
-                "Antonio\n" +
-                "Bell\n" +
-                "Piet\n" +
-                "Gel\n" +
-                "Lior\n" +
-                "*will add more people as we go :)"
-            )
-        msg.channel.send(membermsg);
-        member;
-    }
-});
-
 /* ------------------------------- HP WASH ------------------------------- */
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.hpwash") {
@@ -159,6 +134,31 @@ bot.on("message", async msg => {
             )
             .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
         msg.channel.send(leechmsg);
+    }
+});
+
+/* ------------------------------- MEMBERS ------------------------------- */
+bot.on("message", async msg => {
+    if (msg.content.toLowerCase() === "c.member") {
+        const membermsg = new Discord.MessageEmbed()
+            .setColor('#DDDDDD')
+            .setTitle('Crew\'s Members')
+            .setDescription(
+                "Enter the name of the member you're interested in in the following format:\n" +
+                "`c.member [name]`\n" +
+                "`[name]`:\n" +
+                "Nivi\n" +
+                "Naomi\n" +
+                "Marc\n" +
+                "Antonio\n" +
+                "Bell\n" +
+                "Piet\n" +
+                "Gel\n" +
+                "Lior\n" +
+                "*will add more people as we go :)"
+            )
+        msg.channel.send(membermsg);
+        member;
     }
 });
 
