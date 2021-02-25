@@ -25,7 +25,7 @@ bot.on("message", async msg => {
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
-                { name: 'Crew\'s Members', value: '`c.member`' },
+                { name: 'Members of Crew', value: '`c.member`' },
                 { name: 'Random Channel Picker [NEW]', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker [NEW]', value: '`c.gach`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
