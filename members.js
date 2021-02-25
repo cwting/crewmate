@@ -33,10 +33,11 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
+        /* -------------------------------------- GUILD MASTER AND JR.MASTERS -------------------------------------- */
         // Nivi
         else if (name.toLowerCase() === "nivi") {
             message.reply("Here's info on Nivi! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'Wolftail',
                     content: new MessageEmbed({
@@ -148,13 +149,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Naomi
         else if (name.toLowerCase() === "naomi") {
             message.reply("Here's info on Naomi! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'NLynx',
                     content: new MessageEmbed({
@@ -244,14 +245,14 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
 
         }
 
         // Marc
         else if (name.toLowerCase() === "marc") {
             message.reply("Here's info on Marc! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'xKook007',
                     content: new MessageEmbed({
@@ -364,13 +365,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Antonio
         else if (name.toLowerCase() === "antonio") {
             message.reply("Here's info on Antonio! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'ArchWar',
                     content: new MessageEmbed({
@@ -438,13 +439,13 @@ bot.on('message', message => {
                     },
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Bell
         else if (name.toLowerCase() === "bell") {
             message.reply("Here's info on Bell! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'DingTongBell',
                     content: new MessageEmbed({
@@ -512,13 +513,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Piet/Pietro
         else if (name.toLowerCase() === "piet") {
             message.reply("Here's info on Piet! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'MazeRunner',
                     content: new MessageEmbed({
@@ -542,13 +543,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Gel
         else if (name.toLowerCase() === "gel") {
             message.reply("Here's info on Gel! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'xCintare',
                     content: new MessageEmbed({
@@ -594,13 +595,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Lior
         else if (name.toLowerCase() === "lior") {
             message.reply("Here's info on Lior! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'iTinyRick',
                     content: new MessageEmbed({
@@ -690,13 +691,13 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
         // Jon
         else if (name.toLowerCase() === "jon") {
             message.reply("Here's info on Jon! 😉")
-            let gmjr = new Menu(message.channel, message.author.id, [
+            let member = new Menu(message.channel, message.author.id, [
                 {
                     name: 'S2Hanna',
                     content: new MessageEmbed({
@@ -742,9 +743,80 @@ bot.on('message', message => {
                     }
                 },
             ], 60000)
-            gmjr.start()
+            member.start()
         }
 
+        /* ----------------------------------------------- MEMBERS ----------------------------------------------- */
+
+
+        /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
+        /*else if (name.toLowerCase() === "chris") {
+            message.reply("Here's info on Chris! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'DrKris',
+                    content: new MessageEmbed
+                        .addFields(
+                            { name: "Name:", value: "Chris", inline: true },
+                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
+                            // { name: "Country:", value: "Germany", inline: true },
+                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                            }
+                        )
+                        // .setColor("#00FFF9")
+                        .setImage("https://i.ibb.co/DQJtLWd/DrKris.png"),
+                    reactions: {
+                        '❌': 'DrKris',
+                        '➡': 'Chris4ReaL'
+                    }
+                },
+                {
+                    name: 'Chris4ReaL',
+                    content: new MessageEmbed
+                        .addFields(
+                            { name: "Name:", value: "Chris", inline: true },
+                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
+                            // { name: "Country:", value: "Germany", inline: true },
+                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                            }
+                        )
+                        // .setColor("#00FFF9")
+                        .setImage("https://i.ibb.co/ypdTSXz/Chris4-Rea-L.png"),
+                    reactions: {
+                        '⬅': 'DrKris',
+                        '➡': 'CutePaws'
+                    }
+                },
+                {
+                    name: 'CutePaws',
+                    content: new MessageEmbed
+                        .addFields(
+                            { name: "Name:", value: "Chris", inline: true },
+                            // { name: "Age:", value: `${currentYear - 2002}`, inline: true },
+                            // { name: "Country:", value: "Germany", inline: true },
+                            // { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                // value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                            }
+                        )
+                        // .setColor("#00FFF9")
+                        .setImage("https://i.ibb.co/hsT4bBP/CutePaws.png"),
+                    reactions: {
+                        '⬅': 'Chris4ReaL',
+                        '❌': 'CutePaws'
+                    }
+                },
+            ], 60000)
+            member.start()
+        }
+        */
 
         else {
             return message.reply("Incorrect name!\nNames of members: `c.member`")
@@ -753,3 +825,35 @@ bot.on('message', message => {
 })
 
 bot.login(process.env.TOKEN);
+
+/*
+TEMPLATE:
+else if (name.toLowerCase() === "<name>") {
+            message.reply("Here's info on <name>! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: '<IGN>',
+                    content: new MessageEmbed({
+                        title: 'OPT',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "", inline: true },
+                            { name: "Age:", value: `${currentYear - }`, inline: true },
+                            { name: "Country:", value: "", inline: true },
+                            { name: "Speaks:", value: "", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: `🤍 __IGN - Level XXX JOB__ 🤍`
+                            }
+                        )
+                        .setColor("#")
+                        .setImage(""),
+                    reactions: {
+                        '❌': '',
+                        '😭': ''
+                    }
+                },
+            ], 60000)
+            member.start()
+        }
+*/

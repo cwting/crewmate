@@ -145,17 +145,32 @@ bot.on("message", async msg => {
             .setTitle('Crew\'s Members')
             .setDescription(
                 "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member [name]`\n" +
-                "`[name]`:\n" +
-                "Nivi\n" +
-                "Naomi\n" +
-                "Marc\n" +
-                "Antonio\n" +
-                "Bell\n" +
-                "Piet\n" +
-                "Gel\n" +
-                "Lior\n" +
-                "*will add more people as we go :)"
+                "`c.member [name]`"
+            )
+            .addFields(
+                {
+                    name: 'Guild Master and Jr. Masters',
+                    value:
+                        "Nivi\n" +
+                        "Naomi\n" +
+                        "Marc\n" +
+                        "Antonio\n" +
+                        "Bell\n" +
+                        "Piet\n" +
+                        "Gel\n" +
+                        "Lior\n" +
+                        "*will add more people as we go :)"
+                },
+                {
+                    name: 'Members',
+                    value:
+                        'PM me to add yourself here >w<'
+                },
+                {
+                    name: 'Gone But Not Forgotten',
+                    value:
+                        "Chris"
+                },
             )
         msg.channel.send(membermsg);
         member;
