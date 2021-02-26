@@ -767,9 +767,64 @@ bot.on('message', message => {
                         .setImage("https://i.ibb.co/j66cgGf/megachin.png"),
                     reactions: {
                         '❌': 'megachin',
-                        '😭': 'megachin',
+                        '😭': 'megachin'
                     }
                 },
+            ], 60000)
+            member.start()
+        }
+
+        else if (name.toLowerCase() === "rosa") {
+            message.reply("Here's info on Rosa! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'PalaRose',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Rose", inline: true },
+                            { name: "Age:", value: `${currentYear - 2005}`, inline: true },
+                            { name: "Country:", value: "Canada", inline: true },
+                            { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "🤍 __PalaRose - Level 18x Paladin__ 🤍\n" +
+                                    "N00BPR0 - Level 16x Bishop"
+                            }
+                        )
+                        .setColor("#DDDDDD"),
+                    // .setImage(""),
+                    reactions: {
+                        '❌': 'PalaRose',
+                        '➡': 'N00BPR0'
+                    }
+                },
+                {
+                    name: 'N00BPR0',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Rose", inline: true },
+                            { name: "Age:", value: `${currentYear - 2005}`, inline: true },
+                            { name: "Country:", value: "Canada", inline: true },
+                            { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "PalaRose - Level 18x Paladin\n" +
+                                    "🤍 __N00BPR0 - Level 16x Bishop__ 🤍"
+                            }
+                        )
+                        .setColor("#DDDDDD"),
+                    // .setImage(""),
+                    reactions: {
+                        '⬅': 'PalaRose',
+                        '❌': 'N00BPR0'
+                    }
+                }
             ], 60000)
             member.start()
         }
