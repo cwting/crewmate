@@ -49,7 +49,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __Wolftail - Level 200 Corsair__ 🤍\nBunpaws - Level 200 Buccaneer\nNweeky -  Level 200 Bowmaster\nPronghorn -  Level 18x Marksman\nStripewing -  Level 13x Bishop`
+                                value:
+                                    "🤍 __Wolftail - Level 200 Corsair__ 🤍\n" +
+                                    "Bunpaws - Level 200 Buccaneer\n" +
+                                    "Nweeky - Level 200 Bowmaster\n" +
+                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Stripewing - Level 13x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -71,7 +76,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `Wolftail - Level 200 Corsair\n🤍 __Bunpaws - Level 200 Buccaneer__ 🤍\nNweeky -  Level 200 Bowmaster\nPronghorn -  Level 18x Marksman\nStripewing -  Level 13x Bishop`
+                                value:
+                                    "Wolftail - Level 200 Corsair\n" +
+                                    "🤍 __Bunpaws - Level 200 Buccaneer__ 🤍\n" +
+                                    "Nweeky - Level 200 Bowmaster\n" +
+                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Stripewing - Level 13x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -93,7 +103,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `Wolftail - Level 200 Corsair\nBunpaws - Level 200 Buccaneer\n🤍 __Nweeky -  Level 200 Bowmaster__ 🤍\nPronghorn -  Level 18x Marksman\nStripewing -  Level 13x Bishop`
+                                value:
+                                    "Wolftail - Level 200 Corsair\n" +
+                                    "Bunpaws - Level 200 Buccaneer\n" +
+                                    "🤍 __Nweeky - Level 200 Bowmaster__ 🤍\n" +
+                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Stripewing - Level 13x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -115,7 +130,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `Wolftail - Level 200 Corsair\nBunpaws - Level 200 Buccaneer\nNweeky -  Level 200 Bowmaster\n🤍 __Pronghorn -  Level 18x Marksman__ 🤍\nStripewing -  Level 13x Bishop`
+                                value:
+                                    "Wolftail - Level 200 Corsair\n" +
+                                    "Bunpaws - Level 200 Buccaneer\n" +
+                                    "Nweeky - Level 200 Bowmaster\n" +
+                                    "🤍 __Pronghorn - Level 18x Marksman__ 🤍\n" +
+                                    "Stripewing - Level 13x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -132,12 +152,17 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1988} `, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `Wolftail - Level 200 Corsair\nBunpaws - Level 200 Buccaneer\nNweeky -  Level 200 Bowmaster\nPronghorn -  Level 18x Marksman\n🤍 __Stripewing -  Level 13x Bishop__ 🤍`
+                                value:
+                                    "Wolftail - Level 200 Corsair\n" +
+                                    "Bunpaws - Level 200 Buccaneer\n" +
+                                    "Nweeky - Level 200 Bowmaster\n" +
+                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "🤍 __Stripewing - Level 13x Bishop__ 🤍"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -162,12 +187,16 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __NLynx - Level 200 Night Lord__ 🤍\nAcinonyx - Level 17x Dark Knight\nLunarN - Level 16x Shadower\nNPanthera - Level 16x Bowmaster`
+                                value:
+                                    "🤍 __NLynx - Level 200 Night Lord__ 🤍\n" +
+                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "LunarN - Level 16x Shadower\n" +
+                                    "NPanthera - Level 16x Bowmaster"
                             }
                         )
                         .setColor("#F8A913")
@@ -184,12 +213,16 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `NLynx - Level 200 Night Lord\n🤍 __Acinonyx - Level 17x Dark Knight__ 🤍\nLunarN - Level 16x Shadower\nNPanthera - Level 16x Bowmaster`
+                                value:
+                                    "NLynx - Level 200 Night Lord\n" +
+                                    "🤍 __Acinonyx - Level 17x Dark Knight__ 🤍\n" +
+                                    "LunarN - Level 16x Shadower\n" +
+                                    "NPanthera - Level 16x Bowmaster"
                             }
                         )
                         .setColor("#F8A913")
@@ -206,12 +239,16 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `NLynx - Level 200 Night Lord\nAcinonyx - Level 17x Dark Knight\n🤍 __LunarN - Level 16x Shadower__ 🤍\nNPanthera - Level 16x Bowmaster`
+                                value:
+                                    "NLynx - Level 200 Night Lord\n" +
+                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "🤍 __LunarN - Level 16x Shadower__ 🤍\n" +
+                                    "NPanthera - Level 16x Bowmaster"
                             }
                         )
                         .setColor("#F8A913")
@@ -228,12 +265,16 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `NLynx - Level 200 Night Lord\nAcinonyx - Level 17x Dark Knight\nLunarN - Level 16x Shadower\n🤍 __NPanthera - Level 16x Bowmaster__ 🤍`
+                                value:
+                                    "NLynx - Level 200 Night Lord\n" +
+                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "LunarN - Level 16x Shadower\n" +
+                                    "🤍 __NPanthera - Level 16x Bowmaster__ 🤍"
                             }
                         )
                         .setColor("#F8A913")
@@ -377,7 +418,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -399,7 +440,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -421,7 +462,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -451,7 +492,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -473,7 +514,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -495,7 +536,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -525,7 +566,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Piet/Pietro", inline: true },
-                            { name: "Age:", value: `${currentYear - 2002}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2002} `, inline: true },
                             { name: "Country:", value: "Germany", inline: true },
                             { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                             {
@@ -555,7 +596,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2001}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
@@ -577,7 +618,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2001}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
@@ -607,7 +648,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -629,7 +670,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -651,7 +692,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -673,7 +714,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -703,7 +744,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "USA/Korea", inline: true },
                             { name: "Speaks:", value: "English, Korean", inline: true },
                             {
@@ -725,7 +766,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "USA/Korea", inline: true },
                             { name: "Speaks:", value: "English, Korean", inline: true },
                             {
@@ -745,6 +786,7 @@ bot.on('message', message => {
         }
 
         /* ----------------------------------------------- MEMBERS ----------------------------------------------- */
+        // David
         else if (name.toLowerCase() === "david") {
             message.reply("Here's info on David! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -755,7 +797,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "David", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "The Netherlands", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -774,6 +816,7 @@ bot.on('message', message => {
             member.start()
         }
 
+        // Rosa
         else if (name.toLowerCase() === "rosa") {
             message.reply("Here's info on Rosa! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -783,8 +826,8 @@ bot.on('message', message => {
                         title: 'Member of Crew',
                     })
                         .addFields(
-                            { name: "Name:", value: "Rose", inline: true },
-                            { name: "Age:", value: `${currentYear - 2005}`, inline: true },
+                            { name: "Name:", value: "Rosa", inline: true },
+                            { name: "Age:", value: `${currentYear - 2005} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
                             {
@@ -794,8 +837,8 @@ bot.on('message', message => {
                                     "N00BPR0 - Level 16x Bishop"
                             }
                         )
-                        .setColor("#DDDDDD"),
-                    // .setImage(""),
+                        .setColor("#DDDDDD")
+                        .setImage("https://i.ibb.co/sQwf9Hd/PalaRose.png"),
                     reactions: {
                         '❌': 'PalaRose',
                         '➡': 'N00BPR0'
@@ -807,8 +850,8 @@ bot.on('message', message => {
                         title: 'Member of Crew',
                     })
                         .addFields(
-                            { name: "Name:", value: "Rose", inline: true },
-                            { name: "Age:", value: `${currentYear - 2005}`, inline: true },
+                            { name: "Name:", value: "Rosa", inline: true },
+                            { name: "Age:", value: `${currentYear - 2005} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
                             {
@@ -818,8 +861,8 @@ bot.on('message', message => {
                                     "🤍 __N00BPR0 - Level 16x Bishop__ 🤍"
                             }
                         )
-                        .setColor("#DDDDDD"),
-                    // .setImage(""),
+                        .setColor("#DDDDDD")
+                        .setImage("https://i.ibb.co/FYDtJzq/INA.png"),
                     reactions: {
                         '⬅': 'PalaRose',
                         '❌': 'N00BPR0'
@@ -830,6 +873,7 @@ bot.on('message', message => {
         }
 
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
+        // Chris
         else if (name.toLowerCase() === "chris") {
             message.reply("Here's info on Chris! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -840,7 +884,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -862,7 +906,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -884,7 +928,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -906,7 +950,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996}`, inline: true },
+                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -945,7 +989,7 @@ else if (name.toLowerCase() === "<name>") {
                     })
                         .addFields(
                             { name: "Name:", value: "", inline: true },
-                            { name: "Age:", value: `${currentYear - }`, inline: true },
+                            { name: "Age:", value: `${ currentYear - } `, inline: true },
                             { name: "Country:", value: "", inline: true },
                             { name: "Speaks:", value: "", inline: true },
                             {

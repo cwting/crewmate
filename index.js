@@ -158,8 +158,7 @@ bot.on("message", async msg => {
                         "Bell\n" +
                         "Piet\n" +
                         "Gel\n" +
-                        "Lior\n" +
-                        "*will add more people as we go :)"
+                        "Lior"
                 },
                 {
                     name: 'Members',
