@@ -89,6 +89,10 @@ bot.on("message", async msg => {
 /* --------------------------------- GPQ ----------------------------------- */
 bot.on("message", async msg => {
     if (msg.content.toLowerCase() === "c.gpq") {
+        const gpqmsg = new Discord.MessageEmbed()
+            .setDescription(
+                "enter 4 items"
+            )
         gpq;
     }
 })

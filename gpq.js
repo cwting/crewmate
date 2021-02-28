@@ -68,9 +68,6 @@ bot.on('message', message => {
         if (!args.length) {
             return message.reply("Please enter item name.")
         }
-        else if (guesses.length != answer.length) {
-            return message.reply("Please enter 4 item names.")
-        }
         while (guess <= maxGuesses) {
             message.reply(
                 `Try #${guess}:\n` +
