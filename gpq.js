@@ -11,7 +11,7 @@ bot.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
     var tryNo = 1;
-    var maxGuesses = 7;
+    var maxTryNo = 7;
 
     function gpqStatues() {
         var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
@@ -68,7 +68,7 @@ bot.on('message', message => {
         if (!args.length) {
             return message.reply("Please enter item name.")
         }
-        while (guess <= maxGuesses) {
+        while (tryNo <= maxTryNo) {
             message.reply(
                 `Try #${guess}:\n` +
                 `${gpqStatues}\n` +
