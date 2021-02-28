@@ -70,7 +70,7 @@ bot.on('message', message => {
         }
         while (tryNo <= maxTryNo) {
             message.reply(
-                `Try #${guess}:\n` +
+                `Try #${tryNo}:\n` +
                 `${gpqStatues}\n` +
                 `${tries}`
             )
