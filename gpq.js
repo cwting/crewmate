@@ -10,10 +10,10 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+    var tryNo = 1;
+    var maxGuesses = 7;
 
     function gpqStatues() {
-        var tryNo = 1;
-        var maxGuesses = 7;
         var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
         // answers
