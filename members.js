@@ -7,19 +7,6 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (members.js)`); // BOT online
 });
 
-/*
-List of Members:
-- Nivi
-- Naomi
-- Marc
-- Antonio
-- Bell
-- Piet/Pietro
-- Gel
-- Lior
-- Jon
-*/
-
 const prefix = "c.";
 bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -305,7 +292,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __xKook007 - Level 200 Night Lord__ 🤍\nVaiiente - Level 19x Dark Knight\nRooka - Level 14x Corsair\nLeuca - Level 13x Night Lord\nJyeong - Level 13x Bishop`
+                                value: 
+                                "🤍 __xKook007 - Level 200 Night Lord__ 🤍\n" +
+                                "Vaiiente - Level 19x Dark Knight\n" +
+                                "Rooka - Level 14x Corsair\n" +
+                                "Leuca - Level 13x Night Lord\n" +
+                                "Jyeong - Level 13x Bishop"
                             }
                         )
                         .setColor("#3455EB")
@@ -327,7 +319,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `xKook007 - Level 200 Night Lord\n🤍 __Vaiiente - Level 19x Dark Knight__ 🤍\nRooka - Level 14x Corsair\nLeuca - Level 13x Night Lord\nJyeong - Level 13x Bishop`
+                                value: 
+                                "xKook007 - Level 200 Night Lord\n" +
+                                "🤍 __Vaiiente - Level 19x Dark Knight__ 🤍\n" +
+                                "Rooka - Level 14x Corsair\n" +
+                                "Leuca - Level 13x Night Lord\n" +
+                                "Jyeong - Level 13x Bishop"
                             }
                         )
                         .setColor("3455EB")
@@ -349,7 +346,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `xKook007 - Level 200 Night Lord\nVaiiente - Level 19x Dark Knight\n🤍 __Rooka - Level 14x Corsair__ 🤍\nLeuca - Level 13x Night Lord\nJyeong - Level 13x Bishop`
+                                value:
+                                "xKook007 - Level 200 Night Lord\n" +
+                                "Vaiiente - Level 19x Dark Knight\n" +
+                                "🤍 __Rooka - Level 14x Corsair__ 🤍\n" +
+                                "Leuca - Level 13x Night Lord\n" +
+                                "Jyeong - Level 13x Bishop"
                             }
                         )
                         .setColor("3455EB")
@@ -371,7 +373,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `xKook007 - Level 200 Night Lord\nVaiiente - Level 19x Dark Knight\nRooka - Level 14x Corsair\n🤍 __Leuca - Level 13x Night Lord__ 🤍\nJyeong - Level 13x Bishop`
+                                value: 
+                                "xKook007 - Level 200 Night Lord\n" +
+                                "Vaiiente - Level 19x Dark Knight\n" +
+                                "Rooka - Level 14x Corsair\n" +
+                                "🤍 __Leuca - Level 13x Night Lord__ 🤍\n" +
+                                "Jyeong - Level 13x Bishop"
                             }
                         )
                         .setColor("3455EB")
@@ -393,7 +400,12 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `xKook007 - Level 200 Night Lord\nVaiiente - Level 19x Dark Knight\nRooka - Level 14x Corsair\nLeuca - Level 13x Night Lord\n🤍 __Jyeong - Level 13x Bishop__ 🤍`
+                                value: 
+                                "xKook007 - Level 200 Night Lord\n" +
+                                "Vaiiente - Level 19x Dark Knight\n" +
+                                "Rooka - Level 14x Corsair\n" +
+                                "Leuca - Level 13x Night Lord\n" +
+                                "🤍 __Jyeong - Level 13x Bishop__ 🤍"
                             }
                         )
                         .setColor("3455EB")
@@ -423,7 +435,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __ArchWar - Level 200 Bowmaster__ 🤍\nBadShooter - Level 19x Corsair\nGreenyHeaven - Level 13x Bishop`
+                                value: 
+                                "🤍 __ArchWar - Level 200 Bowmaster__ 🤍\n" +
+                                "BadShooter - Level 19x Corsair\n" +
+                                "GreenyHeaven - Level 13x Bishop"
                             }
                         )
                         .setColor("#384C4F")
@@ -445,7 +460,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `ArchWar - Level 200 Bowmaster\n🤍 __BadShooter - Level 19x Corsair__ 🤍\nGreenyHeaven - Level 13x Bishop`
+                                value: 
+                                "ArchWar - Level 200 Bowmaster\n" +
+                                "🤍 __BadShooter - Level 19x Corsair__ 🤍\n" +
+                                "GreenyHeaven - Level 13x Bishop"
                             }
                         )
                         .setColor("#384C4F")
@@ -467,7 +485,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `ArchWar - Level 200 Bowmaster\nBadShooter - Level 19x Corsair\n🤍 __GreenyHeaven - Level 13x Bishop__ 🤍`
+                                value: 
+                                "ArchWar - Level 200 Bowmaster\n" +
+                                "BadShooter - Level 19x Corsair\n" +
+                                "🤍 __GreenyHeaven - Level 13x Bishop__ 🤍"
                             }
                         )
                         .setColor("#384C4F")
@@ -497,7 +518,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __DingTongBell - Level 200 Hero__ 🤍\nBadPuncher - Level 19x Buccaneer\nTingTongBell - Level 18x Bishop`
+                                value: 
+                                "🤍 __DingTongBell - Level 200 Hero__ 🤍\n" +
+                                "BadPuncher - Level 19x Buccaneer\n" +
+                                "TingTongBell - Level 18x Bishop"
                             }
                         )
                         .setColor("#F83B3B")
@@ -519,7 +543,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `DingTongBell - Level 200 Hero\n🤍 __BadPuncher - Level 19x Buccaneer__ 🤍\nTingTongBell - Level 18x Bishop`
+                                value:
+                                "DingTongBell - Level 200 Hero\n" +
+                                "🤍 __BadPuncher - Level 19x Buccaneer__ 🤍\n" +
+                                "TingTongBell - Level 18x Bishop"
                             }
                         )
                         .setColor("#F83B3B")
@@ -541,7 +568,10 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `DingTongBell - Level 200 Hero\nBadPuncher - Level 19x Buccaneer\n🤍 __TingTongBell - Level 18x Bishop__ 🤍`
+                                value:
+                                "DingTongBell - Level 200 Hero\n" +
+                                "BadPuncher - Level 19x Buccaneer\n" +
+                                "🤍 __TingTongBell - Level 18x Bishop__ 🤍"
                             }
                         )
                         .setColor("#F83B3B")
@@ -571,7 +601,7 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __MazeRunner - Level 200 Night Lord__ 🤍`
+                                value: "🤍 __MazeRunner - Level 200 Night Lord__ 🤍"
                             }
                         )
                         .setColor("#00FFF9")
@@ -601,7 +631,9 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `🤍 __xCintare - Level 200 Dark Knight__ 🤍\nMewleficent - Level 18x Bishop`
+                                value: 
+                                "🤍 __xCintare - Level 200 Dark Knight__ 🤍\n" +
+                                "Mewleficent - Level 18x Bishop"
                             }
                         )
                         .setColor("#5C44D2")
@@ -623,7 +655,9 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: `xCintare - Level 200 Dark Knight\n🤍 __Mewleficent - Level 18x Bishop__ 🤍`
+                                value: 
+                                "xCintare - Level 200 Dark Knight\n" +
+                                "🤍 __Mewleficent - Level 18x Bishop__ 🤍"
                             }
                         )
                         .setColor("#5C44D2")
@@ -766,7 +800,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __S2Hanna - Level 19x Dark Knight__ 🤍\n" +
+                                    "🤍 __S2Hanna - Level 200 Dark Knight__ 🤍\n" +
                                     "iJSK - Level 19x Night Lord"
                             }
                         )
@@ -790,7 +824,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "S2Hanna - Level 19x Dark Knight\n" +
+                                    "S2Hanna - Level 200 Dark Knight\n" +
                                     "🤍 __iJSK - Level 19x Night Lord__ 🤍"
                             }
                         )
@@ -1021,7 +1055,7 @@ else if (name.toLowerCase() === "<name>") {
                 {
                     name: '<IGN>',
                     content: new MessageEmbed({
-                        title: 'OPT',
+                        title: 'TITLE',
                     })
                         .addFields(
                             { name: "Name:", value: "", inline: true },
