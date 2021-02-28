@@ -26,9 +26,6 @@ bot.on('message', message => {
     }
 
     function tries() {
-        message.reply(
-            "guess ty"
-        )
         // guesses
         var g1 = args[0].toLowerCase();
         var g2 = args[1].toLowerCase();
@@ -69,11 +66,8 @@ bot.on('message', message => {
             return message.reply("Please enter item name.")
         }
         while (tryNo <= maxTryNo) {
-            message.reply(
-                `Try #${tryNo}:\n` +
-                `${gpqStatues}\n` +
-                `${tries}`
-            )
+            gpqStatues;
+            tries;
         }
     }
 })
