@@ -2,6 +2,7 @@ var member = require('./members.js');
 var cwkbon = require('./cwkbon.js');
 var hpwash = require("./hpwash.js");
 var apcalc = require('./apcalc.js')
+var gpq = require('./gpq.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -84,6 +85,13 @@ bot.on("message", async msg => {
         cwkbon;
     }
 });
+
+/* --------------------------------- GPQ ----------------------------------- */
+bot.on("message", async msg => {
+    if (msg.content.toLowerCase() === "c.gpq") {
+        gpq;
+    }
+})
 
 /* ------------------------------- HP WASH ------------------------------- */
 bot.on("message", async msg => {
