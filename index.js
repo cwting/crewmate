@@ -204,10 +204,6 @@ bot.on("message", async msg => {
             .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/");
         msg.channel.send(zakmsg);
     }
-
-    else {
-        msg.channel.send("Command not found.")
-    }
 });
 
 bot.login(process.env.TOKEN);
