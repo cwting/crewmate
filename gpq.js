@@ -16,12 +16,14 @@ bot.on('message', message => {
     var maxTryNo = 7;
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
+    var start = args[0].toLowerCase()
+
     if (command === "gpq") {
         // if empty
         if (!args.length) {
             return
         }
-        else if (args[0].toLowerCase() === "start") {
+        else if (start === "start") {
             // answers
             var a1 = items[Math.floor(Math.random() * 4)];
             var a2 = items[Math.floor(Math.random() * 4)];
