@@ -21,7 +21,7 @@ bot.on('message', message => {
     var g3 = args[2];
     var g4 = args[3];
 
-    if (command === "gpq") {
+    if (command === "start") {
         // if empty
         if (!args.length) {
             return
