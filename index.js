@@ -33,11 +33,9 @@ bot.on("message", async msg => {
             )
         msg.channel.send(helpmsg);
     }
-})
 
-/* ------------------------------- ABOUT ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.about") {
+    /* ------------------------------- ABOUT ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.about") {
         const aboutmsg = new Discord.MessageEmbed()
             .setColor('#DDDDDD')
             .setThumbnail('https://i.ibb.co/8zMHfsR/logo.png')
@@ -45,11 +43,9 @@ bot.on("message", async msg => {
             .setDescription("We are a trust-based family where help is always available and nobody gets left behind. 😊");
         msg.channel.send(aboutmsg);
     }
-})
 
-// /* ------------------------------- APQ ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.apq") {
+    // /* ------------------------------- APQ ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.apq") {
         const apqmsg = new Discord.MessageEmbed()
             .setColor("#223DDD")
             .setTitle('APQ Stage 2')
@@ -57,11 +53,9 @@ bot.on("message", async msg => {
             .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/");
         msg.channel.send(apqmsg);
     }
-});
 
-/* ------------------------------- AP CALCULATOR ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.ap") {
+    /* ------------------------------- AP CALCULATOR ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.ap") {
         const apcalcmsg = new Discord.MessageEmbed()
             .setColor("#FF0000")
             .setTitle("Calculate AP")
@@ -77,29 +71,23 @@ bot.on("message", async msg => {
         msg.channel.send(apcalcmsg);
         apcalc;
     }
-});
-
-/* ------------------------------- CWK ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.cwkbon") {
+    /* ------------------------------- CWK ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.cwkbon") {
         cwkbon;
     }
-});
 
-/* --------------------------------- GPQ ----------------------------------- */
-// bot.on("message", async msg => {
-//     if (msg.content.toLowerCase() === "c.gpq") {
-//         const gpqmsg = new Discord.MessageEmbed()
-//             .setDescription(
-//                 "enter 4 items"
-//             )
-//         gpq;
-//     }
-// })
+    /* --------------------------------- GPQ ----------------------------------- */
+    //  else if (msg.content.toLowerCase() === "c.gpq") {
+    //         const gpqmsg = new Discord.MessageEmbed()
+    //             .setDescription(
+    //                 "enter 4 items"
+    //             )
+    //         gpq;
+    //     }
+    // })
 
-/* ------------------------------- HP WASH ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.hpwash") {
+    /* ------------------------------- HP WASH ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.hpwash") {
         const hpwashmsg = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('HP Wash')
@@ -115,11 +103,9 @@ bot.on("message", async msg => {
         msg.channel.send(hpwashmsg);
         hpwash;
     }
-});
 
-/* ------------------------------- LEECH ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.leech") {
+    /* ------------------------------- LEECH ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.leech") {
         const leechmsg = new Discord.MessageEmbed()
             .setColor("#DDDDDD")
             .setTitle("Leeching Guide")
@@ -147,11 +133,9 @@ bot.on("message", async msg => {
             .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
         msg.channel.send(leechmsg);
     }
-});
 
-/* ------------------------------- MEMBERS ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.member") {
+    /* ------------------------------- MEMBERS ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.member") {
         const membermsg = new Discord.MessageEmbed()
             .setColor('#DDDDDD')
             .setTitle('Crew\'s Members')
@@ -187,28 +171,22 @@ bot.on("message", async msg => {
         msg.channel.send(membermsg);
         member;
     }
-});
 
-/* ------------------------------- RANDOM CHANNEL PICKER ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.ch") {
+    /* ------------------------------- RANDOM CHANNEL PICKER ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.ch") {
         var randomCh = Math.floor(Math.random() * 20) + 1;
         msg.reply(`I have picked Channel ${randomCh} for you!`)
     }
-})
 
-/* ------------------------------- RANDOM GACHA LOCATION PICKER ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.gach") {
+    /* ------------------------------- RANDOM GACHA LOCATION PICKER ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.gach") {
         const locationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
         var locationArrayNum = Math.floor(Math.random() * 10);
         msg.reply(`I have picked ${locationArray[locationArrayNum]} for you!`)
     }
-})
 
-/* ------------------------------- ZAK ------------------------------- */
-bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.zak") {
+    /* ------------------------------- ZAK ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.zak") {
         const zakmsg = new Discord.MessageEmbed()
             .setColor("#71502E")
             .setTitle("Zakum Pre-Quest Stage 1")
@@ -225,6 +203,10 @@ bot.on("message", async msg => {
             )
             .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/");
         msg.channel.send(zakmsg);
+    }
+
+    else {
+        msg.channel.send("Command not found.")
     }
 });
 
