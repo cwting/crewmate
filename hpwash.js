@@ -25,7 +25,7 @@ bot.on('message', message => {
             return
         }
         // beginner
-        else if (job.toLowerCase() === 'beginner' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'beginner') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 8;
             var avgHPGain = 10;
             var mpLoss = 8;
@@ -36,7 +36,7 @@ bot.on('message', message => {
             var avgHPGained = numOfWash * avgHPGain;
         }
         // spearman
-        else if (job.toLowerCase() === 'spearman' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'spearman') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 50;
             var avgHPGain = 52;
             var mpLoss = 4;
@@ -47,7 +47,7 @@ bot.on('message', message => {
             var avgHPGained = numOfWash * avgHPGain;
         }
         // fighter 
-        else if (job.toLowerCase() === 'fighter' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'fighter') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 50;
             var avgHPGain = 52;
             var mpLoss = 4;
@@ -58,7 +58,7 @@ bot.on('message', message => {
             var avgHPGained = numOfWash * avgHPGain;
         }
         // page
-        else if (job.toLowerCase() === 'page' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'page') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 50;
             var avgHPGain = 52;
             var mpLoss = 4;
@@ -69,7 +69,7 @@ bot.on('message', message => {
             var avgHPGained = numOfWash * avgHPGain;
         }
         // archer
-        else if (job.toLowerCase() === 'archer' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'archer') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 16;
             var avgHPGain = 18;
             var mpLoss = 12;
@@ -80,7 +80,7 @@ bot.on('message', message => {
             var avgHPGained = numOfWash * avgHPGain;
         }
         // thief
-        else if (job.toLowerCase() === 'thief' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'thief') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var mpLoss = 12;
             var minMP = (14 * level) + 148;
             var extraMP = cleanMP - minMP
@@ -113,7 +113,7 @@ bot.on('message', message => {
             }
         }
         // brawler
-        else if (job.toLowerCase() === 'brawler' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'brawler') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
@@ -144,7 +144,7 @@ bot.on('message', message => {
             }
         }
         // gunslinger
-        else if (job.toLowerCase() === 'gunslinger' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'gunslinger') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var mpLoss = 16;
             var minMP = (18 * level) + 111;
             var extraMP = cleanMP - minMP
@@ -175,7 +175,7 @@ bot.on('message', message => {
             }
         }
         // magician
-        else if (job.toLowerCase() === 'magician' && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        else if ((job.toLowerCase() === 'magician') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 10;
             var avgHPGain = 15;
             var mpLossS0 = 20;

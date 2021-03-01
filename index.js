@@ -86,7 +86,9 @@ bot.on("message", async msg => {
                 "To start: type `c.gpq start`"
             )
         msg.channel.send(gpqmsg);
-        gpq;
+        if (msg.content.toLowerCase() === "c.gpq start") {
+            gpq;
+        }
     }
 
     /* ------------------------------- HP WASH ------------------------------- */
