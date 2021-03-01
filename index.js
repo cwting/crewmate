@@ -80,7 +80,8 @@ bot.on("message", async msg => {
     else if (msg.content.toLowerCase() === "c.gpq") {
         const gpqmsg = new Discord.MessageEmbed()
             .setDescription(
-                "enter 4 items"
+                "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
+                "To start: type `c.gpq start`"
             )
         msg.channel.send(gpqmsg);
         gpq;
