@@ -82,7 +82,11 @@ bot.on("message", async msg => {
             .setColor("#DDDDDD")
             .setTitle("GPQ Stage 3 Practice")
             .setDescription(
-                "Try out GPQ's Stage 3, Fountain of the Wiseman."
+                "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
+                "Enter in the following format:\n" +
+                "`c.gpq [1] [2] [3] [4]`\n" +
+                "`[1]/[2]/[3]/[4]:`\n" +
+                "`s` - scroll,\n`m` - medal\n`w` - wine\n`f` - food"
             )
         msg.channel.send(gpqmsg);
         gpq;
