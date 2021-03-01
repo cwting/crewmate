@@ -44,6 +44,7 @@ bot.on('message', message => {
 
             var correctPcorrectI = 0;
             var wrongPcorrectI = 0;
+            var wrongPwrongI = 0;
 
             for (i = 0; i < tempAnswer.length; i++) {
                 if (guesses[i] == tempAnswer[i]) {
