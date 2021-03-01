@@ -29,11 +29,11 @@ bot.on('message', message => {
 
         while (tryNo <= maxTryNo) {
             // guesses
-            var g1 = args[1];
-            var g2 = args[2];
-            var g3 = args[3];
-            var g4 = args[4];
-            guesses = [g1, g2, g3, g4];
+            var g1 = args[0];
+            var g2 = args[1];
+            var g3 = args[2];
+            var g4 = args[3];
+            var guesses = [g1, g2, g3, g4];
             console.log("guesses: " + guesses)
             var tempAnswer = [a1, a2, a3, a4];
 
