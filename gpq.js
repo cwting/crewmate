@@ -16,12 +16,12 @@ bot.on('message', message => {
     var maxTryNo = 7;
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
-    var g1 = args[0];
-    var g2 = args[1];
-    var g3 = args[2];
-    var g4 = args[3];
+    var g1 = args[1];
+    var g2 = args[2];
+    var g3 = args[3];
+    var g4 = args[4];
 
-    if (command === "start") {
+    if (command === "gpq" && args[0] === "start") {
         // if empty
         if (!args.length) {
             return
