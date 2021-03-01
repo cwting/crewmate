@@ -10,8 +10,6 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    console.log("args: " + args)
-    console.log("command: " + command)
     var tryNo = 1;
     var maxTryNo = 7;
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
@@ -30,7 +28,6 @@ bot.on('message', message => {
         console.log("answer: " + answer)
 
         while (tryNo <= maxTryNo) {
-            message.channel.send("inside???? xd")
             // guesses
             var g1 = args[1];
             var g2 = args[2];
@@ -39,7 +36,6 @@ bot.on('message', message => {
             guesses = [g1, g2, g3, g4];
             console.log("guesses: " + guesses)
             var tempAnswer = [a1, a2, a3, a4];
-            console.log("tempAnswer: " + tempAnswer)
 
             var correctPcorrectI = 0;
             var wrongPcorrectI = 0;
