@@ -86,7 +86,7 @@ bot.on("message", async msg => {
                 "Enter in the following format:\n" +
                 "`c.gpq [1] [2] [3] [4]`\n" +
                 "`[1]/[2]/[3]/[4]:`\n" +
-                "`s` - scroll,\n`m` - medal\n`w` - wine\n`f` - food"
+                "`s - scroll`\n`m - medal`\n`w - wine`\n`f - food`"
             )
         msg.channel.send(gpqmsg);
         gpq;

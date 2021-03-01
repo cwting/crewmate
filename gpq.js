@@ -10,8 +10,6 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var tryNo = 1;
-    var maxTryNo = 7;
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
     if (command === "gpq") {
@@ -27,7 +25,7 @@ bot.on('message', message => {
         answer = [a1, a2, a3, a4];
         console.log("answer: " + answer)
 
-        while (tryNo <= maxTryNo) {
+        for (let tryNo = 1; tryNo <= 7; tryNo++) {
             // guesses
             var g1 = args[0];
             var g2 = args[1];
@@ -82,8 +80,6 @@ bot.on('message', message => {
             else if (correctPcorrectI == 4) {
                 message.reply("CLEAR!")
             }
-
-            tryNo += 1;
         }
     }
 })
