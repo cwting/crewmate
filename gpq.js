@@ -67,7 +67,7 @@ bot.on('message', message => {
     //         message.reply("CLEAR!")
     //     }
     // }
-}
 })
+
 
 bot.login(process.env.TOKEN);
