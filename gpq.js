@@ -50,7 +50,7 @@ bot.on('message', message => {
             for (i = 0; i < tempAnswer.length; i++) {
                 for (j = 0; j < tempAnswer.length; j++) {
                     if (i !== j) {
-                        if (guess[i] == tempAnswer[j]) {
+                        if (guesses[i] == tempAnswer[j]) {
                             wrongPcorrectI += 1;
                         }
                     }
