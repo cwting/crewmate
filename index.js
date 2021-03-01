@@ -82,12 +82,9 @@ bot.on("message", async msg => {
             .setColor("#DDDDDD")
             .setTitle("GPQ Stage 3 Practice")
             .setDescription(
-                "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
-                "To start: type `c.gpq start`"
+                "Try out GPQ's Stage 3, Fountain of the Wiseman."
             )
         msg.channel.send(gpqmsg);
-    }
-    else if (msg.content.toLowerCase() === "c.gpq start") {
         gpq;
     }
 

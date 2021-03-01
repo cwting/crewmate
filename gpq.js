@@ -16,12 +16,7 @@ bot.on('message', message => {
     var maxTryNo = 7;
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
-    var g1 = args[1];
-    var g2 = args[2];
-    var g3 = args[3];
-    var g4 = args[4];
-
-    if (command === "gpq" && args[0] === "start") {
+    if (command === "gpq") {
         // if empty
         if (!args.length) {
             return
@@ -37,6 +32,10 @@ bot.on('message', message => {
         while (tryNo <= maxTryNo) {
             message.channel.send("inside???? xd")
             // guesses
+            var g1 = args[1];
+            var g2 = args[2];
+            var g3 = args[3];
+            var g4 = args[4];
             guesses = [g1, g2, g3, g4];
             console.log("guesses: " + guesses)
             var tempAnswer = [a1, a2, a3, a4];
