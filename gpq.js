@@ -70,13 +70,13 @@ bot.on('message', message => {
                 }
             }
 
-            if (wrongPwrongI > 1 && wrongPwrongI <= 4) {
+            if (wrongPwrongI >= 1 && wrongPwrongI <= 4) {
                 message.channel.send(
                     `${wrongPwrongI} vassals have received unknown offering(s)\n` +
                     `This is attempt #${tryNo}`
                 )
             }
-            else if ((wrongPcorrectI > 1 && wrongPcorrectI <=4) && (wrongPwrongI > 1 && wrongPwrongI <= 4)) {
+            else if ((wrongPcorrectI >= 1 && wrongPcorrectI <= 4) && (wrongPwrongI >= 1 && wrongPwrongI <= 4)) {
                 message.channel.send(
                     `${wrongPcorrectI} vassals are pleased with their offering(s)\n` +
                     `${wrongPwrongI} vassals have received unknown offering(s)\n` +
@@ -84,7 +84,7 @@ bot.on('message', message => {
 
                 )
             }
-            else if (correctPcorrectI = 4) {
+            else if (correctPcorrectI == 4) {
                 message.reply("CLEAR!")
             }
 
