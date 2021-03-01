@@ -79,6 +79,8 @@ bot.on("message", async msg => {
     /* --------------------------------- GPQ ----------------------------------- */
     else if (msg.content.toLowerCase() === "c.gpq") {
         const gpqmsg = new Discord.MessageEmbed()
+            .setColor("#DDDDDD")
+            .setTitle("GPQ Stage 3 Practice")
             .setDescription(
                 "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
                 "To start: type `c.gpq start`"
