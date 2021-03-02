@@ -93,24 +93,34 @@ bot.on('message', message => {
         )
 
     if (command === "gpq") {
+        // if empty
         if (!args.length) {
             return
         }
-        let filter = m => m.author.id === message.author.id;
-        message.channel.send(gpqmsg).then(() => {
-            message.channel.awaitMessages(filter, {
-                max: 1,
-                time: 600000,
-                errors: ['time']
-            })
-                .then(message => {
-                    message = message.first()
-                    solver();
+        while (tryNo <= maxTryNo) {
+            let filter = m => m.author.id === message.author.id
+            message.channel.send(gpqmsg).then(() => {
+                message.channel.awaitMessages(filter, {
+                    max: 7,
+                    time: 600000,
+                    errors: ['time']
                 })
-                .catch(collected => {
-                    message.channel.send('Timeout');
-                });
-        })
+                    .then(message => {
+                        message = message.first();
+                        solver();
+                        // if (message.content.toUpperCase() == 'YES' || message.content.toUpperCase() == 'Y') {
+                        //     message.channel.send(`Deleted`)
+                        // } else if (message.content.toUpperCase() == 'NO' || message.content.toUpperCase() == 'N') {
+                        //     message.channel.send(`Terminated`)
+                        // } else {
+                        //     message.channel.send(`Terminated: Invalid Response`)
+                        // }
+                    })
+                    .catch(collected => {
+                        message.channel.send('Timeout');
+                    });
+            })
+        }
     }
 })
 

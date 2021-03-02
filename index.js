@@ -13,7 +13,10 @@ bot.on("ready", () => {
 
 /* ------------------------------- HELP ------------------------------- */
 bot.on("message", async msg => {
-    if (msg.content.toLowerCase() === "c.help") {
+    if (msg.author.bot) {
+        return
+    }
+    else if (msg.content.toLowerCase() === "c.help") {
         const helpmsg = new Discord.MessageEmbed()
             .setColor('#DDDDDD')
             .setThumbnail('https://i.ibb.co/8zMHfsR/logo.png')
