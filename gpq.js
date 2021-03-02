@@ -97,16 +97,13 @@ bot.on('message', message => {
                     message.reply("CLEAR!")
                 }
             }
+            while (tryNo <= maxTryNo)
+            // })
+            // .catch(collected => {
+            //     message.channel.send('Timeout');
+            // });
+            // })
         }
-        while (tryNo <= maxTryNo)
-        // })
-        // .catch(collected => {
-        //     message.channel.send('Timeout');
-        // });
-        // })
     }
 })
-
-
-
 bot.login(process.env.TOKEN);
