@@ -2,7 +2,7 @@ var member = require('./members.js');
 var cwkbon = require('./cwkbon.js');
 var hpwash = require("./hpwash.js");
 var apcalc = require('./apcalc.js')
-// var gpq = require('./gpq.js');
+var gpq = require('./gpq.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -77,20 +77,20 @@ bot.on("message", async msg => {
     }
 
     /* --------------------------------- GPQ ----------------------------------- */
-    // else if (msg.content.toLowerCase() === "c.gpq") {
-    //     const gpqmsg = new Discord.MessageEmbed()
-    //         .setColor("#DDDDDD")
-    //         .setTitle("GPQ Stage 3 Practice")
-    //         .setDescription(
-    //             "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
-    //             "Enter in the following format:\n" +
-    //             "`c.gpq [1] [2] [3] [4]`\n" +
-    //             "`[1]/[2]/[3]/[4]:`\n" +
-    //             "`s - scroll`\n`m - medal`\n`w - wine`\n`f - food`"
-    //         )
-    //     msg.channel.send(gpqmsg);
-    //     gpq;
-    // }
+    else if (msg.content.toLowerCase() === "c.gpq") {
+        const gpqmsg = new Discord.MessageEmbed()
+            .setColor("#DDDDDD")
+            .setTitle("GPQ Stage 3 Practice")
+            .setDescription(
+                "Try out GPQ's Stage 3, Fountain of the Wiseman.\n" +
+                "Enter in the following format:\n" +
+                "`c.gpq [1] [2] [3] [4]`\n" +
+                "`[1]/[2]/[3]/[4]:`\n" +
+                "`s - scroll`\n`m - medal`\n`w - wine`\n`f - food`"
+            )
+        msg.channel.send(gpqmsg);
+        gpq;
+    }
 
     /* ------------------------------- HP WASH ------------------------------- */
     else if (msg.content.toLowerCase() === "c.hpwash") {

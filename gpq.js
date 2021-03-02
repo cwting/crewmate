@@ -12,7 +12,7 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
 
-    if (command === "gpq") {
+    /*if (command === "gpq") {
         // if empty
         if (!args.length) {
             return
@@ -81,8 +81,33 @@ bot.on('message', message => {
                 message.reply("CLEAR!")
             }
         }
+    }*/
+
+    if (command === "gpq") {
+        let filter = m => m.author.id === message.author.id;
+        message.channel.send(`Are you sure to delete all data? \`YES\` / \`NO\``).then(() => {
+            message.channel.awaitMessages(filter, {
+                max: 1,
+                time: 600000,
+                errors: ['time']
+            })
+                .then(message => {
+                    message = message.first()
+                    if (message.content.toUpperCase() == 'YES' || message.content.toUpperCase() == 'Y') {
+                        message.channel.send(`Deleted`)
+                    } else if (message.content.toUpperCase() == 'NO' || message.content.toUpperCase() == 'N') {
+                        message.channel.send(`Terminated`)
+                    } else {
+                        message.channel.send(`Terminated: Invalid Response`)
+                    }
+                })
+                .catch(collected => {
+                    message.channel.send('Timeout');
+                });
+        })
     }
 })
+
 
 
 bot.login(process.env.TOKEN);
