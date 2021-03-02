@@ -16,7 +16,7 @@ var a4 = items[Math.floor(Math.random() * 4)];
 answer = [a1, a2, a3, a4];
 console.log("answer: " + answer)
 
-function solver() {
+function solver(message) {
     while (tryNo <= maxTryNo) {
         // guesses
         var g1 = args[0];
@@ -97,30 +97,28 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
-        while (tryNo <= maxTryNo) {
-            let filter = m => m.author.id === message.author.id
-            message.channel.send(gpqmsg).then(() => {
-                message.channel.awaitMessages(filter, {
-                    max: 7,
-                    time: 600000,
-                    errors: ['time']
-                })
-                    .then(message => {
-                        message = message.first();
-                        solver();
-                        // if (message.content.toUpperCase() == 'YES' || message.content.toUpperCase() == 'Y') {
-                        //     message.channel.send(`Deleted`)
-                        // } else if (message.content.toUpperCase() == 'NO' || message.content.toUpperCase() == 'N') {
-                        //     message.channel.send(`Terminated`)
-                        // } else {
-                        //     message.channel.send(`Terminated: Invalid Response`)
-                        // }
-                    })
-                    .catch(collected => {
-                        message.channel.send('Timeout');
-                    });
+        let filter = m => m.author.id === message.author.id
+        message.channel.send(gpqmsg).then(() => {
+            message.channel.awaitMessages(filter, {
+                max: 7,
+                time: 600000,
+                errors: ['time']
             })
-        }
+                .then(message => {
+                    message = message.first();
+                    solver(message);
+                    // if (message.content.toUpperCase() == 'YES' || message.content.toUpperCase() == 'Y') {
+                    //     message.channel.send(`Deleted`)
+                    // } else if (message.content.toUpperCase() == 'NO' || message.content.toUpperCase() == 'N') {
+                    //     message.channel.send(`Terminated`)
+                    // } else {
+                    //     message.channel.send(`Terminated: Invalid Response`)
+                    // }
+                })
+                .catch(collected => {
+                    message.channel.send('Timeout');
+                });
+        })
     }
 })
 
