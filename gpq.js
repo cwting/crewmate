@@ -50,7 +50,7 @@ bot.on('message', message => {
         //             message = message.first();
 
         message.channel.send("meow")
-        while (tryNo <= maxTryNo) {
+        do {
             // guesses
             var g1 = args[0];
             var g2 = args[1];
@@ -106,6 +106,7 @@ bot.on('message', message => {
                 message.reply("CLEAR!")
             }
         }
+        while (tryNo <= maxTryNo)
         // })
         // .catch(collected => {
         //     message.channel.send('Timeout');
