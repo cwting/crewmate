@@ -39,71 +39,63 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
-        // let filter = m => m.author.id === message.author.id
-        // message.channel.send(gpqmsg).then(() => {
-        //     message.channel.awaitMessages(filter, {
-        //         max: 7,
-        //         time: 600000,
-        //         errors: ['time']
-        //     })
-        //         .then(message => {
-        //             message = message.first();
+        else {
+            message.channel.send("meow")
+            do {
+                // guesses
+                var g1 = args[0];
+                var g2 = args[1];
+                var g3 = args[2];
+                var g4 = args[3];
+                var guesses = [g1, g2, g3, g4];
+                // console.log("guesses: " + guesses)
+                var tempAnswer = [a1, a2, a3, a4];
 
-        message.channel.send("meow")
-        do {
-            // guesses
-            var g1 = args[0];
-            var g2 = args[1];
-            var g3 = args[2];
-            var g4 = args[3];
-            var guesses = [g1, g2, g3, g4];
-            console.log("guesses: " + guesses)
-            var tempAnswer = [a1, a2, a3, a4];
+                var correctPcorrectI = 0;
+                var wrongPcorrectI = 0;
+                var wrongPwrongI = 0;
 
-            var correctPcorrectI = 0;
-            var wrongPcorrectI = 0;
-            var wrongPwrongI = 0;
-
-            for (i = 0; i < tempAnswer.length; i++) {
-                if (guesses[i] == tempAnswer[i]) {
-                    correctPcorrectI += 1;
+                for (i = 0; i < tempAnswer.length; i++) {
+                    if (guesses[i] == tempAnswer[i]) {
+                        correctPcorrectI += 1;
+                    }
                 }
-            }
-            for (i = 0; i < tempAnswer.length; i++) {
-                for (j = 0; j < tempAnswer.length; j++) {
-                    if (i !== j) {
-                        if (guesses[i] == tempAnswer[j]) {
-                            wrongPcorrectI += 1;
+                for (i = 0; i < tempAnswer.length; i++) {
+                    for (j = 0; j < tempAnswer.length; j++) {
+                        if (i !== j) {
+                            if (guesses[i] == tempAnswer[j]) {
+                                wrongPcorrectI += 1;
+                            }
                         }
                     }
                 }
-            }
-            for (i = 0; i < tempAnswer.length; i++) {
-                for (j = 0; j < tempAnswer.length; j++) {
-                    if (i !== j) {
-                        if (guesses[i] != tempAnswer[j]) {
-                            wrongPwrongI += 1;
+                for (i = 0; i < tempAnswer.length; i++) {
+                    for (j = 0; j < tempAnswer.length; j++) {
+                        if (i !== j) {
+                            if (guesses[i] != tempAnswer[j]) {
+                                wrongPwrongI += 1;
+                            }
                         }
                     }
                 }
-            }
 
-            if (wrongPwrongI >= 1 && wrongPwrongI <= 4) {
-                message.channel.send(
-                    `${wrongPwrongI} vassals have received unknown offering(s)\n` +
-                    `This is attempt #${tryNo}`
-                )
-            }
-            else if ((wrongPcorrectI >= 1 && wrongPcorrectI <= 4) && (wrongPwrongI >= 1 && wrongPwrongI <= 4)) {
-                message.channel.send(
-                    `${wrongPcorrectI} vassals are pleased with their offering(s)\n` +
-                    `${wrongPwrongI} vassals have received unknown offering(s)\n` +
-                    `This is attempt #${tryNo}`
+                if (wrongPwrongI >= 1 && wrongPwrongI <= 4) {
+                    message.channel.send(
+                        `${wrongPwrongI} vassals have received unknown offering(s)\n` +
+                        `This is attempt #${tryNo}`
+                    )
+                }
+                else if ((wrongPcorrectI >= 1 && wrongPcorrectI <= 4) && (wrongPwrongI >= 1 && wrongPwrongI <= 4)) {
+                    message.channel.send(
+                        `${wrongPcorrectI} vassals are pleased with their offering(s)\n` +
+                        `${wrongPwrongI} vassals have received unknown offering(s)\n` +
+                        `This is attempt #${tryNo}`
 
-                )
-            }
-            else if (correctPcorrectI == 4) {
-                message.reply("CLEAR!")
+                    )
+                }
+                else if (correctPcorrectI == 4) {
+                    message.reply("CLEAR!")
+                }
             }
         }
         while (tryNo <= maxTryNo)
