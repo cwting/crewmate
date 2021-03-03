@@ -1,7 +1,7 @@
-var member = require('./members.js');
-var cwkbon = require('./cwkbon.js');
-var hpwash = require("./hpwash.js");
-var apcalc = require('./apcalc.js')
+var member = require('./botjs/members.js');
+var cwkbon = require('./botjs/cwkbon.js');
+var hpwash = require("./botjs/hpwash.js");
+var apcalc = require('./botjs/apcalc.js')
 // var gpq = require('./gpq.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
