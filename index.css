@@ -1,0 +1,12 @@
+body {
+    background: url("https://i.ibb.co/cQ6mdDx/gpq-bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.main {
+    background-color: rgba(235, 240, 246, 0.8);
+}

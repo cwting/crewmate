@@ -191,7 +191,7 @@ bot.on("message", async msg => {
     else if (msg.content.toLowerCase() === "c.gach") {
         const locationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
         var locationArrayNum = Math.floor(Math.random() * 10);
-        msg.reply(`I have picked ${locationArray[locationArrayNum]} for you!`)
+        msg.reply(`I have picked ${locationArray[locationArrayNum]} for you! Good Luck!`)
     }
 
     /* ------------------------------- ZAK ------------------------------- */
