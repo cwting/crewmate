@@ -7,6 +7,18 @@ body {
 
 }
 
-.main {
+.instruction,
+.game {
+    /* border: 2px solid red; */
     background-color: rgba(235, 240, 246, 0.8);
+}
+
+.instructionDesc>.lead,
+.game>p {
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+.game {
+    /* border: 2px solid pink; */
 }
