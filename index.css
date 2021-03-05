@@ -23,6 +23,7 @@ body {
     resize: none;
 }
 
-#btnTalkToNPC {
+#btnTalkToNPC,
+#btnRestart {
     display: none;
 }

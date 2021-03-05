@@ -1,11 +1,13 @@
 var attemptNo = 1;
 
 $(document).ready(function () {
+    let btnStart = document.getElementById("btnStart")
+    let btnTalkToNPC = document.getElementById("btnTalkToNPC")
+    let btnRestart = document.getElementById("btnRestart")
     $('#btnStart').click(function () {
-        let btnStart = document.getElementById("btnStart")
-        let btnTalkToNPC = document.getElementById("btnTalkToNPC")
         btnStart.style.display = "none";
         btnTalkToNPC.style.display = "block";
+        btnRestart.style.display = "none";
         $('.table-responsive').append(`
             <table class="table">
                 <thead>
@@ -106,6 +108,12 @@ $(document).ready(function () {
         `);
         attemptNo++;
     });
+
+    if (attemptNo == 7) {
+        btnStart.style.display = "none";
+        btnTalkToNPC.style.display = "none";
+        btnRestart.style.display = "block";
+    }
 
     // ingredient drop down toggle
     $(document).ready(function () {
