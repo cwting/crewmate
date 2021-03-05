@@ -19,10 +19,10 @@ body {
     text-align: center;
 }
 
-.game {
-    /* border: 2px solid pink; */
-}
-
 #npcFB {
     resize: none;
+}
+
+#btnTalkToNPC {
+    display: none;
 }

@@ -1,11 +1,11 @@
 var attemptNo = 1;
+
 $(document).ready(function () {
     $('#btnStart').click(function () {
-        console.log("start btn clicked")
-        $(this).closest('#btnStart').remove();
-        $('.buttons').append($(`
-            <button type="button" id="btnTalkToNPC" class="btn btn-primary">Talk To NPC</button>
-        `));
+        let btnStart = document.getElementById("btnStart")
+        let btnTalkToNPC = document.getElementById("btnTalkToNPC")
+        btnStart.style.display = "none";
+        btnTalkToNPC.style.display = "block";
         $('.table-responsive').append(`
             <table class="table">
                 <thead>
@@ -64,7 +64,6 @@ $(document).ready(function () {
     });
 
     $('#btnTalkToNPC').click(function () {
-        console.log("npc btn clicked")
         $('#appender').append(`
             <tr>
                 <td>${attemptNo}</td>
