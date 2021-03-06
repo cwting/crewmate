@@ -29,6 +29,6 @@ body {
     display: none;
 }
 
-.instructionMobile {
+.instructionMobile>p>small {
     color: red;
 }
