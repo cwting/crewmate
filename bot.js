@@ -30,8 +30,8 @@ bot.on("message", async msg => {
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
                 { name: 'Members of Crew', value: '`c.member`' },
-                { name: 'Random Channel Picker [NEW]', value: '`c.ch`' },
-                { name: 'Random Gacha Location Picker [NEW]', value: '`c.gach`' },
+                { name: 'Random Channel Picker', value: '`c.ch`' },
+                { name: 'Random Gacha Location Picker', value: '`c.gach`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
             )
         msg.channel.send(helpmsg);
