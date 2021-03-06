@@ -162,7 +162,8 @@ bot.on("message", async msg => {
                     name: 'Members',
                     value:
                         "David\n" +
-                        "Rosa"
+                        "Rosa\n" +
+                        "Jenn"
                 },
                 {
                     name: 'Gone But Not Forgotten',
