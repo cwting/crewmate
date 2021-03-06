@@ -21,9 +21,14 @@ body {
 
 .npcFB {
     resize: none;
+    font-size: small;
 }
 
 #btnTalkToNPC,
 #btnRestart {
     display: none;
+}
+
+.instructionMobile {
+    color: red;
 }

@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+    <title>GPQ Stage 3</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -21,28 +24,30 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="./htmljs/index.js"></script>
-    <title>GPQ Stage 3</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-1"></div> <!-- spacer -->
-            <div class="instruction col-10 mt-3">
-                <div class="instructionTitle d-flex justify-content-center">
+            <div class="instruction col-10 mt-3 py-3">
+                <div id="instructionTitle" class="instructionTitle d-flex justify-content-center">
                     <h1 class="row display-5">Instructions</h1>
                 </div> <!-- instructiontitle -->
-                <div class="instructionDesc d-flex justify-content-center">
+                <div id="instructionDesc" class="instructionDesc d-flex justify-content-center">
                     <p class="lead mb-2">
                         Welcome to Guild PQ's Fountain of the Wiseman Trial Stage!<br>
                         Objective is the same as Guild PQ: finding the right combination of ingredients for the four
                         statues.<br>
-                        You will be given 7 attempts.
+                        You will be given 7 attempts. Good Luck!
                     </p>
                 </div> <!-- instructiondesc -->
-                <div class="buttons d-flex justify-content-center mb-3">
-                    <button type="button" id="btnStart" class="btn btn-secondary">START</button>
-                    <button type="button" id="btnTalkToNPC" class="btn btn-primary">Talk To NPC</button>
+                <div id="instructionMobile" class="instructionMobile d-flex justify-content-center">
+                    <p><small>*If you're using a mobile device, you are adviced to enable desktop site to read feedback better.*</small></p>
+                </div> <!-- mobile -->
+                <div class="buttons d-flex justify-content-center">
+                    <button type="button" id="btnStart" class="btn btn-secondary">START</button> &nbsp;
+                    <button type="button" id="btnTalkToNPC" class="btn btn-primary">Talk To NPC</button> &nbsp;
                     <button type="button" id="btnRestart" class="btn btn-danger">Restart</button>
                 </div> <!-- btnStart -->
             </div> <!-- instruction -->

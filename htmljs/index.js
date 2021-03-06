@@ -1,8 +1,11 @@
 $(document).ready(function () {
     var attemptNo = 1;
-    let btnStart = document.getElementById("btnStart")
-    let btnTalkToNPC = document.getElementById("btnTalkToNPC")
-    let btnRestart = document.getElementById("btnRestart")
+    let btnStart = document.getElementById("btnStart");
+    let btnTalkToNPC = document.getElementById("btnTalkToNPC");
+    let btnRestart = document.getElementById("btnRestart");
+    // let title = document.getElementById("instructionTitle");
+    // let desc = document.getElementById("instructionDesc");
+    // let mobile = document.getElementById("instructionMobile");
 
     // game
     var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
@@ -12,13 +15,16 @@ $(document).ready(function () {
     var a3 = items[Math.floor(Math.random() * 4)];
     var a4 = items[Math.floor(Math.random() * 4)];
     var answer = [a1, a2, a3, a4];
-    console.log("answer: " + answer)
 
     // btnStart
     $('#btnStart').click(function () {
         btnStart.style.display = "none";
         btnTalkToNPC.style.display = "block";
-        btnRestart.style.display = "none";
+        btnRestart.style.display = "block";
+        $("#instructionTitle").remove();
+        $("#instructionDesc").remove();
+        $("#instructionMobile").remove();
+
         $('.table-responsive').append(`
             <table class="table">
                 <thead>
@@ -83,42 +89,41 @@ $(document).ready(function () {
         var g3 = $(`#statue3${attemptNo} option:selected`).val();
         var g4 = $(`#statue4${attemptNo} option:selected`).val();
         var guesses = [g1, g2, g3, g4];
-        console.log("guesses: " + guesses)
 
         var correctPcorrectI = "";
-        var wrongPcorrectI = "";
-
         for (i = 0; i < answer.length; i++) {
             if (guesses[i] == answer[i]) {
                 correctPcorrectI += "*";
-                console.log("correctPcorrectI.length: " + correctPcorrectI.length);
-            }
-        }
-        for (i = 0; i < answer.length; i++) {
-            for (j = 0; j < answer.length; j++) {
-                if (i !== j) {
-                    if (guesses[i] == answer[j]) {
-                        wrongPcorrectI += "/";
-                        console.log("wrongPcorrectI.length: " + wrongPcorrectI.length);
-                    }
-                }
             }
         }
         var unknown = 4 - correctPcorrectI.length;
-
-        if ((wrongPcorrectI.length >= 1 && wrongPcorrectI.length <= 4) && (correctPcorrectI.length >= 1 && correctPcorrectI.length <= 4)) {
-            $(`#npcFB${attemptNo}`).append(correctPcorrectI.length + " vassal(s) is/are pleased with their offering(s)\n" +
-                unknown + " vassal(s) have received unknown offering(s)")
+        if ((unknown >= 1 && unknown <= 4) && (correctPcorrectI.length >= 1 && correctPcorrectI.length < 4)) {
+            $(`#npcFB${attemptNo}`).append(correctPcorrectI.length + " vassal(s) is/are pleased with their offering(s)\n" + unknown + " vassal(s) have received unknown offering(s)")
         }
-        else if (correctPcorrectI.length <= 4 && wrongPcorrectI.length <= 4) {
+        else if (unknown === 4) {
             $(`#npcFB${attemptNo}`).append("4 vassals have received unknown offering(s)");
         }
-        else if (correctPcorrectI.length = 4) {
+        else if (correctPcorrectI.length === 4) {
             $(`#npcFB${attemptNo}`).append("CLEAR!");
         }
 
-        attemptNo++;
-        $('#appender').append(`
+        if (attemptNo == 7) {
+            btnStart.style.display = "none";
+            btnTalkToNPC.style.display = "none";
+            btnRestart.style.display = "block";
+        }
+        else if ($(`#npcFB${attemptNo}`).val() == "CLEAR!") {
+            btnStart.style.display = "none";
+            btnTalkToNPC.style.display = "none";
+            btnRestart.style.display = "block";
+        }
+        else {
+            // lock previous choices
+            for (let i = 0; i <= 4; i++) {
+                $(`#statue${[i]}${attemptNo}`).attr("disabled", true);
+            }
+            attemptNo++;
+            $('#appender').append(`
             <tr>
                 <td>${attemptNo}</td>
                 <td>
@@ -158,11 +163,6 @@ $(document).ready(function () {
                 </td >
             </tr>
             `);
-
-        if (attemptNo == 7) {
-            btnStart.style.display = "none";
-            btnTalkToNPC.style.display = "none";
-            btnRestart.style.display = "block";
         }
     });
 
@@ -175,5 +175,4 @@ $(document).ready(function () {
     $(document).ready(function () {
         $(".dropdown-toggle").dropdown();
     });
-
 });
