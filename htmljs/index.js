@@ -3,12 +3,8 @@ $(document).ready(function () {
     let btnStart = document.getElementById("btnStart");
     let btnTalkToNPC = document.getElementById("btnTalkToNPC");
     let btnRestart = document.getElementById("btnRestart");
-    // let title = document.getElementById("instructionTitle");
-    // let desc = document.getElementById("instructionDesc");
-    // let mobile = document.getElementById("instructionMobile");
 
-    // game
-    var items = ['s', 'm', 'w', 'f'] // scroll, medal, wine, food
+    var items = ['scroll', 'medal', 'wine', 'food']
     // answers
     var a1 = items[Math.floor(Math.random() * 4)];
     var a2 = items[Math.floor(Math.random() * 4)];
@@ -42,34 +38,34 @@ $(document).ready(function () {
                         <td>${attemptNo}</td>
                         <td>
                             <select id="statue1${attemptNo}" class="form-select">
-                            <option value="s" selected>Scroll</option>
-                            <option value="m">Medal</option>
-                            <option value="w">Wine</option>
-                            <option value="f">Food</option>
+                            <option value="scroll" selected>Scroll</option>
+                            <option value="medal">Medal</option>
+                            <option value="wine">Wine</option>
+                            <option value="food">Food</option>
                             </select>
                         </td>
                         <td>
                             <select id="statue2${attemptNo}" class="form-select">
-                            <option value="s" selected>Scroll</option>
-                            <option value="m">Medal</option>
-                            <option value="w">Wine</option>
-                            <option value="f">Food</option>
+                            <option value="scroll" selected>Scroll</option>
+                            <option value="medal">Medal</option>
+                            <option value="wine">Wine</option>
+                            <option value="food">Food</option>
                             </select>
                         </td>
                         <td>
                             <select id="statue3${attemptNo}" class="form-select">
-                            <option value="s" selected>Scroll</option>
-                            <option value="m">Medal</option>
-                            <option value="w">Wine</option>
-                            <option value="f">Food</option>
+                            <option value="scroll" selected>Scroll</option>
+                            <option value="medal">Medal</option>
+                            <option value="wine">Wine</option>
+                            <option value="food">Food</option>
                             </select>
                         </td>
                         <td>
                             <select id="statue4${attemptNo}" class="form-select">
-                            <option value="s" selected>Scroll</option>
-                            <option value="m">Medal</option>
-                            <option value="w">Wine</option>
-                            <option value="f">Food</option>
+                            <option value="scroll" selected>Scroll</option>
+                            <option value="medal">Medal</option>
+                            <option value="wine">Wine</option>
+                            <option value="food">Food</option>
                             </select>    
                         </td>
                         <td>
@@ -107,16 +103,20 @@ $(document).ready(function () {
             $(`#npcFB${attemptNo}`).append("CLEAR!");
         }
 
+        // if max attempts reached, show answer and restart button
         if (attemptNo == 7) {
             btnStart.style.display = "none";
             btnTalkToNPC.style.display = "none";
             btnRestart.style.display = "block";
+            $(`#answerdiv`).append(`<p class="h6">Aww, so close! The answer was ${a1}, ${a2}, ${a3}, ${a4}, try again!</p>`)
         }
+        // if player clears 
         else if ($(`#npcFB${attemptNo}`).val() == "CLEAR!") {
             btnStart.style.display = "none";
             btnTalkToNPC.style.display = "none";
             btnRestart.style.display = "block";
         }
+        // else continues the game
         else {
             // lock previous choices
             for (let i = 0; i <= 4; i++) {
@@ -128,34 +128,34 @@ $(document).ready(function () {
                 <td>${attemptNo}</td>
                 <td>
                     <select id="statue1${attemptNo}" class="form-select">
-                    <option value="s" selected>Scroll</option>
-                    <option value="m">Medal</option>
-                    <option value="w">Wine</option>
-                    <option value="f">Food</option>
+                    <option value="scroll" selected>Scroll</option>
+                    <option value="medal">Medal</option>
+                    <option value="wine">Wine</option>
+                    <option value="food">Food</option>
                     </select>
                 </td>
                 <td>
                     <select id="statue2${attemptNo}" class="form-select">
-                    <option value="s" selected>Scroll</option>
-                    <option value="m">Medal</option>
-                    <option value="w">Wine</option>
-                    <option value="f">Food</option>
+                    <option value="scroll" selected>Scroll</option>
+                    <option value="medal">Medal</option>
+                    <option value="wine">Wine</option>
+                    <option value="food">Food</option>
                     </select>
                 </td>
                 <td>
                     <select id="statue3${attemptNo}" class="form-select">
-                    <option value="s" selected>Scroll</option>
-                    <option value="m">Medal</option>
-                    <option value="w">Wine</option>
-                    <option value="f">Food</option>
+                    <option value="scroll" selected>Scroll</option>
+                    <option value="medal">Medal</option>
+                    <option value="wine">Wine</option>
+                    <option value="food">Food</option>
                     </select>
                 </td>
                 <td>
                     <select id="statue4${attemptNo}" class="form-select">
-                    <option value="s" selected>Scroll</option>
-                    <option value="m">Medal</option>
-                    <option value="w">Wine</option>
-                    <option value="f">Food</option>
+                    <option value="scroll" selected>Scroll</option>
+                    <option value="medal">Medal</option>
+                    <option value="wine">Wine</option>
+                    <option value="food">Food</option>
                     </select>    
                 </td>
                 <td>

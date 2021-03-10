@@ -31,10 +31,10 @@
         <div class="row">
             <div class="col-1"></div> <!-- spacer -->
             <div class="instruction col-10 mt-3 py-3">
-                <div id="instructionTitle" class="instructionTitle d-flex justify-content-center">
+                <div id="instructionTitle" class="d-flex justify-content-center">
                     <h1 class="row display-5">Instructions</h1>
                 </div> <!-- instructiontitle -->
-                <div id="instructionDesc" class="instructionDesc d-flex justify-content-center">
+                <div id="instructionDesc" class="d-flex justify-content-center">
                     <p class="lead mb-2">
                         Welcome to Guild PQ's Fountain of the Wiseman Trial Stage!<br>
                         Objective is the same as Guild PQ: finding the right combination of ingredients for the four
@@ -42,9 +42,14 @@
                         You will be given 7 attempts. Good Luck!
                     </p>
                 </div> <!-- instructiondesc -->
-                <div id="instructionMobile" class="instructionMobile d-flex justify-content-center">
-                    <p><small>*If you're using a mobile device, you are adviced to enable desktop site to read feedback better.*</small></p>
+                <div id="instructionMobile" class="d-flex justify-content-center">
+                    <p><small>*If you're using a mobile device, you are adviced to enable desktop site to read feedback
+                            better.*</small></p>
                 </div> <!-- mobile -->
+                <div id="game">
+                    <div class="table-responsive"></div>
+                </div>
+                <div id="answerdiv" class="d-flex justify-content-center"></div>
                 <div class="buttons d-flex justify-content-center">
                     <button type="button" id="btnStart" class="btn btn-secondary">START</button> &nbsp;
                     <button type="button" id="btnTalkToNPC" class="btn btn-primary">Talk To NPC</button> &nbsp;
@@ -53,15 +58,6 @@
             </div> <!-- instruction -->
             <div class="col-1"></div> <!-- spacer -->
         </div>
-        <div class="row">
-            <div class="col-1"></div> <!-- spacer -->
-            <div class="game col-10 mt-3">
-                <div class="table-responsive"></div>
-            </div>
-            <div class="col-1"></div> <!-- spacer -->
-        </div>
-
-
     </div>
 </body>
 

@@ -7,13 +7,12 @@ body {
 
 }
 
-.instruction,
-.game {
+.instruction {
     /* border: 2px solid red; */
     background-color: rgba(235, 240, 246, 0.8);
 }
 
-.instructionDesc>.lead,
+#instructionDesc>.lead,
 .game>p {
     /* border: 2px solid blue; */
     text-align: center;
@@ -29,6 +28,6 @@ body {
     display: none;
 }
 
-.instructionMobile>p>small {
+#instructionMobile>p>small {
     color: red;
 }
