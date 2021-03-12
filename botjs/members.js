@@ -596,7 +596,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Piet/Pietro", inline: true },
-                            { name: "Age:", value: `${currentYear - 2002} `, inline: true },
+                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
                             { name: "Country:", value: "Germany", inline: true },
                             { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                             {
@@ -626,7 +626,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
@@ -650,7 +650,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
+                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
