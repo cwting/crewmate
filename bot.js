@@ -26,7 +26,7 @@ bot.on("message", async msg => {
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
-                { name: 'Guild PQ\'s Stage 3', value: '`c.gpq`' },
+                { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
                 { name: 'Members of Crew', value: '`c.member`' },

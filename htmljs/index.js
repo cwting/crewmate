@@ -104,17 +104,18 @@ $(document).ready(function () {
         }
 
         // if max attempts reached, show answer and restart button
-        if (attemptNo == 7) {
+        if (attemptNo == 7 && $(`#npcFB${attemptNo}`).val() != "CLEAR!") {
             btnStart.style.display = "none";
             btnTalkToNPC.style.display = "none";
             btnRestart.style.display = "block";
-            $(`#answerdiv`).append(`<p class="h6">Aww, so close! The answer was ${a1}, ${a2}, ${a3}, ${a4}, try again!</p>`)
+            $(`#results`).append(`<p class="h5">Aww, so close! The answer was ${a1}, ${a2}, ${a3}, ${a4}. Try Again!</p>`)
         }
         // if player clears 
         else if ($(`#npcFB${attemptNo}`).val() == "CLEAR!") {
             btnStart.style.display = "none";
             btnTalkToNPC.style.display = "none";
             btnRestart.style.display = "block";
+            $(`#results`).append(`<p class="h6">Good Job!</p>`)
         }
         // else continues the game
         else {
