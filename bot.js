@@ -1,7 +1,8 @@
 var member = require('./botjs/members.js');
 var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require("./botjs/hpwash.js");
-var apcalc = require('./botjs/apcalc.js')
+var apcalc = require('./botjs/apcalc.js');
+var apq = require('./botjs/apq.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -51,10 +52,10 @@ bot.on("message", async msg => {
     else if (msg.content.toLowerCase() === "c.apq") {
         const apqmsg = new Discord.MessageEmbed()
             .setColor("#223DDD")
-            .setTitle('APQ Stage 2')
-            .setImage("https://i.ibb.co/Wks0MQT/apq-stg2.jpg")
-            .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/");
+            .setTitle('APQ Stage 2 Guide(s)')
+            .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
         msg.channel.send(apqmsg);
+        apq;
     }
 
     /* ------------------------------- AP CALCULATOR ------------------------------- */
@@ -143,7 +144,8 @@ bot.on("message", async msg => {
             .setTitle('Crew\'s Members')
             .setDescription(
                 "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member [name]`"
+                "`c.member [name]`\n" +
+                "*You can react to the arrows to navigate the member's character(s)/image(s)*"
             )
             .addFields(
                 {
