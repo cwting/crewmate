@@ -30,7 +30,7 @@ $(document).ready(function () {
                         <th scope="col">Statue 2</th>
                         <th scope="col">Statue 3</th>
                         <th scope="col">Statue 4</th>
-                        <th scope="col">Feedback</th>
+                        <th scope="col">NPC Feedback</th>
                     </tr>
                 </thead>
                 <tbody id="appender">
@@ -115,7 +115,7 @@ $(document).ready(function () {
             btnStart.style.display = "none";
             btnTalkToNPC.style.display = "none";
             btnRestart.style.display = "block";
-            $(`#results`).append(`<p class="h6">Good Job!</p>`)
+            $(`#results`).append(`<p class="h5">Good Job!</p>`)
         }
         // else continues the game
         else {
