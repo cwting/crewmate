@@ -17,7 +17,7 @@ bot.on('message', message => {
                     .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
                     .setColor("#223DDD")
                     .setImage("https://i.ibb.co/LN00p9q/apq1.jpg")
-                    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/"),
+                    .setFooter("Image From:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/"),
                 reactions: {
                     '1️⃣': 'APQ1',
                     '2️⃣': 'APQ2'
@@ -30,8 +30,11 @@ bot.on('message', message => {
                 })
                     .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
                     .setColor("#223DDD")
-                    .setImage("https://i.ibb.co/60XCwz7/apq2.png")
-                    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/comprehensive-apq-guide-updated-feb-2021.172942/#stage2"),
+                    .setImage("https://i.ibb.co/1JDzZxQ/apq2.png")
+                    .setFooter(
+                        "Image Reference From:\nhttps://mapleroyals.com/forum/threads/comprehensive-apq-guide-updated-feb-2021.172942/#stage2" +
+                        "Image Edited By: Gel"
+                    ),
                 reactions: {
                     '1️⃣': 'APQ1',
                     '2️⃣': 'APQ2'
