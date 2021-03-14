@@ -32,7 +32,7 @@ bot.on('message', message => {
                     .setColor("#223DDD")
                     .setImage("https://i.ibb.co/1JDzZxQ/apq2.png")
                     .setFooter(
-                        "Image Reference From:\nhttps://mapleroyals.com/forum/threads/comprehensive-apq-guide-updated-feb-2021.172942/#stage2" +
+                        "Image Reference From:\nhttps://mapleroyals.com/forum/threads/comprehensive-apq-guide-updated-feb-2021.172942/#stage2\n" +
                         "Image Edited By: Gel"
                     ),
                 reactions: {
