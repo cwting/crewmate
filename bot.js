@@ -50,11 +50,6 @@ bot.on("message", async msg => {
 
     // /* ------------------------------- APQ ------------------------------- */
     else if (msg.content.toLowerCase() === "c.apq") {
-        const apqmsg = new Discord.MessageEmbed()
-            .setColor("#223DDD")
-            .setTitle('APQ Stage 2 Guide(s)')
-            .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
-        msg.channel.send(apqmsg);
         apq;
     }
 
@@ -144,9 +139,9 @@ bot.on("message", async msg => {
             .setTitle('Crew\'s Members')
             .setDescription(
                 "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member [name]`\n" +
-                "*You can react to the arrows to navigate the member's character(s)/image(s)*"
+                "`c.member [name]`"
             )
+            .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
             .addFields(
                 {
                     name: 'Guild Master and Jr. Masters',

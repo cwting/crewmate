@@ -14,8 +14,10 @@ bot.on('message', message => {
                 content: new MessageEmbed({
                     title: "APQ Guide #1"
                 })
+                    .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
                     .setColor("#223DDD")
-                    .setImage("https://i.ibb.co/LN00p9q/apq1.jpg"),
+                    .setImage("https://i.ibb.co/LN00p9q/apq1.jpg")
+                    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/amoria-party-quest-apq.31743/"),
                 reactions: {
                     '1️⃣': 'APQ1',
                     '2️⃣': 'APQ2'
@@ -26,14 +28,16 @@ bot.on('message', message => {
                 content: new MessageEmbed({
                     title: "APQ Guide #2",
                 })
+                    .setDescription("You may choose your preferred APQ guide by changing the image with the provided reactions.")
                     .setColor("#223DDD")
-                    .setImage("https://i.ibb.co/60XCwz7/apq2.png"),
+                    .setImage("https://i.ibb.co/60XCwz7/apq2.png")
+                    .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/comprehensive-apq-guide-updated-feb-2021.172942/#stage2"),
                 reactions: {
                     '1️⃣': 'APQ1',
                     '2️⃣': 'APQ2'
                 }
             }
-        ], 600000)
+        ], 60000)
         apq.start()
     }
 })
