@@ -1024,7 +1024,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __28thOfJune - Level 15x Night Lord__ 🤍\n" +
+                                    "🤍 __28thofJune - Level 15x Night Lord__ 🤍\n" +
                                     "JJBishop - Level 17x Bishop"
                             }
                         )
@@ -1049,7 +1049,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "28thOfJune - Level 15x Night Lord\n" +
+                                    "28thofJune - Level 15x Night Lord\n" +
                                     "🤍 __JJBishop - Level 17x Bishop__ 🤍"
                             }
                         )
