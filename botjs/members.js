@@ -1030,7 +1030,7 @@ bot.on('message', message => {
                         )
                         .setColor("#000000")
                         .setFooter("Twitch: twitch.tv/sixpackgamer")
-                        .setImage("https://i.ibb.co/z2W0bjX/28th-Of-June.png"),
+                        .setImage("https://i.ibb.co/6yWwQn0/28thof-June.png"),
                     reactions: {
                         '❌': '28thOfJune',
                         '➡': 'JJBishop'
@@ -1059,6 +1059,61 @@ bot.on('message', message => {
                     reactions: {
                         '⬅': '28thOfJune',
                         '❌': 'JJBishop'
+                    }
+                }
+            ], 60000)
+            member.start()
+        }
+
+        else if (name.toLowerCase() === "james") {
+            message.reply("Here's info on James! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'Snikt',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "James", inline: true },
+                            { name: "Age:", value: `${currentYear - 1992} `, inline: true },
+                            { name: "Country:", value: "USA", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "🤍 __Snikt - Level 200 Shadower__ 🤍\n" +
+                                    "PkewPkew - Level 200 Corsair"
+                            }
+                        )
+                        .setColor("#241773")
+                        .setImage("https://i.ibb.co/47kDjVM/Snikt.png"),
+                    reactions: {
+                        '❌': 'Snikt',
+                        '➡': 'PkewPkew'
+                    }
+                },
+                {
+                    name: 'PkewPkew',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "James", inline: true },
+                            { name: "Age:", value: `${currentYear - 1992} `, inline: true },
+                            { name: "Country:", value: "USA", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "Snikt - Level 200 Shadower\n" +
+                                    "🤍 __PkewPkew - Level 200 Corsair__ 🤍"
+                            }
+                        )
+                        .setColor("#00DD00")
+                        .setImage("https://i.ibb.co/JCJLv8r/PkewPkew.png"),
+                    reactions: {
+                        '⬅': 'Snikt',
+                        '❌': 'PkewPkew'
                     }
                 }
             ], 60000)
