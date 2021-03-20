@@ -1008,6 +1008,63 @@ bot.on('message', message => {
             member.start()
         }
 
+        else if (name.toLowerCase() === "jj") {
+            message.reply("Here's info on JJ! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: '28thOfJune',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "JJ", inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English, Chinese, Malay, Cantonese", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "🤍 __28thOfJune - Level 15x Night Lord__ 🤍\n" +
+                                    "JJBishop - Level 17x Bishop"
+                            }
+                        )
+                        .setColor("#000000")
+                        .setFooter("Twitch: twitch.tv/sixpackgamer")
+                        .setImage("https://i.ibb.co/z2W0bjX/28th-Of-June.png"),
+                    reactions: {
+                        '❌': '28thOfJune',
+                        '➡': 'JJBishop'
+                    }
+                },
+                {
+                    name: 'JJBishop',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "JJ", inline: true },
+                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English, Chinese, Malay, Cantonese", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "28thOfJune - Level 15x Night Lord\n" +
+                                    "🤍 __JJBishop - Level 17x Bishop__ 🤍"
+                            }
+                        )
+                        .setColor("#000000")
+                        .setFooter("Twitch: twitch.tv/sixpackgamer")
+                        .setImage("https://i.ibb.co/F6t6qzv/JJBishop.png"),
+                    reactions: {
+                        '⬅': '28thOfJune',
+                        '❌': 'JJBishop'
+                    }
+                }
+            ], 60000)
+            member.start()
+        }
+
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
         // Chris
         else if (name.toLowerCase() === "chris") {
@@ -1120,44 +1177,10 @@ bot.on('message', message => {
             ], 60000)
             member.start()
         }
-
         else {
-            return message.reply("Incorrect name!\nNames of members: `c.member`")
+            return message.reply("Incorrect name!\nTo get list of members, type: `c.member`")
         }
     }
 })
 
 bot.login(process.env.TOKEN);
-
-/*
-TEMPLATE:
-else if (name.toLowerCase() === "<name>") {
-            message.reply("Here's info on <name>! 😉")
-            let member = new Menu(message.channel, message.author.id, [
-                {
-                    name: '<IGN>',
-                    content: new MessageEmbed({
-                        title: 'TITLE',
-                    })
-                        .addFields(
-                            { name: "Name:", value: "", inline: true },
-                            { name: "Age:", value: `${ currentYear - } `, inline: true },
-                            { name: "Country:", value: "", inline: true },
-                            { name: "Speaks:", value: "", inline: true },
-                            {
-                                name: "Maple Character(s) IGN, Level and Job:",
-                                value: "🤍 __IGN - Level XXX JOB__ 🤍"
-                            }
-                        )
-                        .setColor("#")
-                        .setImage(""),
-                    reactions: {
-                        '❌': '',
-                        '⬅': '',
-                        '➡': '',
-                    }
-                },
-            ], 60000)
-            member.start()
-        }
-*/
