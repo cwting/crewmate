@@ -182,9 +182,12 @@ bot.on("message", async msg => {
 
     /* ------------------------------- RANDOM GACHA LOCATION PICKER ------------------------------- */
     else if (msg.content.toLowerCase() === "c.gach") {
-        const locationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
-        var locationArrayNum = Math.floor(Math.random() * 10);
-        msg.reply(`I have picked ${locationArray[locationArrayNum]} for you! Good Luck!`)
+        const gachLocationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
+        var gachLocationArrayNum = Math.floor(Math.random() * 10);
+        msg.reply(
+            `I have picked ${gachLocationArray[gachLocationArrayNum]} for you! Good Luck!\n` +
+            "Disclaimer: Crewmate is not to be held accountable for any "bad gach run". uwu"
+        )
     }
 
     /* ------------------------------- ZAK ------------------------------- */
