@@ -186,7 +186,7 @@ bot.on("message", async msg => {
         var gachLocationArrayNum = Math.floor(Math.random() * 10);
         msg.reply(
             `I have picked ${gachLocationArray[gachLocationArrayNum]} for you! Good Luck!\n` +
-            "Disclaimer: Crewmate is not to be held accountable for any "bad gach run". uwu"
+            "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
         )
     }
 
