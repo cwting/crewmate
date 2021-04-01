@@ -926,6 +926,7 @@ bot.on('message', message => {
             member.start()
         }
 
+        // Jenn
         else if (name.toLowerCase() === "jenn") {
             message.reply("Here's info on Jenn! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -1008,6 +1009,7 @@ bot.on('message', message => {
             member.start()
         }
 
+        // JJ
         else if (name.toLowerCase() === "jj") {
             message.reply("Here's info on JJ! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -1065,6 +1067,7 @@ bot.on('message', message => {
             member.start()
         }
 
+        // James
         else if (name.toLowerCase() === "james") {
             message.reply("Here's info on James! 😉")
             let member = new Menu(message.channel, message.author.id, [
@@ -1120,6 +1123,62 @@ bot.on('message', message => {
             member.start()
         }
 
+        // Sabi
+        else if (name.toLowerCase() === "sabi") {
+            message.reply("Here's info on Sabi! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'Kwin',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Sabina", inline: true },
+                            { name: "Age:", value: `${currentYear - 1991} `, inline: true },
+                            { name: "Country:", value: "Sweden", inline: true },
+                            { name: "Speaks:", value: "Swedish, English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "🤍 __Kwin - Level 17x Hero__ 🤍\n" +
+                                    "Kwinie - Level 12x Bishop"
+                            }
+                        )
+                        .setColor("#C35DAE")
+                        .setImage("https://i.ibb.co/cYnW9Fw/Kwin.png"),
+                    reactions: {
+                        '❌': 'Kwin',
+                        '➡': 'Kwinie'
+                    }
+                },
+                {
+                    name: 'Kwinie',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Sabina", inline: true },
+                            { name: "Age:", value: `${currentYear - 1991} `, inline: true },
+                            { name: "Country:", value: "Sweden", inline: true },
+                            { name: "Speaks:", value: "Swedish, English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "Kwin - Level 17x Hero\n" +
+                                    "🤍 __Kwinie - Level 12x Bishop__ 🤍"
+                            }
+                        )
+                        .setColor("#C35DAE")
+                        .setImage("https://i.ibb.co/41nDpPV/Kwinie.png"),
+                    reactions: {
+                        '⬅': 'Kwin',
+                        '❌': 'Kwinie'
+                    }
+                }
+            ], 60000)
+            member.start()
+        }
+
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
         // Chris
         else if (name.toLowerCase() === "chris") {
@@ -1145,7 +1204,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#0A0A0A")
-                        .setImage("https://i.ibb.co/580ZqjH/DrKris.png"),
+                        .setImage("https://i.ibb.co/N60TyN8/DrKris.png"),
                     reactions: {
                         '❌': 'DrKris',
                         '➡': 'Chris4ReaL'
@@ -1171,7 +1230,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#0A0A0A")
-                        .setImage("https://i.ibb.co/2q5qY04/Chris4-Rea-L.png"),
+                        .setImage("https://i.ibb.co/C8vWbLP/Chris4-Rea-L.png"),
                     reactions: {
                         '⬅': 'DrKris',
                         '➡': 'SamuraiChris'
@@ -1197,7 +1256,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#0A0A0A")
-                        .setImage("https://i.ibb.co/GFTSNJm/Samurai-Chris.png"),
+                        .setImage("https://i.ibb.co/hBKx7BK/Samurai-Chris.png"),
                     reactions: {
                         '⬅': 'Chris4ReaL',
                         '➡': 'CutePaws'
@@ -1223,7 +1282,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#0A0A0A")
-                        .setImage("https://i.ibb.co/hsT4bBP/CutePaws.png"),
+                        .setImage("https://i.ibb.co/ZYRfj4L/CutePaws.png"),
                     reactions: {
                         '⬅': 'SamuraiChris',
                         '❌': 'CutePaws'
