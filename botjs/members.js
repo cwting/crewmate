@@ -887,7 +887,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __PalaRose - Level 18x Paladin__ 🤍\n" +
+                                    "🤍 __PalaRose - Level 19x Paladin__ 🤍\n" +
                                     "N00BPR0 - Level 16x Bishop"
                             }
                         )
@@ -911,7 +911,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "PalaRose - Level 18x Paladin\n" +
+                                    "PalaRose - Level 19x Paladin\n" +
                                     "🤍 __N00BPR0 - Level 16x Bishop__ 🤍"
                             }
                         )
@@ -1292,7 +1292,7 @@ bot.on('message', message => {
             member.start()
         }
         else {
-            return message.reply("Incorrect name!\nTo get list of members, type: `c.member`")
+            return message.reply("Incorrect name!\nTo get the list of members, type: `c.member`")
         }
     }
 })
