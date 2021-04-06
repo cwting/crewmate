@@ -126,7 +126,7 @@ bot.on("message", async msg => {
                 "Lv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n" +
                 "Lv 105+: Petrifighter [Singapore: Ulu City Center]\n" +
                 "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
-                "Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku"
+                `~~Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku~~ *patch #71 says byebye`
             )
             .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
         msg.channel.send(leechmsg);
