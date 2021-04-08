@@ -1192,7 +1192,7 @@ bot.on('message', message => {
                             { name: "Name:", value: "Cyrus", inline: true },
                             { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
-                            { name: "Speaks:", value: "English, Malay, Basic Thai, French", inline: true },
+                            { name: "Speaks:", value: "Chinese, English, Malay, Basic Thai and French", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
@@ -1216,7 +1216,7 @@ bot.on('message', message => {
                             { name: "Name:", value: "Cyrus", inline: true },
                             { name: "Age:", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
-                            { name: "Speaks:", value: "English, Malay, Basic Thai, French", inline: true },
+                            { name: "Speaks:", value: "Chinese, English, Malay, Basic Thai and French", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
