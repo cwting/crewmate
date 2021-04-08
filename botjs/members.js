@@ -1179,6 +1179,62 @@ bot.on('message', message => {
             member.start()
         }
 
+        // Cyrus
+        else if (name.toLowerCase() === "cyrus") {
+            message.reply("Here's info on Cyrus! 😉")
+            let member = new Menu(message.channel, message.author.id, [
+                {
+                    name: 'xIcedCoffee',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Cyrus", inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English, Malay, Basic Thai, French", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "🤍 __xIcedCoffee - Level 200 Hero__ 🤍\n" +
+                                    "HotCoffee- Level 15x Bishop"
+                            }
+                        )
+                        .setColor("#000000")
+                        .setImage("https://i.ibb.co/C5qSkrT/x-Iced-Coffee.png"),
+                    reactions: {
+                        '❌': 'xIcedCoffee',
+                        '➡': 'HotCoffee'
+                    }
+                },
+                {
+                    name: 'HotCoffee',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Cyrus", inline: true },
+                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English, Malay, Basic Thai, French", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "xIcedCoffee - Level 200 Hero\n" +
+                                    "🤍 __HotCoffee- Level 15x Bishop__ 🤍"
+                            }
+                        )
+                        .setColor("#000000")
+                        .setImage("https://i.ibb.co/Wt2qRJ7/Hot-Coffee.png"),
+                    reactions: {
+                        '⬅': 'xIcedCoffee',
+                        '❌': 'HotCoffee'
+                    }
+                }
+            ], 60000)
+            member.start()
+        }
+
         /* ---------------------------------------- GONE BUT NOT FORGOTTEN ---------------------------------------- */
         // Chris
         else if (name.toLowerCase() === "chris") {
