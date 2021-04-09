@@ -14,7 +14,7 @@ bot.on('message', message => {
 
     if (command === 'remind') {
         var time = args[0];
-        var reason = args.join(" ").slice("c.remind" + time.length);
+        var reason = args.join(" ").slice("c.remind" + args[0]);
 
         if (!time) {
             return message.reply("Please specify time");
@@ -24,8 +24,6 @@ bot.on('message', message => {
         }
 
         setTimeout(function () {
-            // message.member.send(`${reason}`);
-            // bot.users.cache.get('id').send(`${reason}`)
             return message.reply(`${reason}`)
         }, ms(time));
     }    
