@@ -28,7 +28,7 @@ bot.on('message', message => {
         }
 
         setTimeout(function () {
-            message.author.send(`${reason}`);
+            message.member.send(`${reason}`);
         }, ms(time));
     }
 })
