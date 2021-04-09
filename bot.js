@@ -3,6 +3,7 @@ var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
 var apq = require('./botjs/apq.js');
+var remind = require('./botjs/remind.js')
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
