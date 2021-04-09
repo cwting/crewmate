@@ -28,7 +28,8 @@ bot.on('message', message => {
         }
 
         setTimeout(function () {
-            message.member.send(`${reason}`);
+            // message.member.send(`${reason}`);
+            bot.users.cache.get('id').send(`${reason}`)
         }, ms(time));
     }
 })
