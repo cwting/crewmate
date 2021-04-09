@@ -34,6 +34,7 @@ bot.on("message", async msg => {
                 { name: 'Members of Crew', value: '`c.member`' },
                 { name: 'Random Channel Picker', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker', value: '`c.gach`' },
+                { name: 'Reminder', value: '`c.remind`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
             )
         msg.channel.send(helpmsg);
@@ -191,6 +192,21 @@ bot.on("message", async msg => {
             `I have picked ${gachLocationArray[gachLocationArrayNum]} for you! Good Luck!\n` +
             "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
         )
+    }
+
+    /* --------------------------------------- REMINDER --------------------------------------- */
+    else if (msg.content.toLowerCase() === "c.remind") {
+        const remindmsg = new Discord.MessageEmbed()
+            .setColor('#DDDDDD')
+            .setTitle('Reminder')
+            .setDescription(
+                "Enter in the following format:\n" +
+                "`c.remind [time] [reason]`\n" +
+                "`[time]`: s (seconds), m (minutes), h (hours), d (days)\n" +
+                "`[reason]`: reason for reminder"
+            )
+        msg.channel.send(remindmsg);
+        remind;
     }
 
     /* ------------------------------- ZAK ------------------------------- */

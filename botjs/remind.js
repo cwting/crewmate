@@ -29,11 +29,6 @@ bot.on('message', message => {
             }, ms(time));
         }
     }
-
-    console.log("time: " + time)
-    console.log("time length: " + time.length);
-    console.log("reason: " + reason)
-    console.log("args: " + args);
 })
 
 bot.login(process.env.TOKEN);
