@@ -11,15 +11,12 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+    var time = args[0];
+    var reason = args.join(" ").slice(time.length + 1);
 
     if (command === 'remind') {
-        var time = args[0];
-        var reason = args.join(" ").slice(time.length);
-
-        if (!time) {
-            return message.reply("Please specify time");
-        }
-        else if (reason) {
+        if (!time) return message.reply("Please specify time");
+        if (reason) {
             if (!args[1]) {
                 return message.reply("Please specify reason");
             }
@@ -35,6 +32,7 @@ bot.on('message', message => {
     console.log("time: " + time)
     console.log("time length: " + time.length);
     console.log("reason: " + reason)
+    console.log("args: " + args);
 })
 
 bot.login(process.env.TOKEN);
