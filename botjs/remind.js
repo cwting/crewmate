@@ -13,6 +13,10 @@ bot.on('message', message => {
     const command = args.shift().toLowerCase();
 
     if (command === 'remind') {
+        if (!args.length) {
+            return
+        }
+        
         var time = args[0];
         if (!time) {
             return message.reply("Please specify time");
