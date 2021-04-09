@@ -14,28 +14,23 @@ bot.on('message', message => {
 
     if (command === 'remind') {
         var time = args[0];
+        var reason = args.join(" ").slice("c.remind" + args[0].length);
+
         if (!time) {
             return message.reply("Please specify time");
         }
-
-        var reason = args.join(" ").slice("c.remind" + args[0].length);
-        if (reason) {
-            if (!args[1]) {
-                return message.reply("Please specify reason");
-            }
-
-            return message.reply(`I will remind you in ${time}`)
+        if (!reason) {
+            return message.reply("Please specify reason");
         }
 
         setTimeout(function () {
             // message.member.send(`${reason}`);
             // bot.users.cache.get('id').send(`${reason}`)
-            message.reply(`${reason}`)
+            return message.reply(`${reason}`)
         }, ms(time));
-
-        console.log("time:" + time)
-        console.log("reason:" + reason)
-    }
+    }    
+    console.log("time:" + time)
+    console.log("reason:" + reason)
 })
 
 bot.login(process.env.TOKEN);
