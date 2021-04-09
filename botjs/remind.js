@@ -11,11 +11,14 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    var time = args[0];
-    var reason = args.join(" ").slice(time.length + 1);
 
     if (command === 'remind') {
-        if (!time) return message.reply("Please specify time");
+        var time = args[0];
+        if (!time) {
+            return message.reply("Please specify time");
+        }
+
+        var reason = args.join(" ").slice(time.length + 1);
         if (reason) {
             if (!args[1]) {
                 return message.reply("Please specify reason");
