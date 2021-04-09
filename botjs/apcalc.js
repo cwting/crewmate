@@ -5,7 +5,6 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (apcalc.js)`); // BOT online
 });
 
-
 const prefix = "c.";
 bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
