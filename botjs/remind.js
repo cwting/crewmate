@@ -29,8 +29,12 @@ bot.on('message', message => {
 
         setTimeout(function () {
             // message.member.send(`${reason}`);
-            bot.users.cache.get('id').send(`${reason}`)
+            // bot.users.cache.get('id').send(`${reason}`)
+            message.reply(`${reason}`)
         }, ms(time));
+
+        console.log("time:" + time)
+        console.log("reason:" + reason)
     }
 })
 
