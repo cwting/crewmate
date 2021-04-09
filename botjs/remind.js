@@ -14,19 +14,21 @@ bot.on('message', message => {
 
     if (command === 'remind') {
         var time = args[0];
-        var reason = args.join(" ").slice("c.remind" + args[0]);
+        var reason = args.join(" ").slice("c.remind" + time);
 
         if (!time) {
             return message.reply("Please specify time");
         }
-        if (!reason) {
-            return message.reply("Please specify reason");
+        else if (reason) {
+            if (!args[1]) {
+                return message.reply("Please specify reason");
+            }
         }
 
         setTimeout(function () {
             return message.reply(`${reason}`)
         }, ms(time));
-    }    
+    }
     console.log("time:" + ms(time))
     console.log("reason:" + reason)
 })
