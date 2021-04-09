@@ -24,6 +24,7 @@ bot.on('message', message => {
                 return message.reply("Please specify reason");
             }
             else {
+                message.reply(`OK! I will remind you in ${time}`)
                 setTimeout(function () {
                     return message.reply(`${reason}`)
                 }, ms(time));
@@ -31,7 +32,7 @@ bot.on('message', message => {
         }
     }
 
-    console.log("time:" + ms(time))
+    console.log("time: " + time)
     console.log("time length: " + time.length);
     console.log("reason: " + reason)
 })
