@@ -1256,7 +1256,8 @@ bot.on('message', message => {
                                     "🤍 __DrKris - Level 200 Bishop__ 🤍\n" +
                                     "Chris4ReaL - Level 190 Night Lord\n" +
                                     "SamuraiChris - Level 184 Paladin\n" +
-                                    "CutePaws - Level 155 Buccaneer"
+                                    "CutePaws - Level 155 Buccaneer\n" +
+                                    "MarXmaN - Level 134 Marksman"
                             }
                         )
                         .setColor("#0A0A0A")
@@ -1282,7 +1283,8 @@ bot.on('message', message => {
                                     "DrKris - Level 200 Bishop\n" +
                                     "🤍 __Chris4ReaL - Level 190 Night Lord__ 🤍\n" +
                                     "SamuraiChris - Level 184 Paladin\n" +
-                                    "CutePaws - Level 155 Buccaneer"
+                                    "CutePaws - Level 155 Buccaneer\n" +
+                                    "MarXmaN - Level 134 Marksman"
                             }
                         )
                         .setColor("#0A0A0A")
@@ -1308,7 +1310,8 @@ bot.on('message', message => {
                                     "DrKris - Level 200 Bishop\n" +
                                     "Chris4ReaL - Level 190 Night Lord\n" +
                                     "🤍 __SamuraiChris - Level 184 Paladin__ 🤍\n" +
-                                    "CutePaws - Level 155 Buccaneer"
+                                    "CutePaws - Level 155 Buccaneer\n" +
+                                    "MarXmaN - Level 134 Marksman"
                             }
                         )
                         .setColor("#0A0A0A")
@@ -1334,14 +1337,42 @@ bot.on('message', message => {
                                     "DrKris - Level 200 Bishop\n" +
                                     "Chris4ReaL - Level 190 Night Lord\n" +
                                     "SamuraiChris - Level 184 Paladin\n" +
-                                    "🤍 __CutePaws - Level 155 Buccaneer__ 🤍"
+                                    "🤍 __CutePaws - Level 155 Buccaneer__ 🤍\n" +
+                                    "MarXmaN - Level 134 Marksman"
                             }
                         )
                         .setColor("#0A0A0A")
                         .setImage("https://i.ibb.co/ZYRfj4L/CutePaws.png"),
                     reactions: {
                         '⬅': 'SamuraiChris',
-                        '❌': 'CutePaws'
+                        '➡': 'MarXmaN'
+                    }
+                },
+                {
+                    name: 'MarXmaN',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Chris", inline: true },
+                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Country:", value: "Malaysia", inline: true },
+                            { name: "Speaks:", value: "English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "DrKris - Level 200 Bishop\n" +
+                                    "Chris4ReaL - Level 190 Night Lord\n" +
+                                    "SamuraiChris - Level 184 Paladin\n" +
+                                    "CutePaws - Level 155 Buccaneer\n" +
+                                    "🤍 __MarXmaN - Level 134 Marksman__ 🤍"
+                            }
+                        )
+                        .setColor("#0A0A0A")
+                        .setImage("https://i.ibb.co/C7D8F2c/MarXmaN.png"),
+                    reactions: {
+                        '⬅': 'CutePaws',
+                        '❌': 'MarXmaN'
                     }
                 },
             ], 60000)
