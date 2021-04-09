@@ -19,16 +19,14 @@ bot.on('message', message => {
         }
 
         var reason = args.join(" ").slice(time.length + 1);
-        if (reason) {
-            if (!args[1]) {
-                return message.reply("Please specify reason");
-            }
-            else {
-                message.reply(`OK! I will remind you in ${time}`)
-                setTimeout(function () {
-                    return message.reply(`${reason}`)
-                }, ms(time));
-            }
+        if (!reason) {
+            return message.reply("Please specify reason");
+        }
+        else {
+            message.reply(`OK! I will remind you in ${time}`)
+            setTimeout(function () {
+                return message.reply(`${reason}`)
+            }, ms(time));
         }
     }
 
