@@ -181,7 +181,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __NLynx - Level 200 Night Lord__ 🤍\n" +
-                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "Acinonyx - Level 18x Dark Knight\n" +
                                     "LunarN - Level 16x Shadower\n" +
                                     "NPanthera - Level 16x Bowmaster"
                             }
@@ -207,7 +207,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "NLynx - Level 200 Night Lord\n" +
-                                    "🤍 __Acinonyx - Level 17x Dark Knight__ 🤍\n" +
+                                    "🤍 __Acinonyx - Level 18x Dark Knight__ 🤍\n" +
                                     "LunarN - Level 16x Shadower\n" +
                                     "NPanthera - Level 16x Bowmaster"
                             }
@@ -233,7 +233,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "NLynx - Level 200 Night Lord\n" +
-                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "Acinonyx - Level 18x Dark Knight\n" +
                                     "🤍 __LunarN - Level 16x Shadower__ 🤍\n" +
                                     "NPanthera - Level 16x Bowmaster"
                             }
@@ -259,7 +259,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "NLynx - Level 200 Night Lord\n" +
-                                    "Acinonyx - Level 17x Dark Knight\n" +
+                                    "Acinonyx - Level 18x Dark Knight\n" +
                                     "LunarN - Level 16x Shadower\n" +
                                     "🤍 __NPanthera - Level 16x Bowmaster__ 🤍"
                             }
