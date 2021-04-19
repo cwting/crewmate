@@ -845,7 +845,7 @@ bot.on('message', message => {
             message.reply("Here's info on David! 😉")
             let member = new Menu(message.channel, message.author.id, [
                 {
-                    name: 'megachin',
+                    name: 'Negachin',
                     content: new MessageEmbed({
                         title: 'Member of Crew',
                     })
@@ -856,14 +856,14 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: "🤍 __megachin - Level 16x Bowmaster__ 🤍"
+                                value: "🤍 __Negachin - Level 16x Bowmaster__ 🤍"
                             }
                         )
                         .setColor("#6F2525")
-                        .setImage("https://i.ibb.co/j66cgGf/megachin.png"),
+                        .setImage("https://i.ibb.co/XWQcHZ1/Negachin.png"),
                     reactions: {
-                        '❌': 'megachin',
-                        '😭': 'megachin'
+                        '❌': 'Negachin',
+                        '😭': 'Negachin'
                     }
                 },
             ], 60000)
