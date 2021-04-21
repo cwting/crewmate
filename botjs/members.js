@@ -40,7 +40,7 @@ bot.on('message', message => {
                                     "🤍 __Wolftail - Level 200 Corsair__ 🤍\n" +
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
-                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Pronghorn - Level 19x Marksman\n" +
                                     "Stripewing - Level 13x Bishop"
                             }
                         )
@@ -67,7 +67,7 @@ bot.on('message', message => {
                                     "Wolftail - Level 200 Corsair\n" +
                                     "🤍 __Bunpaws - Level 200 Buccaneer__ 🤍\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
-                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Pronghorn - Level 19x Marksman\n" +
                                     "Stripewing - Level 13x Bishop"
                             }
                         )
@@ -94,7 +94,7 @@ bot.on('message', message => {
                                     "Wolftail - Level 200 Corsair\n" +
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "🤍 __Nweeky - Level 200 Bowmaster__ 🤍\n" +
-                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Pronghorn - Level 19x Marksman\n" +
                                     "Stripewing - Level 13x Bishop"
                             }
                         )
@@ -121,7 +121,7 @@ bot.on('message', message => {
                                     "Wolftail - Level 200 Corsair\n" +
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
-                                    "🤍 __Pronghorn - Level 18x Marksman__ 🤍\n" +
+                                    "🤍 __Pronghorn - Level 19x Marksman__ 🤍\n" +
                                     "Stripewing - Level 13x Bishop"
                             }
                         )
@@ -148,7 +148,7 @@ bot.on('message', message => {
                                     "Wolftail - Level 200 Corsair\n" +
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
-                                    "Pronghorn - Level 18x Marksman\n" +
+                                    "Pronghorn - Level 19x Marksman\n" +
                                     "🤍 __Stripewing - Level 13x Bishop__ 🤍"
                             }
                         )
@@ -1197,7 +1197,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __xIcedCoffee - Level 200 Hero__ 🤍\n" +
-                                    "HotCoffee- Level 15x Bishop"
+                                    "HotCoffee- Level 17x Bishop"
                             }
                         )
                         .setColor("#000000")
@@ -1221,7 +1221,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xIcedCoffee - Level 200 Hero\n" +
-                                    "🤍 __HotCoffee- Level 15x Bishop__ 🤍"
+                                    "🤍 __HotCoffee- Level 17x Bishop__ 🤍"
                             }
                         )
                         .setColor("#000000")
