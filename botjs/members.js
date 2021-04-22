@@ -661,7 +661,7 @@ bot.on('message', message => {
                             }
                         )
                         .setColor("#5C44D2")
-                        .setImage("https://i.ibb.co/Br07z5f/Mewleficent.png"),
+                        .setImage("https://i.ibb.co/FXsyvbz/Mewleficent.png"),
                     reactions: {
                         '⬅': 'xCintare',
                         '❌': 'Mewleficent'
