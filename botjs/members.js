@@ -944,7 +944,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __NinjaJenn - Level 17x Night Lord__ 🤍\n" +
-                                    "Bullseyeboi - Level 14x Bowmaster\n" +
+                                    "Bullseyeboi - Level 15x Bowmaster\n" +
                                     "FrozenQueenX - Level 14x Bishop"
                             }
                         )
@@ -969,7 +969,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "NinjaJenn - Level 17x Night Lord\n" +
-                                    "🤍 __Bullseyeboi - Level 14x Bowmaster__ 🤍\n" +
+                                    "🤍 __Bullseyeboi - Level 15x Bowmaster__ 🤍\n" +
                                     "FrozenQueenX - Level 14x Bishop"
                             }
                         )
@@ -994,7 +994,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "NinjaJenn - Level 17x Night Lord\n" +
-                                    "Bullseyeboi - Level 14x Bowmaster\n" +
+                                    "Bullseyeboi - Level 15x Bowmaster\n" +
                                     "🤍 __FrozenQueenX - Level 14x Bishop__ 🤍"
                             }
                         )
