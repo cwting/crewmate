@@ -3,8 +3,8 @@ var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
 var apq = require('./botjs/apq.js');
-var remind = require('./botjs/remind.js')
-var ask = require('./botjs/ask.js')
+var remind = require('./botjs/remind.js');
+// var ask = require('./botjs/ask.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -28,7 +28,7 @@ bot.on("message", async msg => {
                 { name: 'About Crew', value: '`c.about`' },
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
-                { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
+                // { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
                 { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
@@ -76,17 +76,17 @@ bot.on("message", async msg => {
     }
 
     /* ------------------------------- ASK ------------------------------- */
-    else if (msg.content.toLowerCase() === "c.ask") {
-        const askmsg = new Discord.MessageEmbed()
-            .setColor('#DDDDDD')
-            .setTitle('Have A Question?')
-            .setDescription(
-                "Enter in the following format:\n" +
-                "`c.ask [question]`"
-            )
-        msg.channel.send(askmsg);
-        ask;
-    }
+    // else if (msg.content.toLowerCase() === "c.ask") {
+    //     const askmsg = new Discord.MessageEmbed()
+    //         .setColor('#DDDDDD')
+    //         .setTitle('Have A Question?')
+    //         .setDescription(
+    //             "Enter in the following format:\n" +
+    //             "`c.ask [question]`"
+    //         )
+    //     msg.channel.send(askmsg);
+    //     ask;
+    // }
 
     /* ------------------------------- CWK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.cwkbon") {
