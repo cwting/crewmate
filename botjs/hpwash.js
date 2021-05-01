@@ -5,15 +5,14 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
-const prefix = "c.";
 bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
-    var aprMeso = 12500000;
+    var aprMeso = 12000000;
 
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.startsWith("C.") || (!message.content.startsWith("c.") || message.author.bot)) return;
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const args = message.content.slice(2).trim().split(/ +/);
     const command = args.shift().toLowerCase();
     var job = args[0];
     var level = args[1];

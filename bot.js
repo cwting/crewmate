@@ -27,6 +27,7 @@ bot.on("message", async msg => {
                 { name: 'About Crew', value: '`c.about`' },
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
+                { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
                 { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
@@ -72,6 +73,14 @@ bot.on("message", async msg => {
         msg.channel.send(apcalcmsg);
         apcalc;
     }
+
+    /* ------------------------------- ASK ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.ask") {
+        const askArray = ['Hell yes!', 'Yes.', 'Probably.', 'Maybe.', 'Probably not.', 'No.', 'Hell no!', 'Uhm...'];
+        var askArrayNum = Math.floor(Math.random() * 8);
+        msg.reply(`${askArray[askArrayNum]}`)
+    }
+
     /* ------------------------------- CWK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.cwkbon") {
         cwkbon;
