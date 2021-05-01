@@ -6,10 +6,11 @@ bot.on("ready", () => {
     console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (remind.js)`); // BOT online
 });
 
+const prefix = "c.";
 bot.on('message', message => {
-    if (!message.content.startsWith("C.") || (!message.content.startsWith("c.") || message.author.bot)) return;
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-    const args = message.content.slice(2).trim().split(/ +/);
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
 
     if (command === 'remind') {

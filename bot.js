@@ -76,9 +76,7 @@ bot.on("message", async msg => {
 
     /* ------------------------------- ASK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.ask") {
-        const askArray = ['Hell yes!', 'Yes.', 'Probably.', 'Maybe.', 'Probably not.', 'No.', 'Hell no!', 'Uhm...'];
-        var askArrayNum = Math.floor(Math.random() * 8);
-        msg.reply(`${askArray[askArrayNum]}`)
+        
     }
 
     /* ------------------------------- CWK ------------------------------- */
