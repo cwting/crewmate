@@ -4,7 +4,7 @@ var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
 var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js');
-// var ask = require('./botjs/ask.js');
+var ask = require('./botjs/ask.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -76,17 +76,17 @@ bot.on("message", async msg => {
     }
 
     /* ------------------------------- ASK ------------------------------- */
-    // else if (msg.content.toLowerCase() === "c.ask") {
-    //     const askmsg = new Discord.MessageEmbed()
-    //         .setColor('#DDDDDD')
-    //         .setTitle('Have A Question?')
-    //         .setDescription(
-    //             "Enter in the following format:\n" +
-    //             "`c.ask [question]`"
-    //         )
-    //     msg.channel.send(askmsg);
-    //     ask;
-    // }
+    else if (msg.content.toLowerCase() === "c.meow") {
+        const askmsg = new Discord.MessageEmbed()
+            .setColor('#DDDDDD')
+            .setTitle('Have A Question?')
+            .setDescription(
+                "Enter in the following format:\n" +
+                "`c.ask [question]`"
+            )
+        msg.channel.send(askmsg);
+        ask;
+    }
 
     /* ------------------------------- CWK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.cwkbon") {
@@ -203,7 +203,7 @@ bot.on("message", async msg => {
     /* ------------------------------- RANDOM GACHA LOCATION PICKER ------------------------------- */
     else if (msg.content.toLowerCase() === "c.gach") {
         const gachLocationArray = ['CBD', 'Ellinia', 'Henesys', 'Kerning City', 'Nautilus', 'NLC', 'Perion', 'Showa', 'Mushroom Shrine', 'Sleepywood'];
-        var gachLocationArrayNum = Math.floor(Math.random() * 10);
+        var gachLocationArrayNum = Math.floor(Math.random() * gachLocationArray.length);
         msg.reply(
             `I have picked ${gachLocationArray[gachLocationArrayNum]} for you! Good Luck!\n` +
             "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"

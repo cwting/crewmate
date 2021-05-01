@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
@@ -6,13 +6,13 @@ bot.on("ready", () => {
 });
 
 const prefix = "c.";
-bot.on('message', message => {
+bot.on("message", message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if (command === 'ask') {
+    if (command === "ask") {
         if (!args.length) {
             return
         }
@@ -21,12 +21,18 @@ bot.on('message', message => {
             return message.reply("Please ask your question.");
         }
         else {
-            const askArray = ['Hell yes!', 'Yes.', 'Probably.', 'Maybe.', 'Probably not.', 'No.', 'Hell no!', 'Uhm...'];
-            var askArrayNum = Math.floor(Math.random() * 8);
-            message.reply(
-                `${askArray[askArrayNum]}\n` +
-                "Disclaimer: Please don't take Crewmate's answer too seriously, he/she/it is a skem.\n- Bell"
-            )
+            const badwordsArray = ["gay", "slut", "babi", "cb", "ccb", "bitch", "fuck"];
+            const askArray = ["Hell yes!", "Yes.", "Probably.", "Maybe.", "Probably not.", "No.", "Hell no!", "Uhm...", "I don't know, what do you think? 🤔", "I hope not!", "Hmm..."];
+            var askArrayNum = Math.floor(Math.random() * askArray.length);
+            if (badwordsArray.some(word => message.toString().toLowerCase().includes(word))) {
+                message.reply(`I will not be answering your question because it contains bad words! 😠`)
+            }
+            else {
+                message.reply(
+                    `${askArray[askArrayNum]}\n` +
+                    "Disclaimer: Please don't take Crewmate's answer too seriously, he/she/it is a skem.\n-Bell"
+                )
+            }
         }
     }
 })
