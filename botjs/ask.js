@@ -23,7 +23,10 @@ bot.on('message', message => {
         else {
             const askArray = ['Hell yes!', 'Yes.', 'Probably.', 'Maybe.', 'Probably not.', 'No.', 'Hell no!', 'Uhm...'];
             var askArrayNum = Math.floor(Math.random() * 8);
-            message.reply(`${askArray[askArrayNum]}`)
+            message.reply(
+                `${askArray[askArrayNum]}\n` +
+                "Disclaimer: Please don't take Crewmate's answer too seriously, he/she/it is a skem.\n- Bell"
+            )
         }
     }
 })
