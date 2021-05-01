@@ -76,7 +76,7 @@ bot.on("message", async msg => {
     }
 
     /* ------------------------------- ASK ------------------------------- */
-    else if (msg.content.toLowerCase() === "c.meow") {
+    else if (msg.content.toLowerCase() === "c.ask") {
         const askmsg = new Discord.MessageEmbed()
             .setColor('#DDDDDD')
             .setTitle('Have A Question?')

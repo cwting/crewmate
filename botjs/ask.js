@@ -25,10 +25,12 @@ bot.on("message", message => {
             const askArray = ["Hell yes!", "Yes.", "Probably.", "Maybe.", "Probably not.", "No.", "Hell no!", "Uhm...", "I don't know, what do you think? 🤔", "I hope not!", "Hmm..."];
             var askArrayNum = Math.floor(Math.random() * askArray.length);
             if (badwordsArray.some(word => message.toString().toLowerCase().includes(word))) {
-                message.reply(`I will not be answering your question because it contains bad words! 😠`)
+                return message.reply(
+                    `I will not be answering your question because it contains bad words! 😠`
+                )
             }
             else {
-                message.reply(
+                return message.reply(
                     `${askArray[askArrayNum]}\n` +
                     "Disclaimer: Please don't take Crewmate's answer too seriously, he/she/it is a skem.\n-Bell"
                 )
