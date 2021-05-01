@@ -4,6 +4,7 @@ var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
 var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js')
+var ask = require('./botjs/ask.js')
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -76,7 +77,15 @@ bot.on("message", async msg => {
 
     /* ------------------------------- ASK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.ask") {
-        
+        const askmsg = new Discord.MessageEmbed()
+            .setColor('#DDDDDD')
+            .setTitle('Have A Question?')
+            .setDescription(
+                "Enter in the following format:\n" +
+                "`c.ask [question]`"
+            )
+        msg.channel.send(askmsg);
+        ask;
     }
 
     /* ------------------------------- CWK ------------------------------- */
