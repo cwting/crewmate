@@ -3,7 +3,7 @@ const { Menu } = require('discord.js-menu');
 const bot = new Client()
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (apq.js)`); // BOT online
+    console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
 });
 
 bot.on('message', message => {

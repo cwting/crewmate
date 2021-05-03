@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (apcalc.js)`); // BOT online
+    console.info(`${bot.user.tag} is now online! (apcalc.js)`); // BOT online
 });
 
 const prefix = "c.";

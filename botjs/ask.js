@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (ask.js)`); // BOT online
+    console.info(`${bot.user.tag} is now online! (ask.js)`); // BOT online
 });
 
 const prefix = "c.";
@@ -22,7 +22,15 @@ bot.on("message", message => {
         }
         else {
             const badwordsArray = ["gay", "slut", "babi", "cb", "ccb", "bitch", "fuck"];
-            const askArray = ["Hell yes!", "Yes.", "Probably.", "Maybe.", "Probably not.", "No.", "Hell no!", "Uhm...", "I don't know, what do you think? 🤔", "I hope not!", "Hmm..."];
+            const askArray = [
+                "Hell yes!", "Yes.",
+
+                "Probably.", "Maybe.", "Probably not.",
+
+                "No.", "Hell no!",
+
+                "Uhm...", "I don't know, what do you think? 🤔", "I hope not!", "Hmm..."
+            ];
             var askArrayNum = Math.floor(Math.random() * askArray.length);
             if (badwordsArray.some(word => message.toString().toLowerCase().includes(word))) {
                 return message.reply(

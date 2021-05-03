@@ -3,7 +3,7 @@ const ms = require('ms');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (remind.js)`); // BOT online
+    console.info(`${bot.user.tag} is now online! (remind.js)`); // BOT online
 });
 
 const prefix = "c.";

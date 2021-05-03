@@ -9,7 +9,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}! ${bot.user.tag} is now online! (index.js)`); // BOT online
+    console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
 });
 
@@ -28,7 +28,7 @@ bot.on("message", async msg => {
                 { name: 'About Crew', value: '`c.about`' },
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
-                // { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
+                { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
                 { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
@@ -64,12 +64,12 @@ bot.on("message", async msg => {
             .setTitle("Calculate AP")
             .setDescription(
                 "Enter your level, clean str, clean dex, clean int and clean luk in the following format:\n" +
-                "c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`\n" +
-                "`[level]`: 1 - 200\n" +
-                "`[str]`: 4 - 999 \n" +
-                "`[dex]`: 4 - 999 \n" +
-                "`[int]`: 4 - 999 \n" +
-                "`[luk]`: 4 - 999"
+                "c.ap `level` `str` `dex` `int` `luk`\n" +
+                "`level`: 1 - 200\n" +
+                "`str`: 4 - 999 \n" +
+                "`dex`: 4 - 999 \n" +
+                "`int`: 4 - 999 \n" +
+                "`luk`: 4 - 999"
             );
         msg.channel.send(apcalcmsg);
         apcalc;
@@ -82,7 +82,7 @@ bot.on("message", async msg => {
             .setTitle('Have A Question?')
             .setDescription(
                 "Enter in the following format:\n" +
-                "`c.ask [question]`"
+                "`c.ask question`"
             )
         msg.channel.send(askmsg);
         ask;
@@ -109,10 +109,10 @@ bot.on("message", async msg => {
             .setTitle('HP Wash')
             .setDescription(
                 "Enter your job, level and clean MP in the following format:\n" +
-                "`c.hpwash [job] [level] [mp]`\n" +
-                "`[job]`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
-                "`[level]`: 1 - 200\n" +
-                "`[mp]`: 1 - 30000 (not inclusive of MP added by equipments)"
+                "`c.hpwash job level mp`\n" +
+                "`job`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+                "`level`: 1 - 200\n" +
+                "`mp`: 1 - 30000 (not inclusive of MP added by equipments)"
             )
             .setFooter("Many thanks to Naomi, Antonio, Nivi and Marc for helping out with this section 🤍\nAnd let me know if there's any error in calculations @Ting#4335");
 
@@ -157,7 +157,7 @@ bot.on("message", async msg => {
             .setTitle('Crew\'s Members')
             .setDescription(
                 "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member [name]`"
+                "`c.member name`"
             )
             .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
             .addFields(
@@ -217,9 +217,9 @@ bot.on("message", async msg => {
             .setTitle('Reminder')
             .setDescription(
                 "Enter in the following format:\n" +
-                "`c.remind [time] [reason]`\n" +
-                "`[time]`: s (seconds), m (minutes), h (hours), d (days)\n" +
-                "`[reason]`: reason for reminder"
+                "`c.remind time reason`\n" +
+                "`time`: s (seconds), m (minutes), h (hours), d (days)\n" +
+                "`reason`: reason for reminder"
             )
         msg.channel.send(remindmsg);
         remind;
