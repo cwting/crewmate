@@ -5,6 +5,7 @@ var apcalc = require('./botjs/apcalc.js');
 var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
+var dice = require('./botjs/dice.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -30,6 +31,7 @@ bot.on("message", async msg => {
                 { name: 'APQ Stage 2', value: '`c.apq`' },
                 { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
+                { name: 'Roll A Dice', value: '`c.dice`' },
                 { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
@@ -91,6 +93,19 @@ bot.on("message", async msg => {
     /* ------------------------------- CWK ------------------------------- */
     else if (msg.content.toLowerCase() === "c.cwkbon") {
         cwkbon;
+    }
+
+    /* ------------------------------- DICE ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.dice") {
+        const dicemsg = new Discord.MessageEmbed()
+            .setColor("#DDDDDD")
+            .setTitle("Roll a Dice")
+            .setDescription(
+                "Enter in the following format:\n" +
+                "`c.dice X`\n" +
+                "`X`: any number"
+            )
+        dice;
     }
 
     /* --------------------------------- GPQ ----------------------------------- */

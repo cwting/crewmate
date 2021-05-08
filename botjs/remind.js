@@ -7,8 +7,9 @@ bot.on("ready", () => {
 });
 
 const prefix = "c.";
+const prefixB = "C.";
 bot.on('message', message => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.startsWith(prefix) || !message.content.startsWith(prefixB) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
@@ -17,7 +18,7 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
-        
+
         var time = args[0];
         if (!time) {
             return message.reply("Please specify time");
