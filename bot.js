@@ -105,6 +105,7 @@ bot.on("message", async msg => {
                 "`c.dice X`\n" +
                 "`X`: any number"
             )
+        msg.channel.send(dicemsg);
         dice;
     }
 
