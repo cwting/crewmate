@@ -11,12 +11,11 @@ bot.on('message', message => {
     var aprNX = 3100;
     var aprMeso = 11000000;
 
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
     var job = args[0];
-    job = job.toLowerCase();
     var level = args[1];
     var cleanMP = args[2];
 
@@ -26,7 +25,7 @@ bot.on('message', message => {
             return
         }
         else if ((level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
-            switch (job) {
+            switch (job.toLowerCase()) {
                 case "beginner":
                     var minHPGain = 8;
                     var avgHPGain = 10;
