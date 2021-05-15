@@ -126,7 +126,7 @@ bot.on("message", async msg => {
             .setDescription(
                 "Enter your job, level and clean MP in the following format:\n" +
                 "`c.hpwash job level mp`\n" +
-                "`job`: beginner, spearman, fighter, page, archer, thief, brawler, gunslinger, magician\n" +
+                "`job`: job/class\n" +
                 "`level`: 1 - 200\n" +
                 "`mp`: 1 - 30000 (not inclusive of MP added by equipments)"
             )
