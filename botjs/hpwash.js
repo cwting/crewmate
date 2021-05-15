@@ -24,8 +24,36 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
+        else if ((level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+            switch (job) {
+                // beginner
+                case "beginner":
+                    var minHPGain = 8;
+                    var avgHPGain = 10;
+                    var mpLoss = 8;
+                    var minMP = (10 * level) + 2;
+                    var extraMP = cleanMP - minMP
+                    var numOfWash = Math.floor(extraMP / mpLoss);
+                    var minHPGained = numOfWash * minHPGain;
+                    var avgHPGained = numOfWash * avgHPGain;
+                    break;
+
+                case "spearman":
+                case "dk":
+                case "drk":
+                    var minHPGain = 50;
+                    var avgHPGain = 52;
+                    var mpLoss = 4;
+                    var minMP = (4 * level) + 156;
+                    var extraMP = cleanMP - minMP
+                    var numOfWash = Math.floor(extraMP / mpLoss);
+                    var minHPGained = numOfWash * minHPGain;
+                    var avgHPGained = numOfWash * avgHPGain;
+                    break;
+            }
+        }
         // beginner
-        else if ((job.toLowerCase() === 'beginner') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
+        /*else if ((job.toLowerCase() === 'beginner') && (level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             var minHPGain = 8;
             var avgHPGain = 10;
             var mpLoss = 8;
@@ -206,7 +234,7 @@ bot.on('message', message => {
                     `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS10).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS10 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS10).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)`
                 )
             }
-        }
+        }*/
         else {
             return message.reply("Incorrect format!\nCorrect format: c.hpwash `[job]` `[level]` `[mp]`")
         }

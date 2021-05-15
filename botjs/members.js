@@ -32,7 +32,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988}`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1988}`, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
@@ -59,7 +59,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988}`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1988}`, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
@@ -86,7 +86,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988}`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1988}`, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
@@ -113,7 +113,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988}`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1988}`, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
@@ -140,7 +140,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Nivi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1988} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1988} `, inline: true },
                             { name: "Country:", value: "Finland", inline: true },
                             { name: "Speaks:", value: "Finnish, English, Swedish, Spanish (Basics)", inline: true },
                             {
@@ -175,7 +175,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -201,7 +201,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -227,7 +227,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -253,7 +253,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Naomi", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "EU", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -288,7 +288,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
-                            { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
                             { name: "Country:", value: "Korea", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
@@ -315,7 +315,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
-                            { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
                             { name: "Country:", value: "Korea", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
@@ -342,7 +342,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
-                            { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
                             { name: "Country:", value: "Korea", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
@@ -369,7 +369,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
-                            { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
                             { name: "Country:", value: "Korea", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
@@ -396,7 +396,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Marc/Kook", inline: true },
-                            { name: "Age:", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1995} (Normal), ${currentYear - 1994} (Korean)`, inline: true },
                             { name: "Country:", value: "Korea", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Korean", inline: true },
                             {
@@ -431,7 +431,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -456,7 +456,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -481,7 +481,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Arch/Antonio", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "English, Arabic, Hebrew", inline: true },
                             {
@@ -514,7 +514,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -522,7 +522,7 @@ bot.on('message', message => {
                                 value:
                                     "🤍 __DingTongBell - Level 200 Hero__ 🤍\n" +
                                     "BadPuncher - Level 19x Buccaneer\n" +
-                                    "TingTongBell - Level 18x Bishop"
+                                    "TingTongBell - Level 19x Bishop"
                             }
                         )
                         .setColor("#F83B3B")
@@ -539,7 +539,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -547,7 +547,7 @@ bot.on('message', message => {
                                 value:
                                     "DingTongBell - Level 200 Hero\n" +
                                     "🤍 __BadPuncher - Level 19x Buccaneer__ 🤍\n" +
-                                    "TingTongBell - Level 18x Bishop"
+                                    "TingTongBell - Level 19x Bishop"
                             }
                         )
                         .setColor("#F83B3B")
@@ -564,7 +564,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Bell/Belle", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Singapore", inline: true },
                             { name: "Speaks:", value: "English, Chinese", inline: true },
                             {
@@ -572,7 +572,7 @@ bot.on('message', message => {
                                 value:
                                     "DingTongBell - Level 200 Hero\n" +
                                     "BadPuncher - Level 19x Buccaneer\n" +
-                                    "🤍 __TingTongBell - Level 18x Bishop__ 🤍"
+                                    "🤍 __TingTongBell - Level 19x Bishop__ 🤍"
                             }
                         )
                         .setColor("#F83B3B")
@@ -597,7 +597,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Piet/Pietro", inline: true },
-                            { name: "Age:", value: `${currentYear - 2001} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2001} `, inline: true },
                             { name: "Country:", value: "Germany", inline: true },
                             { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                             {
@@ -627,7 +627,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
@@ -651,7 +651,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Gel", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "Philippines", inline: true },
                             { name: "Speaks:", value: "English, Filipino", inline: true },
                             {
@@ -683,7 +683,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -692,7 +692,7 @@ bot.on('message', message => {
                                     "🤍 __iTinyRick - Level 200 Dark Knight__ 🤍\n" +
                                     "TinyHero - Level 200 Hero\n" +
                                     "iDragonFist - Level 19x Buccaneer\n" +
-                                    "HealWolf - Level 15x Bishop"
+                                    "HealWolf - Level 16x Bishop"
                             }
                         )
                         .setColor("#000000")
@@ -709,7 +709,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -718,7 +718,7 @@ bot.on('message', message => {
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "🤍 __TinyHero - Level 200 Hero__ 🤍\n" +
                                     "iDragonFist - Level 19x Buccaneer\n" +
-                                    "HealWolf - Level 15x Bishop"
+                                    "HealWolf - Level 16x Bishop"
                             }
                         )
                         .setColor("#000000")
@@ -735,7 +735,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -744,7 +744,7 @@ bot.on('message', message => {
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "TinyHero - Level 200 Hero\n" +
                                     "🤍 __iDragonFist - Level 19x Buccaneer__ 🤍\n" +
-                                    "HealWolf - Level 15x Bishop"
+                                    "HealWolf - Level 16x Bishop"
                             }
                         )
                         .setColor("#000000")
@@ -761,7 +761,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Lior", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Israel", inline: true },
                             { name: "Speaks:", value: "Hebrew, English", inline: true },
                             {
@@ -770,7 +770,7 @@ bot.on('message', message => {
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "TinyHero - Level 200 Hero\n" +
                                     "iDragonFist - Level 19x Buccaneer\n" +
-                                    "🤍 __HealWolf - Level 15x Bishop__ 🤍"
+                                    "🤍 __HealWolf - Level 16x Bishop__ 🤍"
                             }
                         )
                         .setColor("#000000")
@@ -795,7 +795,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "USA/Korea", inline: true },
                             { name: "Speaks:", value: "English, Korean", inline: true },
                             {
@@ -819,7 +819,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jon", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "USA/Korea", inline: true },
                             { name: "Speaks:", value: "English, Korean", inline: true },
                             {
@@ -852,7 +852,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "David", inline: true },
-                            { name: "Age:", value: `${currentYear - 2000} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2000} `, inline: true },
                             { name: "Country:", value: "The Netherlands", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -882,7 +882,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Rosa", inline: true },
-                            { name: "Age:", value: `${currentYear - 2004} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2004} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
                             {
@@ -906,7 +906,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Rosa", inline: true },
-                            { name: "Age:", value: `${currentYear - 2004} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2004} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, Mandarin, French (Basics)", inline: true },
                             {
@@ -938,7 +938,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jenny/Jenn", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, French, Greek", inline: true },
                             {
@@ -963,7 +963,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jenny/Jenn", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, French, Greek", inline: true },
                             {
@@ -988,7 +988,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Jenny/Jenn", inline: true },
-                            { name: "Age:", value: `${currentYear - 1997} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1997} `, inline: true },
                             { name: "Country:", value: "Canada", inline: true },
                             { name: "Speaks:", value: "English, French, Greek", inline: true },
                             {
@@ -1021,7 +1021,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "JJ", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Malay, Cantonese", inline: true },
                             {
@@ -1046,7 +1046,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "JJ", inline: true },
-                            { name: "Age:", value: `${currentYear - 1994} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1994} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English, Chinese, Malay, Cantonese", inline: true },
                             {
@@ -1079,7 +1079,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "James", inline: true },
-                            { name: "Age:", value: `${currentYear - 1992} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1992} `, inline: true },
                             { name: "Country:", value: "USA", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1103,7 +1103,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "James", inline: true },
-                            { name: "Age:", value: `${currentYear - 1992} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1992} `, inline: true },
                             { name: "Country:", value: "USA", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1135,14 +1135,14 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Sabina", inline: true },
-                            { name: "Age:", value: `${currentYear - 1991} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1991} `, inline: true },
                             { name: "Country:", value: "Sweden", inline: true },
                             { name: "Speaks:", value: "Swedish, English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __Kwin - Level 17x Hero__ 🤍\n" +
-                                    "Kwinie - Level 12x Bishop"
+                                    "🤍 __Kwin - Level 18x Hero__ 🤍\n" +
+                                    "Kwinie - Level 13x Bishop"
                             }
                         )
                         .setColor("#C35DAE")
@@ -1159,14 +1159,14 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Sabina", inline: true },
-                            { name: "Age:", value: `${currentYear - 1991} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1991} `, inline: true },
                             { name: "Country:", value: "Sweden", inline: true },
                             { name: "Speaks:", value: "Swedish, English", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "Kwin - Level 17x Hero\n" +
-                                    "🤍 __Kwinie - Level 12x Bishop__ 🤍"
+                                    "Kwin - Level 18x Hero\n" +
+                                    "🤍 __Kwinie - Level 13x Bishop__ 🤍"
                             }
                         )
                         .setColor("#C35DAE")
@@ -1191,7 +1191,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Cyrus", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "Chinese, English, Malay, Basic Thai and French", inline: true },
                             {
@@ -1215,7 +1215,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Cyrus", inline: true },
-                            { name: "Age:", value: `${currentYear - 1998} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1998} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "Chinese, English, Malay, Basic Thai and French", inline: true },
                             {
@@ -1248,7 +1248,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1275,7 +1275,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1302,7 +1302,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1329,7 +1329,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
@@ -1356,7 +1356,7 @@ bot.on('message', message => {
                     })
                         .addFields(
                             { name: "Name:", value: "Chris", inline: true },
-                            { name: "Age:", value: `${currentYear - 1996} `, inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1996} `, inline: true },
                             { name: "Country:", value: "Malaysia", inline: true },
                             { name: "Speaks:", value: "English", inline: true },
                             {
