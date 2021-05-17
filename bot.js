@@ -15,7 +15,7 @@ bot.on("ready", () => {
     bot.user.setActivity("c.help") // set BOT's status
 
     const eventCh = bot.channels.cache.get('828527080110424074');
-    const job = new cron.CronJob('0 0 12 * * *', () => {
+    const job = new cron.CronJob('5 * * * * *', () => {
         eventCh.send("test");
     });
 
