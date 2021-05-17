@@ -15,11 +15,11 @@ bot.on("ready", () => {
     bot.user.setActivity("c.help") // set BOT's status
 
     const eventCh = bot.channels.cache.get('828527080110424074');
-    const job = new cron.CronJob('* * * * * *', () => {
-        eventCh.send("test");
+    const job = new cron.CronJob('* * */4 * * *', () => {
+        eventCh.send(`<@&${828282848724516875}>, time for cake!`);
     });
 
-    job.stop()
+    job.start()
 });
 
 /* ------------------------------- HELP ------------------------------- */
@@ -169,7 +169,7 @@ bot.on("message", async msg => {
                 "Lv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n" +
                 "Lv 105+: Petrifighter [Singapore: Ulu City Center]\n" +
                 "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
-                "*: First Map After Zipangu: Inside the Castle Gate"
+                "* **First Map After Zipangu: Inside the Castle Gate**"
             )
             .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
         msg.channel.send(leechmsg);
