@@ -13,14 +13,14 @@ const bot = new Discord.Client();
 bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
-});
 
-const scheduledMessage = new cron.CronJob('10 * * * * *', () => {
-    const guildID = bot.guilds.cache.get("460380501191163906");
-    const eventCh = bot.channels.cache.get("828527080110424074");
-    eventCh.send('My Message');
+    const eventCh = bot.channels.cache.get('828527080110424074');
+    const job = new cron.CronJob('0 0 12 * * *', () => {
+        eventCh.send("test");
+    });
+
+    job.start()
 });
-scheduledMessage.start()
 
 /* ------------------------------- HELP ------------------------------- */
 bot.on("message", async msg => {
