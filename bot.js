@@ -6,6 +6,7 @@ var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
 var dice = require('./botjs/dice.js');
+const cron = require('cron');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -13,6 +14,13 @@ bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
 });
+
+const scheduledMessage = new cron.CronJob('10 * * * * *', () => {
+    const guildID = bot.guilds.cache.get("460380501191163906");
+    const eventCh = bot.channels.cache.get("828527080110424074");
+    eventCh.send('My Message');
+});
+scheduledMessage.start()
 
 /* ------------------------------- HELP ------------------------------- */
 bot.on("message", async msg => {
@@ -144,6 +152,7 @@ bot.on("message", async msg => {
             .setDescription(
                 "Lv 10-20: Bubbling [Kerning City Subway: Line 1 Area <1>]\n" +
                 "Lv 20-25: Wild Boar [Hidden Street: The Land of WildBoar I]\n" +
+                "Lv 21-30: Genin [Zipangu: Castle Corridor*]\n" +
                 "Lv 25-30: Brown Teddy, Pink Teddy [Ludibrium: Terrace Hall]\n" +
                 "Lv 30-36: Jr. Wraith [Kerning Line 1 Area 2]\n" +
                 "Lv 36-41: Platoon Chronos [Ludibrium: The Path of Time <1>]\n" +
@@ -160,7 +169,7 @@ bot.on("message", async msg => {
                 "Lv 90-105: Veetron, Slygie [Singapore: Ulu Estate 2]\n" +
                 "Lv 105+: Petrifighter [Singapore: Ulu City Center]\n" +
                 "Lv 108+: Skelegon, Skelosaurus [Leafre: The Dragon Nest Left Behind]\n" +
-                `~~Lv 110+: Duku [Singapore: Destroyed Park I/II] *Destoryed Park I is highly recommended for trio Duku~~ *patch #71 says byebye`
+                "*: First Map After Zipangu: Inside the Castle Gate"
             )
             .setFooter("Details from:\nhttps://mapleroyals.com/forum/threads/leeching-guide-updated-2021.145533/");
         msg.channel.send(leechmsg);
