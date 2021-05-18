@@ -15,16 +15,9 @@ bot.on("ready", () => {
     bot.user.setActivity("c.help") // set BOT's status
 
     const eventCh = bot.channels.cache.get('828527080110424074');
-    const job = new cron.CronJob(
-        '00 55 */3 * * *',
-        '00 55 */7 * * *',
-        '00 55 */11 * * *',
-        '00 55 */15 * * *',
-        '00 55 */19 * * *',
-        '00 55 */23 * * *', () => {
-            eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
-        });
-
+    const job = new cron.CronJob('00 55 */3 * * *', () => {
+        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+    });
     job.start()
 });
 
