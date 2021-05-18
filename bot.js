@@ -6,7 +6,7 @@ var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
 var dice = require('./botjs/dice.js');
-const cron = require('node-cron');
+const cron = require('cron');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -15,22 +15,22 @@ bot.on("ready", () => {
     bot.user.setActivity("c.help") // set BOT's status
 
     const eventCh = bot.channels.cache.get('828527080110424074');
-    const event1 = new cron.CronJob('00 55 23 * * *', () => {
+    const event1 = new cron.CronJob('00 55 03 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
-    const event2 = new cron.CronJob('00 55 03 * * *', () => {
+    const event2 = new cron.CronJob('00 55 07 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
-    const event3 = new cron.CronJob('00 55 07 * * *', () => {
+    const event3 = new cron.CronJob('00 55 11 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
-    const event4 = new cron.CronJob('00 55 11 * * *', () => {
+    const event4 = new cron.CronJob('00 55 15 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
-    const event5 = new cron.CronJob('00 55 15 * * *', () => {
+    const event5 = new cron.CronJob('00 55 19 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
-    const event6 = new cron.CronJob('00 55 19 * * *', () => {
+    const event6 = new cron.CronJob('00 55 23 * * *', () => {
         eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
     });
 
