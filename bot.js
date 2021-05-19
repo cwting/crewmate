@@ -14,10 +14,10 @@ bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
 
-    // channel id
+    // channel id (Crewmate)
     const eventCh = bot.channels.cache.get('803636669689233428');
     const event1 = new cron.CronJob('00 55 03 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`); // ping role
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`); // ping role (cake)
     });
     const event2 = new cron.CronJob('00 55 07 * * *', () => {
         eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
@@ -284,6 +284,14 @@ bot.on("message", async msg => {
             )
             .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/");
         msg.channel.send(zakmsg);
+    }
+
+    /* ------------------------------- hidden features ------------------------------- */
+    else if (msg.content.includes() === "bunpaws") {
+        msg.channel.send("https://cdn.discordapp.com/attachments/515879326856642582/839563550207901706/99eab75d-baf4-49e3-ac8c-c183522eaebe_1.gif");
+    }
+    else if (msg.content.includes() === "cutepaws") {
+        msg.channel.send("https://cdn.discordapp.com/attachments/515879326856642582/839569845041496135/cutepaws.gif");
     }
 });
 
