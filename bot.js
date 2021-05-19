@@ -287,10 +287,10 @@ bot.on("message", async msg => {
     }
 
     /* ------------------------------- hidden features ------------------------------- */
-    else if (msg.content.includes() === "bunpaws") {
+    else if (msg.content.includes("bunpaws")) {
         msg.channel.send("https://cdn.discordapp.com/attachments/515879326856642582/839563550207901706/99eab75d-baf4-49e3-ac8c-c183522eaebe_1.gif");
     }
-    else if (msg.content.includes() === "cutepaws") {
+    else if (msg.content.includes("cutepaws")) {
         msg.channel.send("https://cdn.discordapp.com/attachments/515879326856642582/839569845041496135/cutepaws.gif");
     }
 });
