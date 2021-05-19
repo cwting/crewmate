@@ -14,24 +14,25 @@ bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
 
-    const eventCh = bot.channels.cache.get('828527080110424074');
+    // channel id
+    const eventCh = bot.channels.cache.get('803636669689233428');
     const event1 = new cron.CronJob('00 55 03 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`); // ping role
     });
     const event2 = new cron.CronJob('00 55 07 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
     });
     const event3 = new cron.CronJob('00 55 11 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
     });
     const event4 = new cron.CronJob('00 55 15 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
     });
     const event5 = new cron.CronJob('00 55 19 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
     });
     const event6 = new cron.CronJob('00 55 23 * * *', () => {
-        eventCh.send(`<@&${"828282848724516875"}>, cake in 5 minutes!`);
+        eventCh.send(`<@&${"844488721906008065"}>, cake in 5 minutes!`);
     });
 
     event1.start(), event2.start(), event3.start(), event4.start(), event5.start(), event6.start();
