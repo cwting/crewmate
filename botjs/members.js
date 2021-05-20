@@ -602,14 +602,39 @@ bot.on('message', message => {
                             { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
-                                value: "🤍 __MazeRunner - Level 200 Night Lord__ 🤍"
+                                value: "🤍 __MazeRunner - Level 200 Night Lord__ 🤍\n" +
+                                    "MazeCrusher - Level 5x Page\n"
+
                             }
                         )
                         .setColor("#00FFF9")
                         .setImage("https://i.ibb.co/Tc5ynQX/Maze-Runner.png"),
                     reactions: {
                         '❌': 'MazeRunner',
-                        '😭': 'MazeRunner'
+                        '➡': 'MazeCrusher'
+                    }
+                },
+                {
+                    name: 'MazeCrusher',
+                    content: new MessageEmbed({
+                        title: 'Jr. Master of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Piet/Pietro", inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 2001} `, inline: true },
+                            { name: "Country:", value: "Germany", inline: true },
+                            { name: "Speaks:", value: "German, Italian, English, Spanish", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value: "MazeRunner - Level 200 Night Lord\n" +
+                                    "🤍 __MazeCrusher - Level 5x Page__ 🤍\n"
+                            }
+                        )
+                        .setColor("#00FFF9")
+                        .setImage("https://i.ibb.co/h7yPKGC/Maze-Crusher.png"),
+                    reactions: {
+                        '⬅': 'MazeRunner',
+                        '❌': 'MazeCrusher'
                     }
                 },
             ], 60000)
