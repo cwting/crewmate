@@ -1,4 +1,4 @@
-var member = require('./botjs/members.js');
+// var member = require('./botjs/members.js');
 var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
@@ -14,28 +14,15 @@ bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
     bot.user.setActivity("c.help") // set BOT's status
 
-    // channel id (Crewmate)
-    const eventCh = bot.channels.cache.get('803636669689233428');
-    const event1 = new cron.CronJob('00 50 03 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`); // ping role (cake)
-    });
-    const event2 = new cron.CronJob('00 50 07 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`);
-    });
-    const event3 = new cron.CronJob('00 50 11 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`);
-    });
-    const event4 = new cron.CronJob('00 50 15 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`);
-    });
-    const event5 = new cron.CronJob('00 50 19 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`);
-    });
-    const event6 = new cron.CronJob('00 50 23 * * *', () => {
-        eventCh.send(`<@&${"844488721906008065"}>, cake in 10 minutes!`);
-    });
+    /*
+        // get channel id
+        const eventCh = bot.channels.cache.get('CH_ID');
+        const event1 = new cron.CronJob('ss mm hh * * *', () => {
+            eventCh.send(`<@&${"ROLE_ID"}>, hi!`);
+        });
 
-    event1.start(), event2.start(), event3.start(), event4.start(), event5.start(), event6.start();
+        event1.start();
+    */
 });
 
 /* ------------------------------- HELP ------------------------------- */
@@ -59,7 +46,7 @@ bot.on("message", async msg => {
                 { name: 'Guild PQ\'s Trial Stage', value: '`c.gpq`' },
                 { name: 'HP Washing', value: '`c.hpwash`' },
                 { name: 'Leeching Guide', value: '`c.leech`' },
-                { name: 'Members of Crew', value: '`c.member`' },
+                // { name: 'Members of Crew', value: '`c.member`' },
                 { name: 'Random Channel Picker', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker', value: '`c.gach`' },
                 { name: 'Reminder', value: '`c.remind`' },
@@ -193,46 +180,50 @@ bot.on("message", async msg => {
 
     /* ------------------------------- MEMBERS ------------------------------- */
     else if (msg.content.toLowerCase() === "c.member") {
+        // const membermsg = new Discord.MessageEmbed()
+        //     .setColor('#DDDDDD')
+        //     .setTitle('Crew\'s Members')
+        //     .setDescription(
+        //         "Enter the name of the member you're interested in in the following format:\n" +
+        //         "`c.member name`"
+        //     )
+        //     .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
+        //     .addFields(
+        //         {
+        //             name: 'Guild Master and Jr. Masters',
+        //             value:
+        //                 "Nivi\n" +
+        //                 "Naomi\n" +
+        //                 "Marc\n" +
+        //                 "Antonio\n" +
+        //                 "Bell\n" +
+        //                 "Piet\n" +
+        //                 "Gel\n" +
+        //                 "Lior"
+        //         },
+        //         {
+        //             name: 'Members',
+        //             value:
+        //                 "David\n" +
+        //                 "Rosa\n" +
+        //                 "Jenn\n" +
+        //                 "JJ\n" +
+        //                 "James\n" +
+        //                 "Sabi\n" +
+        //                 "Cyrus"
+        //         },
+        //         {
+        //             name: 'Gone But Not Forgotten',
+        //             value:
+        //                 "Chris"
+        //         },
+        //     )
         const membermsg = new Discord.MessageEmbed()
-            .setColor('#DDDDDD')
-            .setTitle('Crew\'s Members')
-            .setDescription(
-                "Enter the name of the member you're interested in in the following format:\n" +
-                "`c.member name`"
-            )
-            .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
-            .addFields(
-                {
-                    name: 'Guild Master and Jr. Masters',
-                    value:
-                        "Nivi\n" +
-                        "Naomi\n" +
-                        "Marc\n" +
-                        "Antonio\n" +
-                        "Bell\n" +
-                        "Piet\n" +
-                        "Gel\n" +
-                        "Lior"
-                },
-                {
-                    name: 'Members',
-                    value:
-                        "David\n" +
-                        "Rosa\n" +
-                        "Jenn\n" +
-                        "JJ\n" +
-                        "James\n" +
-                        "Sabi\n" +
-                        "Cyrus"
-                },
-                {
-                    name: 'Gone But Not Forgotten',
-                    value:
-                        "Chris"
-                },
-            )
+            .setColor("#DDDDDD")
+            .setTitle("Given Up")
+            .setDescription("This command no longer exist.")
         msg.channel.send(membermsg);
-        member;
+        // member;
     }
 
     /* ------------------------------- RANDOM CHANNEL PICKER ------------------------------- */
@@ -259,7 +250,7 @@ bot.on("message", async msg => {
             .setDescription(
                 "Enter in the following format:\n" +
                 "`c.remind time reason`\n" +
-                "`time`: s (seconds), m (minutes), h (hours), d (days)\n" +
+                "`time`: s (seconds), m (minutes), h (hours)\n" +
                 "`reason`: reason for reminder"
             )
         msg.channel.send(remindmsg);
@@ -273,14 +264,14 @@ bot.on("message", async msg => {
             .setTitle("Zakum Pre-Quest Stage 1")
             .setImage("https://i.ibb.co/2gRQxw0/zak-stg1.png")
             .setDescription(
-                "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16.\n" +
                 "11-1 (chest)\n" +
                 "9-2 (chest)\n" +
                 "14-1 (chest)\n" +
                 "4-2 (rock)\n" +
                 "16-3 (chest)\n" +
                 "16-2 (chest)\n" +
-                "16-5 (rock)"
+                "16-5 (rock)\n" +
+                "*In order to gain access to Area 16, you need to go through room 10 or 7 until you reach Area 16."
             )
             .setFooter("Image from:\nhttps://mapleroyals.com/forum/threads/zakum-prerequisite-guide.10723/");
         msg.channel.send(zakmsg);

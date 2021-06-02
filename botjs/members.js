@@ -603,7 +603,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value: "🤍 __MazeRunner - Level 200 Night Lord__ 🤍\n" +
-                                    "MazeCrusher - Level 5x Page\n"
+                                    "MazeCrusher - Level 13x Paladin\n"
 
                             }
                         )
@@ -627,7 +627,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value: "MazeRunner - Level 200 Night Lord\n" +
-                                    "🤍 __MazeCrusher - Level 5x Page__ 🤍\n"
+                                    "🤍 __MazeCrusher - Level 13x Paladin__ 🤍\n"
                             }
                         )
                         .setColor("#00FFF9")
@@ -1167,7 +1167,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __Kwin - Level 18x Hero__ 🤍\n" +
-                                    "Kwinie - Level 13x Bishop"
+                                    "Kwinie - Level 13x Bishop\n" +
+                                    "Kweyn - Level 13x Buccaneer"
                             }
                         )
                         .setColor("#C35DAE")
@@ -1191,14 +1192,40 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "Kwin - Level 18x Hero\n" +
-                                    "🤍 __Kwinie - Level 13x Bishop__ 🤍"
+                                    "🤍 __Kwinie - Level 13x Bishop__ 🤍\n" +
+                                    "Kweyn - Level 13x Buccaneer"
                             }
                         )
                         .setColor("#C35DAE")
                         .setImage("https://i.ibb.co/41nDpPV/Kwinie.png"),
                     reactions: {
                         '⬅': 'Kwin',
-                        '❌': 'Kwinie'
+                        '➡': 'Kweyn'
+                    }
+                },
+                {
+                    name: 'Kweyn',
+                    content: new MessageEmbed({
+                        title: 'Member of Crew',
+                    })
+                        .addFields(
+                            { name: "Name:", value: "Sabina", inline: true },
+                            { name: "Age (By end of 2021):", value: `${currentYear - 1991} `, inline: true },
+                            { name: "Country:", value: "Sweden", inline: true },
+                            { name: "Speaks:", value: "Swedish, English", inline: true },
+                            {
+                                name: "Maple Character(s) IGN, Level and Job:",
+                                value:
+                                    "Kwin - Level 18x Hero\n" +
+                                    "Kwinie - Level 13x Bishop\n" +
+                                    "🤍 __Kweyn - Level 13x Buccaneer__ 🤍"
+                            }
+                        )
+                        .setColor("#C35DAE")
+                        .setImage("https://i.ibb.co/FYDtJzq/INA.png"),
+                    reactions: {
+                        '⬅': 'Kwinie',
+                        '❌': 'Kweyn'
                     }
                 }
             ], 60000)
@@ -1223,7 +1250,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __xIcedCoffee - Level 200 Hero__ 🤍\n" +
-                                    "HotCoffee- Level 17x Bishop"
+                                    "HotCoffee- Level 18x Bishop"
                             }
                         )
                         .setColor("#000000")
@@ -1247,7 +1274,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xIcedCoffee - Level 200 Hero\n" +
-                                    "🤍 __HotCoffee- Level 17x Bishop__ 🤍"
+                                    "🤍 __HotCoffee- Level 18x Bishop__ 🤍"
                             }
                         )
                         .setColor("#000000")
