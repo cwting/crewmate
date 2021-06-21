@@ -22,19 +22,19 @@ bot.on('message', message => {
         if (!hours) {
             return message.reply("Please specify hour(s)");
         }
-        var hoursTime = parseInt(hours) / 3600000
+        var hoursTime = parseInt(hours) * 3600000
 
         var minutes = args[1];
         if (!minutes) {
             return message.reply("Please specify minute(s)");
         }
-        var minutesTime = parseInt(minutes) / 60000
+        var minutesTime = parseInt(minutes) * 60000
 
         var seconds = args[2];
         if (!seconds) {
             return message.reply("Please specify second(s)");
         }
-        var secondsTime = parseInt(seconds) / 1000
+        var secondsTime = parseInt(seconds) * 1000
 
         var totalTime = hoursTime + minutesTime + secondsTime;
 
