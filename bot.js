@@ -249,9 +249,7 @@ bot.on("message", async msg => {
             .setTitle('Reminder')
             .setDescription(
                 "Enter in the following format:\n" +
-                "`c.remind time reason`\n" +
-                "`time`: s (seconds), m (minutes), h (hours)\n" +
-                "`reason`: reason for reminder"
+                "`c.remind hh mm ss reason`"
             )
         msg.channel.send(remindmsg);
         remind;

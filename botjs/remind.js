@@ -18,12 +18,27 @@ bot.on('message', message => {
             return
         }
 
-        var time = args[0];
-        if (!time) {
-            return message.reply("Please specify time");
+        var hours = args[0];
+        if (!hours) {
+            return message.reply("Please specify hour(s)");
         }
+        var hoursTime = hours / 3600000
 
-        var reason = args.join(" ").slice(time.length + 1);
+        var minutes = args[1];
+        if (!minutes) {
+            return message.reply("Please specify minute(s)");
+        }
+        var minutesTime = minutes / 60000
+
+        var seconds = args[2];
+        if (!seconds) {
+            return message.reply("Please specify second(s)");
+        }
+        var secondsTime = seconds / 1000
+
+        var totalTime = hoursTime + minutesTime + secondsTime;
+
+        var reason = args.join(" ").slice(hours.length + 1 + minutes.length + 1 + seconds.length + 1);
         if (!reason) {
             return message.reply("Please specify reason");
         }
@@ -31,7 +46,7 @@ bot.on('message', message => {
             message.reply(`OK! I will remind you in ${time}`)
             setTimeout(function () {
                 return message.reply(`${reason}`)
-            }, ms(time));
+            }, totalTime);
         }
     }
 })
