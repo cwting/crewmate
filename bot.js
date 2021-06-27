@@ -125,7 +125,7 @@ bot.on("message", async msg => {
         const gpqmsg = new Discord.MessageEmbed()
             .setColor("#DDDDDD")
             .setTitle("GPQ Stage 3 Practice")
-            .setDescription("https://cwting.github.io/crewmate/")
+            .setDescription("https://cwting.github.io/crewmate/index.html")
         msg.channel.send(gpqmsg);
     }
 
