@@ -24,9 +24,9 @@ bot.on("ready", () => {
         event1.start();
     */
 
-    let mikeVote = new cron.CronJob("0 20 * * *", () => {
-        bot.users.fetch('409686858826514432').then(mikeVoteMsg => {
-            mikeVoteMsg.send('1min test')
+    let mikeVote = new cron.CronJob("0 0 0 * * *", () => {
+        bot.users.fetch('245522553173442560').then(mikeVoteMsg => {
+            mikeVoteMsg.send('Time to vote :3')
         })
     })
     mikeVote.start();
