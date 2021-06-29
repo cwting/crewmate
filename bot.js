@@ -25,7 +25,7 @@ bot.on("ready", () => {
     */
 
     let mikeVote = new cron.CronJob("* * * * *", () => {
-        client.users.cache.get('409686858826514432').send('15s dm test');
+        bot.users.cache.get('409686858826514432').send('15s dm test');
     })
     mikeVote.start();
 });
