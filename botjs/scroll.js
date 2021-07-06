@@ -17,12 +17,9 @@ bot.on('message', message => {
             return
         }
 
-        var scrollPct = args[0];
-        if (!scrollPct) {
-            return message.reply("Please specify scroll %");
-        }
-
+        var scrollPct = parseInt(args[0]);
         var rng = Math.floor(Math.random() * 100) + 1;
+
         switch (scrollPct) {
             case 1:
                 if (rng <= 1) {
