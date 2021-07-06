@@ -6,6 +6,7 @@ var apq = require('./botjs/apq.js');
 var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
 var dice = require('./botjs/dice.js');
+var scroll = require('./botjs/scroll.js');
 const cron = require('cron');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -258,8 +259,22 @@ bot.on("message", async msg => {
                 "Enter in the following format:\n" +
                 "`c.remind hh mm ss reason`"
             )
+            .setFooter('For some reason, long hours aren\'t allowed to try to keep reminder short :)');
         msg.channel.send(remindmsg);
         remind;
+    }
+
+    else if (msg.content.toLowerCase() === "c.scroll") {
+        const scrollmsg = new Discord.MessageEmbed()
+        .setColor('#DDDDDD')
+        .setTitle('Scrolling Simulator')
+        .setDescription(
+            "Enter in the following format:\n" +
+            "`c.scroll %`\n" +
+            "`%`: 1, 3, 10, 30, 60, 70"
+        )
+        msg.channel.send(scrollmsg);
+        scroll;
     }
 
     /* ------------------------------- ZAK ------------------------------- */

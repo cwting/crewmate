@@ -245,7 +245,7 @@ bot.on('message', message => {
             }
         }
         else {
-            return message.reply("Incorrect format!\nCorrect format: c.hpwash `[job]` `[level]` `[mp]`")
+            return message.reply("Incorrect format!\nCorrect format: c.hpwash `job` `level` `clean mp`")
         }
         if (cleanMP < minMP) {
             return message.reply(
