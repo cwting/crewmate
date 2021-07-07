@@ -47,6 +47,7 @@ bot.on("message", async msg => {
             .addFields(
                 { name: 'About Crew', value: '`c.about`' },
                 { name: 'Calculate AP that is unassigned/assigned to HP/MP', value: '`c.ap`' },
+                { name: 'Coin Flip', value: '`c.coinflip`' },
                 { name: 'APQ Stage 2', value: '`c.apq`' },
                 { name: 'Ask Crewmate A Question!', value: '`c.ask`' },
                 { name: 'Crimsonwood Keep\'s Bonus Stage Split', value: '`c.cwkbon`' },
@@ -58,6 +59,7 @@ bot.on("message", async msg => {
                 { name: 'Random Channel Picker', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker', value: '`c.gach`' },
                 { name: 'Reminder', value: '`c.remind`' },
+                { name: 'Scroll', value: '`c.scroll`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
             )
         msg.channel.send(helpmsg);
@@ -94,6 +96,13 @@ bot.on("message", async msg => {
             );
         msg.channel.send(apcalcmsg);
         apcalc;
+    }
+
+    /* ------------------------------- COIN FLIP ------------------------------- */
+    else if (msg.content.toLowerCase() === "c.coinflip") {
+        const coinFlipOutcomeArray = ["Heads", "Tails"]
+        var coinFlipOutcomeNum = Math.floor(Math.random() * coinFlipOutcomeArray.length);
+        msg.reply(`you got ${coinFlipOutcomeArray[coinFlipOutcomeNum]}.`)
     }
 
     /* ------------------------------- ASK ------------------------------- */
@@ -264,6 +273,7 @@ bot.on("message", async msg => {
         remind;
     }
 
+    /* ------------------------------- SCROLL ------------------------------- */
     else if (msg.content.toLowerCase() === "c.scroll") {
         const scrollmsg = new Discord.MessageEmbed()
         .setColor('#DDDDDD')
