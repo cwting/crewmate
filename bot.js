@@ -139,11 +139,16 @@ bot.on("message", async msg => {
 
     /* --------------------------------- GPQ ----------------------------------- */
     else if (msg.content.toLowerCase() === "c.gpq") {
-        const gpqmsg1 = new Discord.MessageEmbed()
+        const gpqmsg = new Discord.MessageEmbed()
             .setColor("#DDDDDD")
             .setTitle("GPQ Stage 3 Practice")
             .setDescription("https://cwting.github.io/crewmate/index.html")
-        const gpqmsg2 = new Discord.MessageEmbed()
+
+        msg.channel.send(gpqmsg);
+    }
+
+    else if (msg.content.toLowerCase() === "c.gpqbon") {
+        const gpqbonmsg = new Discord.MessageEmbed()
             .setColor("#DDDDDD")
             .setTitle("GPQ Bonus Map")
             .setImage("https://i.ibb.co/Jm33f7S/gpq-bon.png")
@@ -151,7 +156,7 @@ bot.on("message", async msg => {
                 "Red/Cyan markings - Hidden Teleporters (from circle to X)\n" +
                 "Purple - Spawn Point"
             )
-        msg.channel.send(gpqmsg1, gpqmsg2);
+        msg.channel.send(gpqbonmsg);
     }
 
     /* ------------------------------- HP WASH ------------------------------- */
