@@ -139,11 +139,19 @@ bot.on("message", async msg => {
 
     /* --------------------------------- GPQ ----------------------------------- */
     else if (msg.content.toLowerCase() === "c.gpq") {
-        const gpqmsg = new Discord.MessageEmbed()
+        const gpqmsg1 = new Discord.MessageEmbed()
             .setColor("#DDDDDD")
             .setTitle("GPQ Stage 3 Practice")
             .setDescription("https://cwting.github.io/crewmate/index.html")
-        msg.channel.send(gpqmsg);
+        const gpqmsg2 = new Discord.MessageEmbed()
+            .setColor("#DDDDDD")
+            .setTitle("GPQ Bonus Map")
+            .setImage("https://i.ibb.co/Jm33f7S/gpq-bon.png")
+            .setDescription(
+                "Red/Cyan markings - Hidden Teleporters (from circle to X)\n" +
+                "Purple - Spawn Point"
+            )
+        msg.channel.send(gpqmsg1, gpqmsg2);
     }
 
     /* ------------------------------- HP WASH ------------------------------- */
@@ -276,13 +284,13 @@ bot.on("message", async msg => {
     /* ------------------------------- SCROLL ------------------------------- */
     else if (msg.content.toLowerCase() === "c.scroll") {
         const scrollmsg = new Discord.MessageEmbed()
-        .setColor('#DDDDDD')
-        .setTitle('Scrolling Simulator')
-        .setDescription(
-            "Enter in the following format:\n" +
-            "`c.scroll %`\n" +
-            "`%`: 1, 3, 10, 30, 60, 70"
-        )
+            .setColor('#DDDDDD')
+            .setTitle('Scrolling Simulator')
+            .setDescription(
+                "Enter in the following format:\n" +
+                "`c.scroll %`\n" +
+                "`%`: 1, 3, 10, 30, 60, 70"
+            )
         msg.channel.send(scrollmsg);
         scroll;
     }
