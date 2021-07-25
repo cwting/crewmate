@@ -26,13 +26,14 @@ bot.on('message', message => {
         else {
             const gachLocationArray = locations.split(' ');
             var gachLocationArrayNum = Math.floor(Math.random() * gachLocationArray.length);
+            return message.reply(
+                `You have selected: ${gachLocationArray}.\n` +
+                `From these locations... I choose......\n` +
+                `${gachLocationArray[gachLocationArrayNum]}!\n` +
+                "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
+            )
         }
-        message.reply(
-            `You have selected: ${gachLocationArray}.\n` +
-            `From these locations... I choose......\n` +
-            `${gachLocationArray[gachLocationArrayNum]}!\n` +
-            "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
-        )
+
     }
 })
 
