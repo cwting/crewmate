@@ -25,7 +25,7 @@ bot.on('message', message => {
             var gachLocationArrayNum = Math.floor(Math.random() * gachLocationArray.length);
             return message.reply(
                 `You have selected: ${locations}.\n` +
-                `From these locations... I choose...... ${gachLocationArray[gachLocationArrayNum]}` +
+                `From these locations... I choose: ${gachLocationArray[gachLocationArrayNum]}\n` +
                 "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
             )
         }
