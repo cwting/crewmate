@@ -21,7 +21,7 @@ bot.on("message", message => {
             return message.reply("Please ask your question.");
         }
         else {
-            const badwordsArray = ["gay", "slut", "babi", "cb", "ccb", "bitch", "fuck"];
+            const badwordsArray = ["gay", "slut", "babi", "ccb", "bitch", "fuck"];
             const askArray = [
                 "Hell yes!", "Yes.",
 

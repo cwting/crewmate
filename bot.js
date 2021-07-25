@@ -7,6 +7,7 @@ var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
 var dice = require('./botjs/dice.js');
 var scroll = require('./botjs/scroll.js');
+var gacha2 = require('./botjs/gach2.js');
 const cron = require('cron');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -58,6 +59,7 @@ bot.on("message", async msg => {
                 // { name: 'Members of Crew', value: '`c.member`' },
                 { name: 'Random Channel Picker', value: '`c.ch`' },
                 { name: 'Random Gacha Location Picker', value: '`c.gach`' },
+                { name: 'Random Gacha Location Picker (Selective)', value: '`c.gach2`' },
                 { name: 'Reminder', value: '`c.remind`' },
                 { name: 'Scroll', value: '`c.scroll`' },
                 { name: 'Zakum Pre-Quest Stage 1', value: '`c.zak`' },
@@ -263,6 +265,22 @@ bot.on("message", async msg => {
             `I have picked ${gachLocationArray[gachLocationArrayNum]} for you! Good Luck!\n` +
             "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
         )
+    }
+
+    /* ------------------------------- RANDOM GACHA LOCATION PICKER 2 ------------------------------- */
+    else if (msg.content.toLowerCase() === 'c.gach2') {
+        const gach2msg = new Discord.MessageEmbed()
+            .setColor('#DDDDDD')
+            .setTitle('Gacha Location Randomiser')
+            .setDescription(
+                'Enter in the following format:\n' +
+                '`c.gach2 <location1> <location2>`\n' +
+                'Locations: CBD, Ellinia, Henesys, Kerning City, Nautilus, NLC, Perion, Showa, Mushroom Shrine, Sleepywood'
+            )
+            .setFooter("There can be more than 2 locations!")
+        msg.channel.send(gach2msg);
+        gach2;
+
     }
 
     /* --------------------------------------- REMINDER --------------------------------------- */
