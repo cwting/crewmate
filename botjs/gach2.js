@@ -19,7 +19,7 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
-        var locations = args[0];
+        var locations = args.join(" ").slice(1);
         console.log(locations)
         if (!locations) {
             return message.reply("Please specify locations~");
