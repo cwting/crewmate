@@ -19,20 +19,13 @@ bot.on('message', message => {
         if (!args.length) {
             return
         }
-        var locations = args.join(" ").slice();
-        console.log("locations:" + locations)
-        if (!locations) {
-            return message.reply("Please specify locations~");
-        }
         else {
+            var locations = args.join(" ").slice();
             const gachLocationArray = locations.split(' ');
-            console.log(gachLocationArray)
             var gachLocationArrayNum = Math.floor(Math.random() * gachLocationArray.length);
-            console.log(gachLocationArrayNum)
             return message.reply(
                 `You have selected: ${locations}.\n` +
-                `From these locations... I choose......\n` +
-                `${gachLocationArray[gachLocationArrayNum]}!\n` +
+                `From these locations... I choose...... ${gachLocationArray[gachLocationArrayNum]}` +
                 "Disclaimer: Crewmate is not to be held accountable for any 'bad gach run'. uwu"
             )
         }
