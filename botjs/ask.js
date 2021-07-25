@@ -16,7 +16,7 @@ bot.on("message", message => {
         if (!args.length) {
             return
         }
-        var question = args[0];
+        var question = args.join(" ").slice();
         console.log("question: " + question)
         if (!question) {
             return message.reply("Please ask your question.");
