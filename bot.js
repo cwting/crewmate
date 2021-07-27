@@ -1,4 +1,4 @@
-// var member = require('./botjs/members.js');
+var member = require('./botjs/members.js');
 var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require("./botjs/hpwash.js");
 var apcalc = require('./botjs/apcalc.js');
