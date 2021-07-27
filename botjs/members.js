@@ -42,7 +42,7 @@ bot.on('message', message => {
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
                                     "Pronghorn - Level 19x Marksman\n" +
-                                    "Stripewing - Level 13x Bishop"
+                                    "Stripewing - Level 14x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -69,7 +69,7 @@ bot.on('message', message => {
                                     "🤍 __Bunpaws - Level 200 Buccaneer__ 🤍\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
                                     "Pronghorn - Level 19x Marksman\n" +
-                                    "Stripewing - Level 13x Bishop"
+                                    "Stripewing - Level 14x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -96,7 +96,7 @@ bot.on('message', message => {
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "🤍 __Nweeky - Level 200 Bowmaster__ 🤍\n" +
                                     "Pronghorn - Level 19x Marksman\n" +
-                                    "Stripewing - Level 13x Bishop"
+                                    "Stripewing - Level 14x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -123,7 +123,7 @@ bot.on('message', message => {
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
                                     "🤍 __Pronghorn - Level 19x Marksman__ 🤍\n" +
-                                    "Stripewing - Level 13x Bishop"
+                                    "Stripewing - Level 14x Bishop"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -150,7 +150,7 @@ bot.on('message', message => {
                                     "Bunpaws - Level 200 Buccaneer\n" +
                                     "Nweeky - Level 200 Bowmaster\n" +
                                     "Pronghorn - Level 19x Marksman\n" +
-                                    "🤍 __Stripewing - Level 13x Bishop__ 🤍"
+                                    "🤍 __Stripewing - Level 14x Bishop__ 🤍"
                             }
                         )
                         .setColor("#5FC3C3")
@@ -295,8 +295,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __xKook007 - Level 200 Night Lord__ 🤍\n" +
-                                    "Vaiiente - Level 19x Dark Knight\n" +
-                                    "Rooka - Level 14x Corsair\n" +
+                                    "Vaiiente - Level 200 Dark Knight\n" +
+                                    "Rooka - Level 15x Corsair\n" +
                                     "Leuca - Level 13x Night Lord\n" +
                                     "Jyeong - Level 13x Bishop"
                             }
@@ -322,8 +322,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xKook007 - Level 200 Night Lord\n" +
-                                    "🤍 __Vaiiente - Level 19x Dark Knight__ 🤍\n" +
-                                    "Rooka - Level 14x Corsair\n" +
+                                    "🤍 __Vaiiente - Level 200 Dark Knight__ 🤍\n" +
+                                    "Rooka - Level 15x Corsair\n" +
                                     "Leuca - Level 13x Night Lord\n" +
                                     "Jyeong - Level 13x Bishop"
                             }
@@ -349,8 +349,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xKook007 - Level 200 Night Lord\n" +
-                                    "Vaiiente - Level 19x Dark Knight\n" +
-                                    "🤍 __Rooka - Level 14x Corsair__ 🤍\n" +
+                                    "Vaiiente - Level 200 Dark Knight\n" +
+                                    "🤍 __Rooka - Level 15x Corsair__ 🤍\n" +
                                     "Leuca - Level 13x Night Lord\n" +
                                     "Jyeong - Level 13x Bishop"
                             }
@@ -376,8 +376,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xKook007 - Level 200 Night Lord\n" +
-                                    "Vaiiente - Level 19x Dark Knight\n" +
-                                    "Rooka - Level 14x Corsair\n" +
+                                    "Vaiiente - Level 200 Dark Knight\n" +
+                                    "Rooka - Level 15x Corsair\n" +
                                     "🤍 __Leuca - Level 13x Night Lord__ 🤍\n" +
                                     "Jyeong - Level 13x Bishop"
                             }
@@ -403,8 +403,8 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "xKook007 - Level 200 Night Lord\n" +
-                                    "Vaiiente - Level 19x Dark Knight\n" +
-                                    "Rooka - Level 14x Corsair\n" +
+                                    "Vaiiente - Level 200 Dark Knight\n" +
+                                    "Rooka - Level 15x Corsair\n" +
                                     "Leuca - Level 13x Night Lord\n" +
                                     "🤍 __Jyeong - Level 13x Bishop__ 🤍"
                             }
@@ -438,7 +438,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __ArchWar - Level 200 Bowmaster__ 🤍\n" +
-                                    "BadShooter - Level 19x Corsair\n" +
+                                    "BadShooter - Level 200 Corsair\n" +
                                     "GreenyHeaven - Level 13x Bishop"
                             }
                         )
@@ -463,7 +463,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "ArchWar - Level 200 Bowmaster\n" +
-                                    "🤍 __BadShooter - Level 19x Corsair__ 🤍\n" +
+                                    "🤍 __BadShooter - Level 200 Corsair__ 🤍\n" +
                                     "GreenyHeaven - Level 13x Bishop"
                             }
                         )
@@ -488,7 +488,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "ArchWar - Level 200 Bowmaster\n" +
-                                    "BadShooter - Level 19x Corsair\n" +
+                                    "BadShooter - Level 200 Corsair\n" +
                                     "🤍 __GreenyHeaven - Level 13x Bishop__ 🤍"
                             }
                         )
@@ -521,7 +521,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __DingTongBell - Level 200 Hero__ 🤍\n" +
-                                    "BadPuncher - Level 19x Buccaneer\n" +
+                                    "BadPuncher - Level 200 Buccaneer\n" +
                                     "TingTongBell - Level 19x Bishop"
                             }
                         )
@@ -546,7 +546,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "DingTongBell - Level 200 Hero\n" +
-                                    "🤍 __BadPuncher - Level 19x Buccaneer__ 🤍\n" +
+                                    "🤍 __BadPuncher - Level 200 Buccaneer__ 🤍\n" +
                                     "TingTongBell - Level 19x Bishop"
                             }
                         )
@@ -571,7 +571,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "DingTongBell - Level 200 Hero\n" +
-                                    "BadPuncher - Level 19x Buccaneer\n" +
+                                    "BadPuncher - Level 200 Buccaneer\n" +
                                     "🤍 __TingTongBell - Level 19x Bishop__ 🤍"
                             }
                         )
@@ -603,7 +603,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value: "🤍 __MazeRunner - Level 200 Night Lord__ 🤍\n" +
-                                    "MazeCrusher - Level 13x Paladin\n"
+                                    "MazeCrusher - Level 16x Paladin\n"
 
                             }
                         )
@@ -627,7 +627,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value: "MazeRunner - Level 200 Night Lord\n" +
-                                    "🤍 __MazeCrusher - Level 13x Paladin__ 🤍\n"
+                                    "🤍 __MazeCrusher - Level 16x Paladin__ 🤍\n"
                             }
                         )
                         .setColor("#00FFF9")
@@ -716,7 +716,7 @@ bot.on('message', message => {
                                 value:
                                     "🤍 __iTinyRick - Level 200 Dark Knight__ 🤍\n" +
                                     "TinyHero - Level 200 Hero\n" +
-                                    "iDragonFist - Level 19x Buccaneer\n" +
+                                    "iDragonFist - Level 200 Buccaneer\n" +
                                     "HealWolf - Level 16x Bishop"
                             }
                         )
@@ -742,7 +742,7 @@ bot.on('message', message => {
                                 value:
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "🤍 __TinyHero - Level 200 Hero__ 🤍\n" +
-                                    "iDragonFist - Level 19x Buccaneer\n" +
+                                    "iDragonFist - Level 200 Buccaneer\n" +
                                     "HealWolf - Level 16x Bishop"
                             }
                         )
@@ -768,7 +768,7 @@ bot.on('message', message => {
                                 value:
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "TinyHero - Level 200 Hero\n" +
-                                    "🤍 __iDragonFist - Level 19x Buccaneer__ 🤍\n" +
+                                    "🤍 __iDragonFist - Level 200 Buccaneer__ 🤍\n" +
                                     "HealWolf - Level 16x Bishop"
                             }
                         )
@@ -794,7 +794,7 @@ bot.on('message', message => {
                                 value:
                                     "iTinyRick - Level 200 Dark Knight\n" +
                                     "TinyHero - Level 200 Hero\n" +
-                                    "iDragonFist - Level 19x Buccaneer\n" +
+                                    "iDragonFist - Level 200 Buccaneer\n" +
                                     "🤍 __HealWolf - Level 16x Bishop__ 🤍"
                             }
                         )
@@ -913,7 +913,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __PalaRose - Level 19x Paladin__ 🤍\n" +
+                                    "🤍 __PalaRose - Level 200 Paladin__ 🤍\n" +
                                     "N00BPR0 - Level 16x Bishop"
                             }
                         )
@@ -937,7 +937,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "PalaRose - Level 19x Paladin\n" +
+                                    "PalaRose - Level 200 Paladin\n" +
                                     "🤍 __N00BPR0 - Level 16x Bishop__ 🤍"
                             }
                         )
@@ -1052,7 +1052,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "🤍 __28thofJune - Level 15x Night Lord__ 🤍\n" +
+                                    "🤍 __28thofJune - Level 16x Night Lord__ 🤍\n" +
                                     "JJBishop - Level 17x Bishop"
                             }
                         )
@@ -1077,7 +1077,7 @@ bot.on('message', message => {
                             {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
-                                    "28thofJune - Level 15x Night Lord\n" +
+                                    "28thofJune - Level 16x Night Lord\n" +
                                     "🤍 __JJBishop - Level 17x Bishop__ 🤍"
                             }
                         )
@@ -1168,7 +1168,7 @@ bot.on('message', message => {
                                 value:
                                     "🤍 __Kwin - Level 18x Hero__ 🤍\n" +
                                     "Kwinie - Level 13x Bishop\n" +
-                                    "Kweyn - Level 13x Buccaneer"
+                                    "Kweyn - Level 16x Buccaneer"
                             }
                         )
                         .setColor("#C35DAE")
@@ -1193,7 +1193,7 @@ bot.on('message', message => {
                                 value:
                                     "Kwin - Level 18x Hero\n" +
                                     "🤍 __Kwinie - Level 13x Bishop__ 🤍\n" +
-                                    "Kweyn - Level 13x Buccaneer"
+                                    "Kweyn - Level 16x Buccaneer"
                             }
                         )
                         .setColor("#C35DAE")
@@ -1218,7 +1218,7 @@ bot.on('message', message => {
                                 value:
                                     "Kwin - Level 18x Hero\n" +
                                     "Kwinie - Level 13x Bishop\n" +
-                                    "🤍 __Kweyn - Level 13x Buccaneer__ 🤍"
+                                    "🤍 __Kweyn - Level 16x Buccaneer__ 🤍"
                             }
                         )
                         .setColor("#C35DAE")

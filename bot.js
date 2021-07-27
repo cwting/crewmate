@@ -205,50 +205,50 @@ bot.on("message", async msg => {
 
     /* ------------------------------- MEMBERS ------------------------------- */
     else if (msg.content.toLowerCase() === "c.member") {
-        // const membermsg = new Discord.MessageEmbed()
-        //     .setColor('#DDDDDD')
-        //     .setTitle('Crew\'s Members')
-        //     .setDescription(
-        //         "Enter the name of the member you're interested in in the following format:\n" +
-        //         "`c.member name`"
-        //     )
-        //     .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
-        //     .addFields(
-        //         {
-        //             name: 'Guild Master and Jr. Masters',
-        //             value:
-        //                 "Nivi\n" +
-        //                 "Naomi\n" +
-        //                 "Marc\n" +
-        //                 "Antonio\n" +
-        //                 "Bell\n" +
-        //                 "Piet\n" +
-        //                 "Gel\n" +
-        //                 "Lior"
-        //         },
-        //         {
-        //             name: 'Members',
-        //             value:
-        //                 "David\n" +
-        //                 "Rosa\n" +
-        //                 "Jenn\n" +
-        //                 "JJ\n" +
-        //                 "James\n" +
-        //                 "Sabi\n" +
-        //                 "Cyrus"
-        //         },
-        //         {
-        //             name: 'Gone But Not Forgotten',
-        //             value:
-        //                 "Chris"
-        //         },
-        //     )
         const membermsg = new Discord.MessageEmbed()
-            .setColor("#DDDDDD")
-            .setTitle("Given Up")
-            .setDescription("This command no longer exist.")
+            .setColor('#DDDDDD')
+            .setTitle('Crew\'s Members')
+            .setDescription(
+                "Enter the name of the member you're interested in in the following format:\n" +
+                "`c.member name`"
+            )
+            .setFooter("Once a member has been 'summoned', you can react to the arrows to navigate the member's character(s)/image(s)")
+            .addFields(
+                {
+                    name: 'Guild Master and Jr. Masters',
+                    value:
+                        "Nivi\n" +
+                        "Naomi\n" +
+                        "Marc\n" +
+                        "Antonio\n" +
+                        "Bell\n" +
+                        "Piet\n" +
+                        "Gel\n" +
+                        "Lior"
+                },
+                {
+                    name: 'Members',
+                    value:
+                        "David\n" +
+                        "Rosa\n" +
+                        "Jenn\n" +
+                        "JJ\n" +
+                        "James\n" +
+                        "Sabi\n" +
+                        "Cyrus"
+                },
+                {
+                    name: 'Gone But Not Forgotten',
+                    value:
+                        "Chris"
+                },
+            )
+        // const membermsg = new Discord.MessageEmbed()
+        //     .setColor("#DDDDDD")
+        //     .setTitle("Given Up")
+        //     .setDescription("This command no longer exist.")
         msg.channel.send(membermsg);
-        // member;
+        member;
     }
 
     /* ------------------------------- RANDOM CHANNEL PICKER ------------------------------- */
