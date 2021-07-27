@@ -7,7 +7,9 @@ bot.on("ready", () => {
 });
 
 bot.on('message', message => {
-    if (message.content === "c.apq") {
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+
+    if (message.content.toLowerCase() === "c.apq") {
         let apq = new Menu(message.channel, message.author.id, [
             {
                 name: "APQ1",

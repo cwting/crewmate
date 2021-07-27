@@ -7,11 +7,11 @@ bot.on("ready", () => {
 
 const prefix = "c.";
 bot.on('message', message => {
-
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
+
     var level = args[0];
     var str = args[1];
     var dex = args[2];

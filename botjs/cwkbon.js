@@ -7,7 +7,9 @@ bot.on("ready", () => {
 });
 
 bot.on('message', message => {
-    if (message.content === "c.cwkbon") {
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+
+    if (message.content.toLowerCase() === "c.cwkbon") {
         let cwkbon = new Menu(message.channel, message.author.id, [
             // 3 man bon
             {
