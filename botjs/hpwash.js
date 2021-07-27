@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", () => {
+bot.on('ready', () => {
     console.info(`${bot.user.tag} is now online! (hpwash.js)`); // BOT online
 })
 
-const prefix = "c.";
+const prefix = 'c.';
 bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
@@ -26,7 +26,7 @@ bot.on('message', message => {
         }
         else if ((level >= 1 && level <= 200) && (cleanMP >= 1 && cleanMP <= 30000)) {
             switch (job.toLowerCase()) {
-                case "beginner":
+                case 'beginner':
                     var minHPGain = 8;
                     var avgHPGain = 10;
                     var mpLoss = 8;
@@ -37,9 +37,9 @@ bot.on('message', message => {
                     var avgHPGained = numOfWash * avgHPGain;
                     break;
 
-                case "spearman":
-                case "dk":
-                case "drk":
+                case 'spearman':
+                case 'dk':
+                case 'drk':
                     var minHPGain = 50;
                     var avgHPGain = 52;
                     var mpLoss = 4;
@@ -50,9 +50,9 @@ bot.on('message', message => {
                     var avgHPGained = numOfWash * avgHPGain;
                     break;
 
-                case "fighter":
-                case "crusader":
-                case "hero":
+                case 'fighter':
+                case 'crusader':
+                case 'hero':
                     var minHPGain = 50;
                     var avgHPGain = 52;
                     var mpLoss = 4;
@@ -63,10 +63,10 @@ bot.on('message', message => {
                     var avgHPGained = numOfWash * avgHPGain;
                     break;
 
-                case "page":
-                case "wk":
-                case "pala":
-                case "paladin":
+                case 'page':
+                case 'wk':
+                case 'pala':
+                case 'paladin':
                     var minHPGain = 50;
                     var avgHPGain = 52;
                     var mpLoss = 4;
@@ -77,15 +77,15 @@ bot.on('message', message => {
                     var avgHPGained = numOfWash * avgHPGain;
                     break;
 
-                case "archer":
-                case "hunter":
-                case "ranger":
-                case "bowmaster":
-                case "bm":
-                case "crossbowman":
-                case "sniper":
-                case "marksman":
-                case "mm":
+                case 'archer':
+                case 'hunter':
+                case 'ranger':
+                case 'bowmaster':
+                case 'bm':
+                case 'crossbowman':
+                case 'sniper':
+                case 'marksman':
+                case 'mm':
                     var minHPGain = 16;
                     var avgHPGain = 18;
                     var mpLoss = 12;
@@ -96,17 +96,17 @@ bot.on('message', message => {
                     var avgHPGained = numOfWash * avgHPGain;
                     break;
 
-                case "thief":
-                case "assassin":
-                case "sin":
-                case "hermit":
-                case "nightlord":
-                case "nl":
-                case "bandit":
-                case "chiefbandit":
-                case "cb":
-                case "shadower":
-                case "shad":
+                case 'thief':
+                case 'assassin':
+                case 'sin':
+                case 'hermit':
+                case 'nightlord':
+                case 'nl':
+                case 'bandit':
+                case 'chiefbandit':
+                case 'cb':
+                case 'shadower':
+                case 'shad':
                     var mpLoss = 12;
                     var minMP = (14 * level) + 148;
                     var extraMP = cleanMP - minMP
@@ -138,10 +138,10 @@ bot.on('message', message => {
                         )
                     }
 
-                case "brawler":
-                case "marauder":
-                case "buccaneer":
-                case "bucc":
+                case 'brawler':
+                case 'marauder':
+                case 'buccaneer':
+                case 'bucc':
                     var mpLoss = 16;
                     var minMP = (18 * level) + 111;
                     var extraMP = cleanMP - minMP
@@ -171,10 +171,10 @@ bot.on('message', message => {
                         )
                     }
 
-                case "gunslinger":
-                case "outlaw":
-                case "corsair":
-                case "sair":
+                case 'gunslinger':
+                case 'outlaw':
+                case 'corsair':
+                case 'sair':
                     var mpLoss = 16;
                     var minMP = (18 * level) + 111;
                     var extraMP = cleanMP - minMP
@@ -204,14 +204,14 @@ bot.on('message', message => {
                         )
                     }
 
-                case "magician":
-                case "f/p":
-                case "i/l":
-                case "am":
-                case "cleric":
-                case "priest":
-                case "bishop":
-                case "bs":
+                case 'magician':
+                case 'f/p':
+                case 'i/l':
+                case 'am':
+                case 'cleric':
+                case 'priest':
+                case 'bishop':
+                case 'bs':
                     var minHPGain = 10;
                     var avgHPGain = 15;
                     var mpLossS0 = 20;
@@ -234,10 +234,10 @@ bot.on('message', message => {
                     } else {
                         return message.reply(
                             `\nYou have ${extraMP.toLocaleString()} extra MP.\n` +
-                            "**If your `Improved MaxMP Increase skill` is level 0:**\n" +
+                            '**If your `Improved MaxMP Increase skill` is level 0:**\n' +
                             `You can wash ${numOfWashS0.toLocaleString()} times and gain at least ${Math.floor(minHPGainedS0).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS0).toLocaleString()} HP.\n` +
                             `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS0).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS0 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS0).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)\n` +
-                            "**If your `Improved MaxMP Increase skill` is level 10:**\n" +
+                            '**If your `Improved MaxMP Increase skill` is level 10:**\n' +
                             `You can wash ${numOfWashS10.toLocaleString()} times and gain at least ${Math.floor(minHPGainedS10).toLocaleString()} HP and on average ${Math.floor(avgHPGainedS10).toLocaleString()} HP.\n` +
                             `The cost of AP resets will be: ${Math.ceil(aprNX * numOfWashS10).toLocaleString()} NX (${Math.ceil(aprNX * numOfWashS10 / vote).toLocaleString()} days of voting) or ${Math.ceil(aprMeso * numOfWashS10).toLocaleString()} mesos (${aprMeso.toLocaleString()} mesos / AP Reset)`
                         )
@@ -245,7 +245,7 @@ bot.on('message', message => {
             }
         }
         else {
-            return message.reply("Incorrect format!\nCorrect format: c.hpwash `job` `level` `clean mp`")
+            return message.reply('Incorrect format!\nCorrect format: c.hpwash `job` `level` `clean mp`')
         }
         if (cleanMP < minMP) {
             return message.reply(

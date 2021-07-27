@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", () => {
+bot.on('ready', () => {
     console.info(`${bot.user.tag} is now online! (scroll.js)`); // BOT online
 });
 
-const prefix = "c.";
+const prefix = 'c.';
 bot.on('message', message => {
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 

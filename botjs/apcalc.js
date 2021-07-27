@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", () => {
+bot.on('ready', () => {
     console.info(`${bot.user.tag} is now online! (apcalc.js)`); // BOT online
 });
 
-const prefix = "c.";
+const prefix = 'c.';
 bot.on('message', message => {
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
@@ -38,11 +38,11 @@ bot.on('message', message => {
             }
             var unusedAP = userAP - str - dex - int - luk + 16;
             if (unusedAP < 0) {
-                return message.reply("\nYour AP that is assigned to HP/MP or unassigned is negative. Please check that your str/dex/int/luk is not inclusive of any stat added by equipments.")
+                return message.reply('\nYour AP that is assigned to HP/MP or unassigned is negative. Please check that your str/dex/int/luk is not inclusive of any stat added by equipments.')
             }
         }
         else {
-            return message.reply("Incorrect format!\nCorrect format: c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`")
+            return message.reply('Incorrect format!\nCorrect format: c.ap `[level]` `[str]` `[dex]` `[int]` `[luk]`')
         }
         message.reply(`\nYou have ${unusedAP} AP unassigned or assigned to HP/MP`)
     }

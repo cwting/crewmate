@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", () => {
+bot.on('ready', () => {
     console.info(`${bot.user.tag} is now online! (dice.js)`); // BOT online
 });
 
-const prefix = "c.";
+const prefix = 'c.';
 bot.on('message', message => {
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
@@ -19,7 +19,7 @@ bot.on('message', message => {
 
         var number = args[0];
         if (!number) {
-            return message.reply("Please specify a number");
+            return message.reply('Please specify a number');
         }
         else {
             var randomDice = Math.floor(Math.random() * number) + 1;

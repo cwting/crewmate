@@ -914,7 +914,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "🤍 __PalaRose - Level 200 Paladin__ 🤍\n" +
-                                    "N00BPR0 - Level 16x Bishop"
+                                    "N00BPR0 - Level 17x Bishop"
                             }
                         )
                         .setColor("#D633FF")
@@ -938,7 +938,7 @@ bot.on('message', message => {
                                 name: "Maple Character(s) IGN, Level and Job:",
                                 value:
                                     "PalaRose - Level 200 Paladin\n" +
-                                    "🤍 __N00BPR0 - Level 16x Bishop__ 🤍"
+                                    "🤍 __N00BPR0 - Level 17x Bishop__ 🤍"
                             }
                         )
                         .setColor("#D633FF")
