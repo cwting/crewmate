@@ -6,6 +6,7 @@ bot.on("ready", () => {
     console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
 });
 
+const prefix = "c.";
 bot.on('message', message => {
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
