@@ -74,9 +74,9 @@ bot.on('message', async msg => {
             .setThumbnail('https://i.ibb.co/8zMHfsR/logo.png')
             .setTitle('About Crew')
             .setDescription('We are a trust-based family where help is always available and nobody gets left behind. 😊')
-            .setImage('https://i.ibb.co/Gd6QNWP/crew.png')
             .setFooter('Guild Pic will be updated upon request 🤍')
         msg.channel.send(aboutmsg);
+        msg.channel.send('https://i.ibb.co/Gd6QNWP/crew.png')
     }
 
     // /* ------------------------------- APQ ------------------------------- */
@@ -226,7 +226,8 @@ bot.on('message', async msg => {
                         'Bell\n' +
                         'Piet\n' +
                         'Gel\n' +
-                        'Lior'
+                        'Lior\n' +
+                        'James' 
                 },
                 {
                     name: 'Members',
@@ -235,7 +236,6 @@ bot.on('message', async msg => {
                         'Rosa\n' +
                         'Jenn\n' +
                         'JJ\n' +
-                        'James\n' +
                         'Sabi\n' +
                         'Cyrus'
                 },
