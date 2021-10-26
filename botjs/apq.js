@@ -1,6 +1,6 @@
-const { /*Client,*/ MessageEmbed } = require('discord.js')
+const { Client, MessageEmbed } = require('discord.js')
 const { Menu } = require('discord.js-menu');
-// const bot = new Client()
+const bot = new Client()
 
 bot.on('ready', () => {
     console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
