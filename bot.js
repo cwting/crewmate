@@ -2,7 +2,8 @@ var member = require('./botjs/members.js');
 var cwkbon = require('./botjs/cwkbon.js');
 var hpwash = require('./botjs/hpwash.js');
 var apcalc = require('./botjs/apcalc.js');
-var apq = require('./botjs/apq.js');
+// var apq = require('./botjs/apq.js');
+import APQ from './botjs/apq.js';
 var remind = require('./botjs/remind.js');
 var ask = require('./botjs/ask.js');
 var dice = require('./botjs/dice.js');
@@ -81,7 +82,7 @@ bot.on('message', async msg => {
 
     // /* ------------------------------- APQ ------------------------------- */
     else if (msg.content.toLowerCase() === 'c.apq') {
-        apq;
+        APQ;
     }
 
     /* ------------------------------- AP CALCULATOR ------------------------------- */
