@@ -1,20 +1,16 @@
-// const { /*Client,*/ MessageEmbed } = require('discord.js')
-// const { Menu } = require('discord.js-menu');
+const { /*Client,*/ MessageEmbed } = require('discord.js')
+const { Menu } = require('discord.js-menu');
 // const bot = new Client()
 
-import { MessageEmbed } from "discord.js";
-import { Menu } from "discord.js-menu";
+bot.on('ready', () => {
+    console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
+});
 
-// bot.on('ready', () => {
-//     console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
-// });
+  const prefix = 'c.';
+  bot.on('message', message => {
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
-const APQ = () => {
-  // const prefix = 'c.';
-  // bot.on('message', message => {
-    // if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-
-    // if (message.content.toLowerCase() === 'c.apq') {
+    if (message.content.toLowerCase() === 'c.apq') {
       let apq = new Menu(message.channel, message.author.id, [
         {
           name: 'APQ1',
@@ -49,10 +45,9 @@ const APQ = () => {
         }
       ], 60000)
       apq.start()
-    // }
-  // })
+    }
+  })
 
-// bot.login(process.env.TOKEN);
-}
+bot.login(process.env.TOKEN);
 
 export default APQ;

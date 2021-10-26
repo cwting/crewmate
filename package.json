@@ -3,7 +3,6 @@
     "description": "Crewmate",
     "version": "0.0.0",
     "main": "bot.js",
-    "type": "module",
     "scripts": {
         "start": "node bot.js"
     },
