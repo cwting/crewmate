@@ -49,5 +49,3 @@ bot.on('ready', () => {
   })
 
 bot.login(process.env.TOKEN);
-
-export default APQ;
