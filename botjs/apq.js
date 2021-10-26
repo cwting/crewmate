@@ -1,18 +1,17 @@
-const { /*Client,*/ MessageEmbed } = require('discord.js')
+const { Client, MessageEmbed } = require('discord.js')
 const { Menu } = require('discord.js-menu');
-// const bot = new Client()
+const bot = new Client()
 
-// bot.on('ready', () => {
-//     console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
-// });
+bot.on('ready', () => {
+  console.info(`${bot.user.tag} is now online! (apq.js)`); // BOT online
+});
 
-// const prefix = 'c.';
-// bot.on('message', message => {
-// if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+const prefix = 'c.';
+bot.on('message', message => {
+  if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
-const APQ = () => {
-  // if (message.content.toLowerCase() === 'c.apq') {
-    let apq = new Menu(message.channel, message.author.id, [
+  if (message.content.toLowerCase() === 'c.apq') {
+    let apq = new Menu([
       {
         name: 'APQ1',
         content: new MessageEmbed({
@@ -46,13 +45,7 @@ const APQ = () => {
       }
     ], 60000)
     apq.start()
-  // }
-}
-//   }
-// })
+  }
+})
 
-// bot.login(process.env.TOKEN);
-
-module.exports = {
-  APQ
-}
+bot.login(process.env.TOKEN);
