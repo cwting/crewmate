@@ -16,6 +16,8 @@ bot.on('ready', () => {
   console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
   bot.user.setActivity('c.help') // set BOT's status
 
+  /* ------------------------------- Channels ------------------------------- */
+
   /*
       // get channel id
       const eventCh = bot.channels.cache.get('CH_ID');
@@ -26,12 +28,24 @@ bot.on('ready', () => {
       event1.start();
   */
 
+  /* ------------------------------- DMs ------------------------------- */
+
+  // Mike 
   let mikeVote = new cron.CronJob('0 0 0 * * *', () => {
     bot.users.fetch('245522553173442560').then(mikeVoteMsg => {
       mikeVoteMsg.send('Time to vote :3')
     })
   })
   mikeVote.start();
+
+  // Ant
+  let antVote = new cron.CronJob('0 0 0 * * *', () => {
+    bot.users.fetch('518100094839685130').then(antVoteMsg => {
+      antVoteMsg.send('Time to vote UwU')
+    })
+  })
+  antVote.start();
+
 });
 
 /* ------------------------------- HELP ------------------------------- */
