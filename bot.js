@@ -16,6 +16,7 @@ bot.on('ready', () => {
   console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
   bot.user.setActivity('c.help') // set BOT's status
 
+  /* CRONJOB TIMEZONE = UTC */
   /* ------------------------------- Channels ------------------------------- */
 
   /*
@@ -39,7 +40,7 @@ bot.on('ready', () => {
   mikeVote.start();
 
   // Ant
-  let antVote = new cron.CronJob('0 0 0 * * *', () => {
+  let antVote = new cron.CronJob('0 0 16 * * *', () => {
     bot.users.fetch('518100094839685130').then(antVoteMsg => {
       antVoteMsg.send('Time to vote UwU')
     })
