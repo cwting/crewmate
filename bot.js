@@ -358,13 +358,12 @@ bot.on('message', async msg => {
 
   else if (msg.channel.type === 'dm') {
     const dmmsg = new Discord.MessageEmbed()
-      .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
-      .setDescription(msg.content);
+      .setAuthor(msg.author.tag)
+      .setURL(msg.author.displayAvatarURL)
+      .setDescription(msg.content)
 
     const dmChannel = bot.channels.cache.get('943806396896514068');
-    dmChannel.send(dmmsg)
-
-    bot.channels.get(channelID).send(embed);
+    dmChannel.send(dmmsg);
   }
 });
 
