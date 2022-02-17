@@ -355,6 +355,17 @@ bot.on('message', async msg => {
   else if (msg.content.toLowerCase().includes('cutepaws')) {
     msg.channel.send('https://cdn.discordapp.com/attachments/515879326856642582/839569845041496135/cutepaws.gif');
   }
+
+  else if (msg.channel.type === 'dm') {
+    const dmmsg = new Discord.MessageEmbed()
+      .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
+      .setDescription(msg.content);
+
+    const dmChannel = bot.channels.cache.get('943806396896514068');
+    dmChannel.send(dmmsg)
+
+    bot.channels.get(channelID).send(embed);
+  }
 });
 
 bot.login(process.env.TOKEN);
