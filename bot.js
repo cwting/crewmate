@@ -47,6 +47,40 @@ bot.on('ready', () => {
   })
   antVote.start();
 
+  // Gal's Slime Reminder
+  let galSlime1 = new cron.CronJob('0 50 3 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+  let galSlime2 = new cron.CronJob('0 50 7 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+  let galSlime3 = new cron.CronJob('0 50 11 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+  let galSlime4 = new cron.CronJob('0 50 15 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+  let galSlime5 = new cron.CronJob('0 50 19 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+  let galSlime6 = new cron.CronJob('0 50 23 * * *', () => {
+    bot.users.fetch('225343585816543233').then(galSlimeMsg => {
+      galSlimeMsg.send('Slime in 10 minutes!')
+    })
+  })
+
+  galSlime1.start(), galSlime2.start(), galSlime3.start(), galSlime4.start(), galSlime5.start(), galSlime6.start();
+
 });
 
 /* ------------------------------- HELP ------------------------------- */
@@ -359,9 +393,7 @@ bot.on('message', async msg => {
   else if (msg.channel.type === 'dm') {
     const dmmsg = new Discord.MessageEmbed()
       .setAuthor(msg.author.tag)
-      .setURL(msg.author.displayAvatarURL)
       .setDescription(msg.content)
-
     const dmChannel = bot.channels.cache.get('943806396896514068');
     dmChannel.send(dmmsg);
   }
