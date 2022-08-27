@@ -9,7 +9,7 @@ const prefix = 'c.';
 bot.on('message', message => {
     var vote = 8000;
     var aprNX = 3100;
-    var aprMeso = 11000000;
+    var aprMeso = 9000000;
 
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
