@@ -18,11 +18,6 @@ bot.on('ready', () => {
   console.info(`${bot.user.tag} is now online! (index.js)`); // BOT online
   bot.user.setActivity('c.help') // set BOT's status
 
-  bot.guilds.cache.forEach(guild => {
-    console.log(`${guild.name} | ${guild.id}`);
-    console.log(`Checking Servers...`)
-  })
-
   /* CRONJOB TIMEZONE = UTC */
   /* ------------------------------- Channels ------------------------------- */
 
